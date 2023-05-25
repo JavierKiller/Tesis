@@ -1,0 +1,24 @@
+project:
+  type: book
+
+book:
+  title: "tesis_qmd"
+  author: "Jane Doe"
+  date: "16/5/2023"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - prelimilares.qmd
+    - limpieza_de_datos.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+

@@ -1,0 +1,6 @@
+## 
+
+descripcion de la base de datos
+formato de los datos
+variables de interes
+Data cleaning
