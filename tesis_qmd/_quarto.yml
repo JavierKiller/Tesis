@@ -9,6 +9,7 @@ book:
     - index.qmd
     - intro.qmd
     - prelimilares.qmd
+    - paquete_de_R_stegomia.qmd
     - limpieza_de_datos.qmd
     - references.qmd
 

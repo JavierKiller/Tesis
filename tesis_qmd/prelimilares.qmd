@@ -1,3 +1,20 @@
----
-title: "prelimilares.qmd"
----
+# Prelimilares: Guias operaticas de WHO para la vigilancia entomologica
+
+agregar la definision y uso de la vigilancia de las guias de WHO 
+
+
+## Vigilancia entomologica
+
+
+## Indices estegomia  
+
+### indice de casa positiva (HI)
+
+### indice de contenedor positivo (CI)
+
+### indice de bretau (BI)
+
+
+
+
+## Definicion y calculo de indices de estegomia 

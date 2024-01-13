@@ -31,7 +31,21 @@
     "objectID": "intro.html#descripción-del-problema",
     "href": "intro.html#descripción-del-problema",
     "title": "1  Introduccion",
-    "section": "1.1 Descripción del problema",
-    "text": "1.1 Descripción del problema"
+    "section": "1.2 Descripción del problema",
+    "text": "1.2 Descripción del problema\nEl Programa estatal de vigilancia entomología y control integral de enfermedades trasmitidas por vector, realiza diversas actividades para la prevención de enfermedades, las cuales se guían con actividades de vigilancia que proporcionan índices de riesgo entomológico, por ello se hará una API para calcular los índices de riesgo entomológico de forma automática y oportuna para la toma de decisione.\nTodas las actividades se capturan diariamente en una plataforma, donde es posible descargar los datos para su reporte y análisis. En el caso de Vigilancia por Ovitrampa(VO), la plataforma calcula los índices de riesgo pero para la actividad de Estudio Entomológico (EE) los calcula por manzana trabajada, estos índices se requiere por localidad de riesgo de manera semanal.\nSe requiere poder calcular índices de riesgo del EE por tipo de estudio, localidad de riesgo y por semana epidemiológica de manera automatizada.\nLa actividad de EE evalúa una muestra antes(encuesta) y después(verificación) de las actividades de control integral para determinar el riesgo entomológico\nque hay en un área grande a trabajar (Sectores o Localidad) y si requiere reforzar acciones de control y prevención.\nTener la información oportuna de los índices de riego entomológicos permiten tomar decisiones informades de ¿En Dónde? y ¿Cuándo? focalizar intervenciones."
+  },
+  {
+    "objectID": "intro.html#motivacion",
+    "href": "intro.html#motivacion",
+    "title": "1  Introduccion",
+    "section": "1.1 Motivacion",
+    "text": "1.1 Motivacion\nQueremos Analizar los datos de la actividad de vigilancia entomológica de forma oportuna y automática utilizando herramientas de Ciencia de Datos utilizando la base de datos de la plataforma de “Vigilancia Entomológica y Control Integral del Vector” del INSTITUTO NACIONAL DE SALUD PÚBLICA en colaboración con Secretaria de Salud y CENAPRECE. Con el Fin de calcular y analizar los índices de riesgo entomológico, y con esto gestionar información para la toma de decisiones en la prevención de enfermedades trasmitidas por vector."
+  },
+  {
+    "objectID": "intro.html#descripcion-de-la-base-de-datos",
+    "href": "intro.html#descripcion-de-la-base-de-datos",
+    "title": "1  Introduccion",
+    "section": "1.3 Descripcion de la base de datos",
+    "text": "1.3 Descripcion de la base de datos"
   }
 ]

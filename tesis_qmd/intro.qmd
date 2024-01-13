@@ -1,5 +1,7 @@
 # Introduccion
 
+## Motivacion
+
 Queremos Analizar los datos de la actividad de vigilancia  entomológica de 
 forma oportuna y automática utilizando herramientas de Ciencia de Datos 
 utilizando la base de datos de la plataforma de “Vigilancia Entomológica y 
@@ -36,5 +38,7 @@ reforzar  acciones de control y prevención.
 Tener la información oportuna de los índices de riego entomológicos permiten 
 tomar decisiones informades de ¿En Dónde? y ¿Cuándo? focalizar intervenciones.
 
+
+## Descripcion de la base de datos
 
 
