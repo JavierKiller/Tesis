@@ -1,0 +1,69 @@
+# Prelimilares
+
+Guias operaticas de WHO para la vigilancia entomologica
+
+
+## Vigilancia entomologica
+
+Vigilancia de entomologica es importante para determinar la distribución, la 
+densidad de población, los principales hábitats de las larvas y los factores de
+riesgo espaciales y temporales relacionados con la transmisión de arbovirosis,
+y los niveles de susceptibilidad o resistencia a los insecticidas,con el fin de
+priorizar áreas y estaciones para el control de vectores.
+Estos datos permitirán la selección y el uso de las herramientas de control de 
+vectores más apropiadas y pueden usarse para monitorear su efectividad. Existen
+varios métodos disponibles para la detección y seguimiento de poblaciones 
+larvarias y adultos. La selección de métodos apropiados depende de los 
+objetivos de vigilancia, los niveles de infestación y la disponibilidad de 
+recursos.
+
+## Indices estegomia  
+
+
+Las metodologías  más comunes emplean procedimientos de muestreo de larvas en 
+lugar de recolecciones de huevos o adultos. La unidad básica de muestreo es la 
+casa o localidad, donde se busca sistemáticamente recipientes para almacenar 
+agua.
+
+### indice de casa positiva (HI)
+
+El índice de casa positiva se ha utilizado más ampliamente para monitorear los 
+niveles de infestación, pero no toma en cuenta la cantidad de contenedores 
+positivos ni la productividad de esos contenedores. 
+
+
+### indice de contenedor positivo (CI)
+
+El índice de contenedores sólo proporciona información sobre la proporción de 
+contenedores con agua que son positivos con larvas o pupas de mosquito.
+
+Los contenedores se examinan para detectar la presencia de larvas y pupas de
+mosquitos. Dependiendo de los objetivos del estudio, la búsqueda podrá 
+finalizar tan pronto como se encuentren larvas de mosquito, o podrá continuar 
+hasta que se hayan examinado todos los contenedores. Es necesaria la 
+recolección de especímenes para examinar en laboratorio para confirmar las 
+especies presente.
+
+
+### indice de bretau (BI)
+
+El índice Breateau establece una relación entre contenedores positivos y casas,
+y se considera el más informativo, pero nuevamente no refleja la productividad
+de los contenedores.
+Sin embargo, en el curso de la recopilación de información básica para calcular
+el índice de Breateau, es posible y deseable obtener un perfil de las 
+características del hábitat de las larvas registrando simultáneamente la
+abundancia relativa de los diversos tipos de contenedores, ya sea como sitios
+potenciales o reales de producción de mosquitos. (por ejemplo, número de 
+tambores positivos por 100 casas, número de neumáticos positivos por 100 casas,
+etc.). Estos datos son particularmente relevantes para centrar esfuerzos para 
+la gestión o eliminación de los hábitats más comunes y para la orientación de
+mensajes educativos en apoyo de iniciativas comunitarias.
+
+
+## Definicion y calculo de indices de estegomia 
+
+
+
+
+agregar la definision y uso de la vigilancia de las guias de WHO 

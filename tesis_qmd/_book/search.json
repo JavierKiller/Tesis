@@ -1,51 +1,16 @@
 [
   {
+    "objectID": "paquete_de_R_stegomia.html#section",
+    "href": "paquete_de_R_stegomia.html#section",
+    "title": "3  Cálculo de los índices de estegomía",
+    "section": "3.1 ",
+    "text": "3.1 \nSe sigue el modelo de desarrollo basado test driven development Se desarrollaron basado en tidyr y devtools tidyr Manipulación de los datos Estilo de codificación devtools Documentación (roxygen2 ) Pruebas unitarias (testthat) CRAN (Comprehensive R Archive Network)"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "tesis_qmd",
     "section": "",
     "text": "Resumen\nQueremos Analizar los datos de la actividad de vigilancia entomológica de forma oportuna y automática utilizando herramientas de Ciencia de Datos utilizando la base de datos de la plataforma de “Vigilancia Entomológica y Control Integral del Vector” del INSTITUTO NACIONAL DE SALUD PÚBLICA en colaboración con Secretaria de Salud y CENAPRECE. Con el Fin de calcular y analizar los índices de riesgo entomológico, y con esto gestionar información para la toma de decisiones en la prevención de enfermedades trasmitidas por vector.\nsistema integral de monitoreo de vectores http://geosis.mx/aplicaciones/sismv/\nver (Giordano et al. 2020, knuth84)\nVigilancia Entomológica y Control Integral del Vector http://geosis.mx/Aplicaciones/EntomologiayControlIntegral/login.aspx\n\n\n\n\nGiordano, Rosanna, Ravi Kiran Donthu, Aleksey V. Zimin, Irene Consuelo Julca Chavez, Toni Gabaldon, Manuella van Munster, Lawrence Hon, et al. 2020. “Soybean Aphid Biotype 1 Genome: Insights into the Invasive Biology and Adaptive Evolution of a Major Agricultural Pest.” Insect Biochemistry and Molecular Biology 120: 103334. https://doi.org/https://doi.org/10.1016/j.ibmb.2020.103334."
-  },
-  {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  Introduction",
-    "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
-  },
-  {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "2  Summary",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Giordano, Rosanna, Ravi Kiran Donthu, Aleksey V. Zimin, Irene Consuelo\nJulca Chavez, Toni Gabaldon, Manuella van Munster, Lawrence Hon, et al.\n2020. “Soybean Aphid Biotype 1 Genome: Insights into the Invasive\nBiology and Adaptive Evolution of a Major Agricultural Pest.”\nInsect Biochemistry and Molecular Biology 120: 103334.\nhttps://doi.org/https://doi.org/10.1016/j.ibmb.2020.103334.\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
-  },
-  {
-    "objectID": "intro.html#descripción-del-problema",
-    "href": "intro.html#descripción-del-problema",
-    "title": "1  Introduccion",
-    "section": "1.2 Descripción del problema",
-    "text": "1.2 Descripción del problema\nEl Programa estatal de vigilancia entomología y control integral de enfermedades trasmitidas por vector, realiza diversas actividades para la prevención de enfermedades, las cuales se guían con actividades de vigilancia que proporcionan índices de riesgo entomológico, por ello se hará una API para calcular los índices de riesgo entomológico de forma automática y oportuna para la toma de decisione.\nTodas las actividades se capturan diariamente en una plataforma, donde es posible descargar los datos para su reporte y análisis. En el caso de Vigilancia por Ovitrampa(VO), la plataforma calcula los índices de riesgo pero para la actividad de Estudio Entomológico (EE) los calcula por manzana trabajada, estos índices se requiere por localidad de riesgo de manera semanal.\nSe requiere poder calcular índices de riesgo del EE por tipo de estudio, localidad de riesgo y por semana epidemiológica de manera automatizada.\nLa actividad de EE evalúa una muestra antes(encuesta) y después(verificación) de las actividades de control integral para determinar el riesgo entomológico\nque hay en un área grande a trabajar (Sectores o Localidad) y si requiere reforzar acciones de control y prevención.\nTener la información oportuna de los índices de riego entomológicos permiten tomar decisiones informades de ¿En Dónde? y ¿Cuándo? focalizar intervenciones."
-  },
-  {
-    "objectID": "intro.html#motivacion",
-    "href": "intro.html#motivacion",
-    "title": "1  Introduccion",
-    "section": "1.1 Motivacion",
-    "text": "1.1 Motivacion\nQueremos Analizar los datos de la actividad de vigilancia entomológica de forma oportuna y automática utilizando herramientas de Ciencia de Datos utilizando la base de datos de la plataforma de “Vigilancia Entomológica y Control Integral del Vector” del INSTITUTO NACIONAL DE SALUD PÚBLICA en colaboración con Secretaria de Salud y CENAPRECE. Con el Fin de calcular y analizar los índices de riesgo entomológico, y con esto gestionar información para la toma de decisiones en la prevención de enfermedades trasmitidas por vector."
-  },
-  {
-    "objectID": "intro.html#descripcion-de-la-base-de-datos",
-    "href": "intro.html#descripcion-de-la-base-de-datos",
-    "title": "1  Introduccion",
-    "section": "1.3 Descripcion de la base de datos",
-    "text": "1.3 Descripcion de la base de datos"
   }
 ]

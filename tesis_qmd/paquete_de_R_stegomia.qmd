@@ -1,0 +1,12 @@
+# Cálculo de los índices de estegomía
+
+##
+Se sigue el modelo de desarrollo basado test driven development 
+Se desarrollaron basado en tidyr y devtools
+tidyr
+Manipulación de los datos 
+Estilo de codificación 
+devtools
+Documentación (roxygen2 )
+Pruebas unitarias (testthat)
+CRAN (Comprehensive R Archive Network)

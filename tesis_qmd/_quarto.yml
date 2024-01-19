@@ -6,12 +6,12 @@ book:
   author: "Jane Doe"
   date: "16/5/2023"
   chapters:
-    - index.qmd
-    - intro.qmd
-    - prelimilares.qmd
-    - paquete_de_R_stegomia.qmd
-    - limpieza_de_datos.qmd
-    - references.qmd
+     - index.qmd
+     - intro.qmd
+     - preliminares.qmd
+     - paquete_de_R_stegomia.qmd
+    # - limpieza_de_datos.qmd
+    # - references.qmd
 
 bibliography: references.bib
 
