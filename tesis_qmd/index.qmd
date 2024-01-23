@@ -13,7 +13,7 @@ vector.
 sistema integral de monitoreo de vectores
 http://geosis.mx/aplicaciones/sismv/
 
-ver [@GIORDANO2020, knuth84]
+ver [@GIORDANO2020]
 
 
 

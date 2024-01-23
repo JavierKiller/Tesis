@@ -1,16 +1,12 @@
 [
   {
-    "objectID": "paquete_de_R_stegomia.html#section",
-    "href": "paquete_de_R_stegomia.html#section",
-    "title": "3  Cálculo de los índices de estegomía",
-    "section": "3.1 ",
-    "text": "3.1 \nSe sigue el modelo de desarrollo basado test driven development Se desarrollaron basado en tidyr y devtools tidyr Manipulación de los datos Estilo de codificación devtools Documentación (roxygen2 ) Pruebas unitarias (testthat) CRAN (Comprehensive R Archive Network)"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "tesis_qmd",
     "section": "",
-    "text": "Resumen\nQueremos Analizar los datos de la actividad de vigilancia entomológica de forma oportuna y automática utilizando herramientas de Ciencia de Datos utilizando la base de datos de la plataforma de “Vigilancia Entomológica y Control Integral del Vector” del INSTITUTO NACIONAL DE SALUD PÚBLICA en colaboración con Secretaria de Salud y CENAPRECE. Con el Fin de calcular y analizar los índices de riesgo entomológico, y con esto gestionar información para la toma de decisiones en la prevención de enfermedades trasmitidas por vector.\nsistema integral de monitoreo de vectores http://geosis.mx/aplicaciones/sismv/\nver (Giordano et al. 2020, knuth84)\nVigilancia Entomológica y Control Integral del Vector http://geosis.mx/Aplicaciones/EntomologiayControlIntegral/login.aspx\n\n\n\n\nGiordano, Rosanna, Ravi Kiran Donthu, Aleksey V. Zimin, Irene Consuelo Julca Chavez, Toni Gabaldon, Manuella van Munster, Lawrence Hon, et al. 2020. “Soybean Aphid Biotype 1 Genome: Insights into the Invasive Biology and Adaptive Evolution of a Major Agricultural Pest.” Insect Biochemistry and Molecular Biology 120: 103334. https://doi.org/https://doi.org/10.1016/j.ibmb.2020.103334."
+    "text": "Resumen\nQueremos Analizar los datos de la actividad de vigilancia entomológica de forma oportuna y automática utilizando herramientas de Ciencia de Datos utilizando la base de datos de la plataforma de “Vigilancia Entomológica y Control Integral del Vector” del INSTITUTO NACIONAL DE SALUD PÚBLICA en colaboración con Secretaria de Salud y CENAPRECE. Con el Fin de calcular y analizar los índices de riesgo entomológico, y con esto gestionar información para la toma de decisiones en la prevención de enfermedades trasmitidas por vector.\nsistema integral de monitoreo de vectores http://geosis.mx/aplicaciones/sismv/\nver (Giordano et al. 2020)\nVigilancia Entomológica y Control Integral del Vector http://geosis.mx/Aplicaciones/EntomologiayControlIntegral/login.aspx\n\n\n\n\nGiordano, Rosanna, Ravi Kiran Donthu, Aleksey V. Zimin, Irene Consuelo Julca Chavez, Toni Gabaldon, Manuella van Munster, Lawrence Hon, et al. 2020. “Soybean Aphid Biotype 1 Genome: Insights into the Invasive Biology and Adaptive Evolution of a Major Agricultural Pest.” Insect Biochemistry and Molecular Biology 120: 103334. https://doi.org/https://doi.org/10.1016/j.ibmb.2020.103334.",
+    "crumbs": [
+      "Resumen"
+    ]
   }
 ]

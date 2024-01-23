@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>tesis_qmd - 3&nbsp; Cálculo de los índices de estegomía</title>
+<title>tesis_qmd - 1&nbsp; Introduccion</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./referencia.html" rel="next">
-<link href="./preliminares.html" rel="prev">
+<link href="./preliminares.html" rel="next">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./paquete_de_R_stegomia.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Cálculo de los índices de estegomía</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduccion</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -114,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+  <a href="./intro.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduccion</span></span></a>
   </div>
 </li>
@@ -126,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./paquete_de_R_stegomia.html" class="sidebar-item-text sidebar-link active">
+  <a href="./paquete_de_R_stegomia.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Cálculo de los índices de estegomía</span></span></a>
   </div>
 </li>
@@ -146,7 +146,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"><span class="header-section-number">3.1</span> </a></li>
+  <li><a href="#motivacion" id="toc-motivacion" class="nav-link active" data-scroll-target="#motivacion"><span class="header-section-number">1.1</span> Motivacion</a></li>
+  <li><a href="#descripción-del-problema" id="toc-descripción-del-problema" class="nav-link" data-scroll-target="#descripción-del-problema"><span class="header-section-number">1.2</span> Descripción del problema</a></li>
+  <li><a href="#gestion-de-datos" id="toc-gestion-de-datos" class="nav-link" data-scroll-target="#gestion-de-datos"><span class="header-section-number">1.3</span> Gestion de datos</a></li>
+  <li><a href="#descripcion-de-la-base-de-datos" id="toc-descripcion-de-la-base-de-datos" class="nav-link" data-scroll-target="#descripcion-de-la-base-de-datos"><span class="header-section-number">1.4</span> Descripcion de la base de datos</a></li>
   </ul>
 </nav>
     </div>
@@ -155,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Cálculo de los índices de estegomía</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduccion</span></h1>
 </div>
 
 
@@ -172,9 +175,27 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="section" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="section"><span class="header-section-number">3.1</span> </h2>
-<p>Se sigue el modelo de desarrollo basado test driven development Se desarrollaron basado en tidyr y devtools tidyr Manipulación de los datos Estilo de codificación devtools Documentación (roxygen2 ) Pruebas unitarias (testthat) CRAN (Comprehensive R Archive Network)</p>
+<section id="motivacion" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="motivacion"><span class="header-section-number">1.1</span> Motivacion</h2>
+<p>Queremos Analizar los datos de la actividad de vigilancia entomológica de forma oportuna y automática utilizando&nbsp;herramientas de Ciencia de Datos utilizando la base de datos de la plataforma de “Vigilancia Entomológica y Control Integral del Vector” del INSTITUTO NACIONAL DE SALUD PÚBLICA&nbsp;en colaboración con Secretaria de Salud y el Centro Nacional de Prevencion y Control de enfermedades (CENAPRECE). Con el Fin de calcular y analizar los índices de riesgo entomológico, y con esto gestionar información para la toma de decisiones en la prevención de enfermedades trasmitidas por vector.</p>
+<p>El análisis de riesgo entomológico se hace en hojas de cálculo El manejo de la información es ineficiente: La estructura de la base de datos es compleja Adaptar consultas a pequeñas modificaciones es impráctico La visualización georreferenciada de esta plataforma es pobre e inestable</p>
+<p>Usar R para visualizar la información en tiempo y espacio Automatizar el manejo de la información Generar visualización georreferenciada con los índices de estegomía</p>
+</section>
+<section id="descripción-del-problema" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="descripción-del-problema"><span class="header-section-number">1.2</span> Descripción del problema</h2>
+<p>El Programa estatal de vigilancia entomología y control integral de enfermedades trasmitidas por vector, realiza diversas actividades para la prevención de enfermedades, las cuales se guían con actividades de vigilancia que proporcionan índices de riesgo entomológico, por ello se hará una API para calcular los índices de riesgo entomológico de forma automática y oportuna para la toma de decisione.</p>
+<p>Todas las actividades se capturan diariamente en una plataforma, donde es posible descargar los datos para su reporte y análisis. En el caso de Vigilancia por Ovitrampa(VO), la plataforma calcula los índices de riesgo pero para la actividad de Estudio Entomológico (EE) los calcula por manzana trabajada, estos índices se requiere por localidad de riesgo de manera semanal.</p>
+<p>Se requiere poder calcular índices de riesgo del EE por tipo de estudio, localidad de riesgo y por semana epidemiológica de manera automatizada.</p>
+<p>La actividad de EE evalúa una muestra antes(encuesta) y después(verificación) de las actividades de control integral para determinar el riesgo entomológico<br>
+que hay en un área grande a trabajar (Sectores o Localidad) y si requiere reforzar acciones de control y prevención.</p>
+<p>Tener la información oportuna de los índices de riego entomológicos permiten tomar decisiones informades de ¿En Dónde? y ¿Cuándo? focalizar intervenciones.</p>
+</section>
+<section id="gestion-de-datos" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="gestion-de-datos"><span class="header-section-number">1.3</span> Gestion de datos</h2>
+<p>Para validar y poner a prueba la solución propuesta, se plantea la utilización de una base de datos ficticia que sea representativa con las bases de datos reales descargadas de la plataforma. Esto permitirá evaluar el funcionamiento del paquete de R en un entorno controlado. Una vez realizadas las pruebas iniciales y asegurada la confiabilidad de los resultados obtenidos,se establecerá un convenio de confidencialidad con el fin de acceder a los datos reales y evaluar el desempeño del paquete de R en un escenario más cercano a la realidad. Esta estrategia garantizará la confidencialidad de los datos utilizados, a la vez que brindará la oportunidad de comprobar la efectividad de la solución en situaciones reales y aplicables al contexto de vigilancia entomológica y control de enfermedades transmitidas por vectores.</p>
+</section>
+<section id="descripcion-de-la-base-de-datos" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="descripcion-de-la-base-de-datos"><span class="header-section-number">1.4</span> Descripcion de la base de datos</h2>
 
 
 </section>
@@ -569,13 +590,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./preliminares.html" class="pagination-link  aria-label=" &lt;span="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Prelimilares</span></span>
+      <a href="./index.html" class="pagination-link  aria-label=" resumen"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Resumen</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./referencia.html" class="pagination-link" aria-label="<span class='chapter-number'>4</span>&nbsp; <span class='chapter-title'>References</span>">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">References</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./preliminares.html" class="pagination-link" aria-label="<span class='chapter-number'>2</span>&nbsp; <span class='chapter-title'>Prelimilares</span>">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Prelimilares</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

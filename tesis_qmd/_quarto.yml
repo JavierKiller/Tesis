@@ -10,8 +10,8 @@ book:
      - intro.qmd
      - preliminares.qmd
      - paquete_de_R_stegomia.qmd
-    # - limpieza_de_datos.qmd
-    # - references.qmd
+     - limpieza_de_datos.qmd
+     - referencia.qmd
 
 bibliography: references.bib
 
@@ -22,4 +22,10 @@ format:
     documentclass: scrreprt
 
 editor: visual
+
+#qpa_yxruFpN2RyUyiqLBDGzlYgxn3K0XFUgxV0qX8QVS3wWEvRZLM10JrDs0USXjeDKv
+
+
+#url  https://javier-verdugo.quarto.pub/tesis_qmd/
+
 
