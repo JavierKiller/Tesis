@@ -19,7 +19,13 @@ format:
   html:
     theme: cosmo
   pdf:
-    documentclass: scrreprt
+    documentclass: scrbook
+    toc: true
+    toc-depth: 2
+    toc-title: Contents
+    number-sections: true
+    colorlinks: true
+    cite-method: biblatex
 
 editor: visual
 
@@ -28,4 +34,5 @@ editor: visual
 
 #url  https://javier-verdugo.quarto.pub/tesis_qmd/
 
+#quarto render index.qmd --to pdf
 
