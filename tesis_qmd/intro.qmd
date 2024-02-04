@@ -25,4 +25,4 @@ Tener la información oportuna de los índices de riego entomológicos permiten 
 
 Para validar y poner a prueba la solución propuesta, se plantea la utilización de una base de datos ficticia que sea representativa con las bases de datos reales descargadas de la plataforma. Esto permitirá evaluar el funcionamiento del paquete de R en un entorno controlado. Una vez realizadas las pruebas iniciales y asegurada la confiabilidad de los resultados obtenidos,se establecerá un convenio de confidencialidad con el fin de acceder a los datos reales y evaluar el desempeño del paquete de R en un escenario más cercano a la realidad. Esta estrategia garantizará la confidencialidad de los datos utilizados, a la vez que brindará la oportunidad de comprobar la efectividad de la solución en situaciones reales y aplicables al contexto de vigilancia entomológica y control de enfermedades transmitidas por vectores.
 
-## Descripcion de la base de datos
+

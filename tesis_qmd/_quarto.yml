@@ -8,6 +8,7 @@ book:
   chapters:
      - index.qmd
      - intro.qmd
+     - obtencion_datos.qmd
      - preliminares.qmd
      - paquete_de_R_stegomia.qmd
      - limpieza_de_datos.qmd
@@ -16,6 +17,11 @@ book:
 bibliography: references.bib
 
 format:
+  latex:
+    documentclass: report
+    classoption: [twocolumn, landscape]
+    lof: true
+    lot: true
   html:
     theme: cosmo
   pdf:
@@ -28,10 +34,6 @@ format:
     cite-method: biblatex
 
 editor: visual
-
-output:
-  quarto::quarto_html:
-    to_dir: docs
 
 
 #source: project

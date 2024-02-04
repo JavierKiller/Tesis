@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>tesis_qmd - 2&nbsp; Prelimilares</title>
+<title>tesis_qmd - 2&nbsp; Obtencion de los datos</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./paquete_de_R_stegomia.html" rel="next">
+<link href="./preliminares.html" rel="next">
 <link href="./intro.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./preliminares.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Prelimilares</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./obtencion_datos.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Obtencion de los datos</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -120,26 +120,32 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./preliminares.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Prelimilares</span></span></a>
+  <a href="./obtencion_datos.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Obtencion de los datos</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./preliminares.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Prelimilares</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./paquete_de_R_stegomia.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Cálculo de los índices de estegomía</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Cálculo de los índices de estegomía</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./limpieza_de_datos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Limpieza de datos</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Limpieza de datos</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./referencia.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">References</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Referencias</span></span></a>
   </div>
 </li>
     </ul>
@@ -152,12 +158,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#vigilancia-entomologica" id="toc-vigilancia-entomologica" class="nav-link active" data-scroll-target="#vigilancia-entomologica"><span class="header-section-number">2.1</span> Vigilancia entomologica</a></li>
-  <li><a href="#indices-estegomia" id="toc-indices-estegomia" class="nav-link" data-scroll-target="#indices-estegomia"><span class="header-section-number">2.2</span> Indices estegomia</a>
+  <li><a href="#obtencion-de-los-datos" id="toc-obtencion-de-los-datos" class="nav-link active" data-scroll-target="#obtencion-de-los-datos"><span class="header-section-number">3</span> Obtencion de los datos</a>
   <ul class="collapse">
-  <li><a href="#indice-de-casa-positiva-hi" id="toc-indice-de-casa-positiva-hi" class="nav-link" data-scroll-target="#indice-de-casa-positiva-hi"><span class="header-section-number">2.2.1</span> indice de casa positiva (HI)</a></li>
-  <li><a href="#indice-de-contenedor-positivo-ci" id="toc-indice-de-contenedor-positivo-ci" class="nav-link" data-scroll-target="#indice-de-contenedor-positivo-ci"><span class="header-section-number">2.2.2</span> indice de contenedor positivo (CI)</a></li>
-  <li><a href="#indice-de-bretau-bi" id="toc-indice-de-bretau-bi" class="nav-link" data-scroll-target="#indice-de-bretau-bi"><span class="header-section-number">2.2.3</span> indice de bretau (BI)</a></li>
+  <li><a href="#descripcion-de-la-base-de-datos" id="toc-descripcion-de-la-base-de-datos" class="nav-link" data-scroll-target="#descripcion-de-la-base-de-datos"><span class="header-section-number">3.1</span> Descripcion de la base de datos</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -167,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Prelimilares</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Obtencion de los datos</span></h1>
 </div>
 
 
@@ -184,26 +187,14 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Guias operaticas de WHO para la vigilancia entomologica</p>
-<section id="vigilancia-entomologica" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="vigilancia-entomologica"><span class="header-section-number">2.1</span> Vigilancia entomologica</h2>
-<p>Vigilancia de entomologica es importante para determinar la distribución, la densidad de población, los principales hábitats de las larvas y los factores de riesgo espaciales y temporales relacionados con la transmisión de arbovirosis, y los niveles de susceptibilidad o resistencia a los insecticidas,con el fin de priorizar áreas y estaciones para el control de vectores. Estos datos permitirán la selección y el uso de las herramientas de control de vectores más apropiadas y pueden usarse para monitorear su efectividad. Existen varios métodos disponibles para la detección y seguimiento de poblaciones larvarias y adultos. La selección de métodos apropiados depende de los objetivos de vigilancia, los niveles de infestación y la disponibilidad de recursos.</p>
-</section>
-<section id="indices-estegomia" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="indices-estegomia"><span class="header-section-number">2.2</span> Indices estegomia</h2>
-<p>Las metodologías más comunes emplean procedimientos de muestreo de larvas en lugar de recolecciones de huevos o adultos. La unidad básica de muestreo es la casa o localidad, donde se busca sistemáticamente recipientes para almacenar agua.</p>
-<section id="indice-de-casa-positiva-hi" class="level3" data-number="2.2.1">
-<h3 data-number="2.2.1" class="anchored" data-anchor-id="indice-de-casa-positiva-hi"><span class="header-section-number">2.2.1</span> indice de casa positiva (HI)</h3>
-<p>El índice de casa positiva se ha utilizado más ampliamente para monitorear los niveles de infestación, pero no toma en cuenta la cantidad de contenedores positivos ni la productividad de esos contenedores.</p>
-</section>
-<section id="indice-de-contenedor-positivo-ci" class="level3" data-number="2.2.2">
-<h3 data-number="2.2.2" class="anchored" data-anchor-id="indice-de-contenedor-positivo-ci"><span class="header-section-number">2.2.2</span> indice de contenedor positivo (CI)</h3>
-<p>El índice de contenedores sólo proporciona información sobre la proporción de contenedores con agua que son positivos con larvas o pupas de mosquito.</p>
-<p>Los contenedores se examinan para detectar la presencia de larvas y pupas de mosquitos. Dependiendo de los objetivos del estudio, la búsqueda podrá finalizar tan pronto como se encuentren larvas de mosquito, o podrá continuar hasta que se hayan examinado todos los contenedores. Es necesaria la recolección de especímenes para examinar en laboratorio para confirmar las especies presente.</p>
-</section>
-<section id="indice-de-bretau-bi" class="level3" data-number="2.2.3">
-<h3 data-number="2.2.3" class="anchored" data-anchor-id="indice-de-bretau-bi"><span class="header-section-number">2.2.3</span> indice de bretau (BI)</h3>
-<p>El índice Breateau establece una relación entre contenedores positivos y casas, y se considera el más informativo, pero nuevamente no refleja la productividad de los contenedores. Sin embargo, en el curso de la recopilación de información básica para calcular el índice de Breateau, es posible y deseable obtener un perfil de las características del hábitat de las larvas registrando simultáneamente la abundancia relativa de los diversos tipos de contenedores, ya sea como sitios potenciales o reales de producción de mosquitos. (por ejemplo, número de tambores positivos por 100 casas, número de neumáticos positivos por 100 casas, etc.). Estos datos son particularmente relevantes para centrar esfuerzos para la gestión o eliminación de los hábitats más comunes y para la orientación de mensajes educativos en apoyo de iniciativas comunitarias.</p>
+<section id="obtencion-de-los-datos" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Obtencion de los datos</h1>
+<p>El Programa estatal de vigilancia entomología y control integral de enfermedades trasmitidas por vector, realiza diversas actividades para la prevención de enfermedades (Control Larvario (CL) , Rociado a caso (RaC), Rociado intra domiciliario(RI) y Nebulización espacial (N)) las cuales se guían con actividades de vigilancia (Vigilancia entomológica con ovitrampas, (VO) )las cuales proporcionan índices de riesgo entomológico(EE), Estudios entomológicos en fase larval y pupal, y Estudios entomovirológicos (EEV))</p>
+<p>Todas las actividades mencionadas se capturan diariamente en una plataforma, donde es posible descargar los datos para su reporte y análisis. Para la actividad de EE los calcula por manzana trabajada, estos índices se requieren por localidad de riesgo de manera semanal.</p>
+<p>La actividad de EE evalúa una muestra antes(encuesta) y después(verificación) de las actividades de control integral para determinar el riesgo entomológico que hay en un área grande a trabajar (Sectores o Localidad) y si requiere reforzar las acciones de control</p>
+<section id="descripcion-de-la-base-de-datos" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="descripcion-de-la-base-de-datos"><span class="header-section-number">3.1</span> Descripcion de la base de datos</h2>
+<p>Vigilancia entomológica, al monitoreo de presencia y abundancia de los insectos vectores de alguna enfermedad en un lugar determinado.</p>
 
 
 </section>
@@ -604,8 +595,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./paquete_de_R_stegomia.html" class="pagination-link" aria-label="<span class='chapter-number'>3</span>&nbsp; <span class='chapter-title'>Cálculo de los índices de estegomía</span>">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Cálculo de los índices de estegomía</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./preliminares.html" class="pagination-link" aria-label="<span class='chapter-number'>3</span>&nbsp; <span class='chapter-title'>Prelimilares</span>">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Prelimilares</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

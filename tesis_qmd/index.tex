@@ -124,8 +124,8 @@
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\usepackage[]{biblatex}
-\addbibresource{references.bib}
+%\usepackage[]{biblatex}
+%\addbibresource{references.bib}
 \usepackage{bookmark}
 
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
@@ -174,7 +174,7 @@ de enfermedades trasmitidas por vector.
 sistema integral de monitoreo de vectores
 http://geosis.mx/aplicaciones/sismv/
 
-ver \autocite{GIORDANO2020,who2016zikasurvirus}
+ver \cite{GIORDANO2020,who2016zikasurvirus}
 
 Vigilancia Entomológica y Control Integral del Vector
 http://geosis.mx/Aplicaciones/EntomologiayControlIntegral/login.aspx
@@ -407,10 +407,11 @@ interes Data cleaning''''
 
 \chapter{References}\label{references}
 
-\printbibliography[heading=none]
+
 
 
 \backmatter
 
-
+\bibliography{references}{}
+\bibliographystyle{plain}
 \end{document}
