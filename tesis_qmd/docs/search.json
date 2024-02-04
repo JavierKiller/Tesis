@@ -1,5 +1,55 @@
 [
   {
+    "objectID": "obtencion_datos.html",
+    "href": "obtencion_datos.html",
+    "title": "2  Obtencion de los datos",
+    "section": "",
+    "text": "3 Obtencion de los datos\nEl Programa estatal de vigilancia entomología y control integral de enfermedades trasmitidas por vector, realiza diversas actividades para la prevención de enfermedades (Control Larvario (CL) , Rociado a caso (RaC), Rociado intra domiciliario(RI) y Nebulización espacial (N)) las cuales se guían con actividades de vigilancia (Vigilancia entomológica con ovitrampas, (VO) )las cuales proporcionan índices de riesgo entomológico(EE), Estudios entomológicos en fase larval y pupal, y Estudios entomovirológicos (EEV))\nTodas las actividades mencionadas se capturan diariamente en una plataforma, donde es posible descargar los datos para su reporte y análisis. Para la actividad de EE los calcula por manzana trabajada, estos índices se requieren por localidad de riesgo de manera semanal.\nLa actividad de EE evalúa una muestra antes(encuesta) y después(verificación) de las actividades de control integral para determinar el riesgo entomológico que hay en un área grande a trabajar (Sectores o Localidad) y si requiere reforzar las acciones de control",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Obtencion de  los datos</span>"
+    ]
+  },
+  {
+    "objectID": "obtencion_datos.html#descripcion-de-la-base-de-datos",
+    "href": "obtencion_datos.html#descripcion-de-la-base-de-datos",
+    "title": "2  Obtencion de los datos",
+    "section": "3.1 Descripcion de la base de datos",
+    "text": "3.1 Descripcion de la base de datos\nVigilancia entomológica, al monitoreo de presencia y abundancia de los insectos vectores de alguna enfermedad en un lugar determinado.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Obtencion de  los datos</span>"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "tesis_qmd",
+    "section": "",
+    "text": "Resumen\nQueremos Analizar los datos de la actividad de vigilancia entomológica de forma oportuna y automática utilizando herramientas de Ciencia de Datos utilizando la base de datos de la plataforma de “Vigilancia Entomológica y Control Integral del Vector” del INSTITUTO NACIONAL DE SALUD PÚBLICA en colaboración con Secretaria de Salud y CENAPRECE. Con el Fin de calcular y analizar los índices de riesgo entomológico, y con esto gestionar información para la toma de decisiones en la prevención de enfermedades trasmitidas por vector.\nsistema integral de monitoreo de vectores http://geosis.mx/aplicaciones/sismv/\nver (Giordano et al. 2020; Organization 2016)\nVigilancia Entomológica y Control Integral del Vector http://geosis.mx/Aplicaciones/EntomologiayControlIntegral/login.aspx\n\n\n\n\nGiordano, Rosanna, Ravi Kiran Donthu, Aleksey V. Zimin, Irene Consuelo Julca Chavez, Toni Gabaldon, Manuella van Munster, Lawrence Hon, et al. 2020. “Soybean Aphid Biotype 1 Genome: Insights into the Invasive Biology and Adaptive Evolution of a Major Agricultural Pest.” Insect Biochemistry and Molecular Biology 120: 103334. https://doi.org/https://doi.org/10.1016/j.ibmb.2020.103334.\n\n\nOrganization, World Health. 2016. “Entomological Surveillance for Aedes Spp. In the Context of Zika Virus: Interim Guidance for Entomologists.” Technical documents. World Health Organization.",
+    "crumbs": [
+      "Resumen"
+    ]
+  },
+  {
+    "objectID": "preliminares.html",
+    "href": "preliminares.html",
+    "title": "3  Prelimilares",
+    "section": "",
+    "text": "3.1 Vigilancia entomologica\nVigilancia de entomologica es importante para determinar la distribución, la densidad de población, los principales hábitats de las larvas y los factores de riesgo espaciales y temporales relacionados con la transmisión de arbovirosis, y los niveles de susceptibilidad o resistencia a los insecticidas,con el fin de priorizar áreas y estaciones para el control de vectores. Estos datos permitirán la selección y el uso de las herramientas de control de vectores más apropiadas y pueden usarse para monitorear su efectividad. Existen varios métodos disponibles para la detección y seguimiento de poblaciones larvarias y adultos. La selección de métodos apropiados depende de los objetivos de vigilancia, los niveles de infestación y la disponibilidad de recursos.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Prelimilares</span>"
+    ]
+  },
+  {
+    "objectID": "preliminares.html#indices-estegomia",
+    "href": "preliminares.html#indices-estegomia",
+    "title": "3  Prelimilares",
+    "section": "3.2 Indices estegomia",
+    "text": "3.2 Indices estegomia\nLas metodologías más comunes emplean procedimientos de muestreo de larvas en lugar de recolecciones de huevos o adultos. La unidad básica de muestreo es la casa o localidad, donde se busca sistemáticamente recipientes para almacenar agua.\n\n3.2.1 indice de casa positiva (HI)\nEl índice de casa positiva se ha utilizado más ampliamente para monitorear los niveles de infestación, pero no toma en cuenta la cantidad de contenedores positivos ni la productividad de esos contenedores.\n\n\n3.2.2 indice de contenedor positivo (CI)\nEl índice de contenedores sólo proporciona información sobre la proporción de contenedores con agua que son positivos con larvas o pupas de mosquito.\nLos contenedores se examinan para detectar la presencia de larvas y pupas de mosquitos. Dependiendo de los objetivos del estudio, la búsqueda podrá finalizar tan pronto como se encuentren larvas de mosquito, o podrá continuar hasta que se hayan examinado todos los contenedores. Es necesaria la recolección de especímenes para examinar en laboratorio para confirmar las especies presente.\n\n\n3.2.3 indice de bretau (BI)\nEl índice Breateau establece una relación entre contenedores positivos y casas, y se considera el más informativo, pero nuevamente no refleja la productividad de los contenedores. Sin embargo, en el curso de la recopilación de información básica para calcular el índice de Breateau, es posible y deseable obtener un perfil de las características del hábitat de las larvas registrando simultáneamente la abundancia relativa de los diversos tipos de contenedores, ya sea como sitios potenciales o reales de producción de mosquitos. (por ejemplo, número de tambores positivos por 100 casas, número de neumáticos positivos por 100 casas, etc.). Estos datos son particularmente relevantes para centrar esfuerzos para la gestión o eliminación de los hábitats más comunes y para la orientación de mensajes educativos en apoyo de iniciativas comunitarias.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Prelimilares</span>"
+    ]
+  },
+  {
     "objectID": "intro.html",
     "href": "intro.html",
     "title": "1  Introduccion",
@@ -30,103 +80,63 @@
     ]
   },
   {
-    "objectID": "intro.html#descripcion-de-la-base-de-datos",
-    "href": "intro.html#descripcion-de-la-base-de-datos",
-    "title": "1  Introduccion",
-    "section": "1.4 Descripcion de la base de datos",
-    "text": "1.4 Descripcion de la base de datos",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduccion</span>"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "tesis_qmd",
-    "section": "",
-    "text": "Resumen\nQueremos Analizar los datos de la actividad de vigilancia entomológica de forma oportuna y automática utilizando herramientas de Ciencia de Datos utilizando la base de datos de la plataforma de “Vigilancia Entomológica y Control Integral del Vector” del INSTITUTO NACIONAL DE SALUD PÚBLICA en colaboración con Secretaria de Salud y CENAPRECE. Con el Fin de calcular y analizar los índices de riesgo entomológico, y con esto gestionar información para la toma de decisiones en la prevención de enfermedades trasmitidas por vector.\nsistema integral de monitoreo de vectores http://geosis.mx/aplicaciones/sismv/\nver (Giordano et al. 2020; Organization 2016)\nVigilancia Entomológica y Control Integral del Vector http://geosis.mx/Aplicaciones/EntomologiayControlIntegral/login.aspx\n\n\n\n\nGiordano, Rosanna, Ravi Kiran Donthu, Aleksey V. Zimin, Irene Consuelo Julca Chavez, Toni Gabaldon, Manuella van Munster, Lawrence Hon, et al. 2020. “Soybean Aphid Biotype 1 Genome: Insights into the Invasive Biology and Adaptive Evolution of a Major Agricultural Pest.” Insect Biochemistry and Molecular Biology 120: 103334. https://doi.org/https://doi.org/10.1016/j.ibmb.2020.103334.\n\n\nOrganization, World Health. 2016. “Entomological Surveillance for Aedes Spp. In the Context of Zika Virus: Interim Guidance for Entomologists.” Technical documents. World Health Organization.",
-    "crumbs": [
-      "Resumen"
-    ]
-  },
-  {
-    "objectID": "preliminares.html",
-    "href": "preliminares.html",
-    "title": "2  Prelimilares",
-    "section": "",
-    "text": "2.1 Vigilancia entomologica\nVigilancia de entomologica es importante para determinar la distribución, la densidad de población, los principales hábitats de las larvas y los factores de riesgo espaciales y temporales relacionados con la transmisión de arbovirosis, y los niveles de susceptibilidad o resistencia a los insecticidas,con el fin de priorizar áreas y estaciones para el control de vectores. Estos datos permitirán la selección y el uso de las herramientas de control de vectores más apropiadas y pueden usarse para monitorear su efectividad. Existen varios métodos disponibles para la detección y seguimiento de poblaciones larvarias y adultos. La selección de métodos apropiados depende de los objetivos de vigilancia, los niveles de infestación y la disponibilidad de recursos.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Prelimilares</span>"
-    ]
-  },
-  {
-    "objectID": "preliminares.html#indices-estegomia",
-    "href": "preliminares.html#indices-estegomia",
-    "title": "2  Prelimilares",
-    "section": "2.2 Indices estegomia",
-    "text": "2.2 Indices estegomia\nLas metodologías más comunes emplean procedimientos de muestreo de larvas en lugar de recolecciones de huevos o adultos. La unidad básica de muestreo es la casa o localidad, donde se busca sistemáticamente recipientes para almacenar agua.\n\n2.2.1 indice de casa positiva (HI)\nEl índice de casa positiva se ha utilizado más ampliamente para monitorear los niveles de infestación, pero no toma en cuenta la cantidad de contenedores positivos ni la productividad de esos contenedores.\n\n\n2.2.2 indice de contenedor positivo (CI)\nEl índice de contenedores sólo proporciona información sobre la proporción de contenedores con agua que son positivos con larvas o pupas de mosquito.\nLos contenedores se examinan para detectar la presencia de larvas y pupas de mosquitos. Dependiendo de los objetivos del estudio, la búsqueda podrá finalizar tan pronto como se encuentren larvas de mosquito, o podrá continuar hasta que se hayan examinado todos los contenedores. Es necesaria la recolección de especímenes para examinar en laboratorio para confirmar las especies presente.\n\n\n2.2.3 indice de bretau (BI)\nEl índice Breateau establece una relación entre contenedores positivos y casas, y se considera el más informativo, pero nuevamente no refleja la productividad de los contenedores. Sin embargo, en el curso de la recopilación de información básica para calcular el índice de Breateau, es posible y deseable obtener un perfil de las características del hábitat de las larvas registrando simultáneamente la abundancia relativa de los diversos tipos de contenedores, ya sea como sitios potenciales o reales de producción de mosquitos. (por ejemplo, número de tambores positivos por 100 casas, número de neumáticos positivos por 100 casas, etc.). Estos datos son particularmente relevantes para centrar esfuerzos para la gestión o eliminación de los hábitats más comunes y para la orientación de mensajes educativos en apoyo de iniciativas comunitarias.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Prelimilares</span>"
-    ]
-  },
-  {
     "objectID": "paquete_de_R_stegomia.html",
     "href": "paquete_de_R_stegomia.html",
-    "title": "3  Cálculo de los índices de estegomía",
+    "title": "4  Cálculo de los índices de estegomía",
     "section": "",
-    "text": "3.1\nSe sigue el modelo de desarrollo basado test driven development Se desarrollaron basado en tidyr y devtools tidyr Manipulación de los datos Estilo de codificación devtools Documentación (roxygen2 ) Pruebas unitarias (testthat) CRAN (Comprehensive R Archive Network)",
+    "text": "4.1\nSe sigue el modelo de desarrollo basado test driven development Se desarrollaron basado en tidyr y devtools tidyr Manipulación de los datos Estilo de codificación devtools Documentación (roxygen2 ) Pruebas unitarias (testthat) CRAN (Comprehensive R Archive Network)",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Cálculo de los índices de estegomía</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Cálculo de los índices de estegomía</span>"
     ]
   },
   {
     "objectID": "limpieza_de_datos.html",
     "href": "limpieza_de_datos.html",
-    "title": "4  Limpieza de datos",
+    "title": "5  Limpieza de datos",
     "section": "",
-    "text": "4.1 descripcion de la base de datos\nLa base de datos de estudio entomológico es un archivo .txt de la Plataforma Vigilancia Entomológica y Control Integral del Vector\nTiene 121 variables\ny 16 variables de interés\nformato de los datos",
+    "text": "5.1 descripcion de la base de datos\nLa base de datos de estudio entomológico es un archivo .txt de la Plataforma Vigilancia Entomológica y Control Integral del Vector\nTiene 121 variables\ny 16 variables de interés\nformato de los datos",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Limpieza de datos</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Limpieza de datos</span>"
     ]
   },
   {
     "objectID": "limpieza_de_datos.html#variables-de-interes",
     "href": "limpieza_de_datos.html#variables-de-interes",
-    "title": "4  Limpieza de datos",
-    "section": "4.2 variables de interes",
-    "text": "4.2 variables de interes\n\n4.2.1 Variable para determinar el tipo de estudio entomológico:\nTipo de Estudio\n\n\n4.2.2 Variables para la georreferenciación:\nJurisdicción Municipio Localidad Sector\n\n\n4.2.3 Variables de intervalos de tiempo:\nFecha de Inicio Semana Epidemiológica\n\n\n4.2.4 Variables para índices de estegomía:\nCasas Revisadas Casas Positivas Total de Recipientes con Agua Total de Recipientes Positivos Total de Recipientes Positivos a Pupas No. Total de Pupas en Recipientes Recipientes Tratables Recipientes Controlables Recipientes Eliminables",
+    "title": "5  Limpieza de datos",
+    "section": "5.2 variables de interes",
+    "text": "5.2 variables de interes\n\n5.2.1 Variable para determinar el tipo de estudio entomológico:\nTipo de Estudio\n\n\n5.2.2 Variables para la georreferenciación:\nJurisdicción Municipio Localidad Sector\n\n\n5.2.3 Variables de intervalos de tiempo:\nFecha de Inicio Semana Epidemiológica\n\n\n5.2.4 Variables para índices de estegomía:\nCasas Revisadas Casas Positivas Total de Recipientes con Agua Total de Recipientes Positivos Total de Recipientes Positivos a Pupas No. Total de Pupas en Recipientes Recipientes Tratables Recipientes Controlables Recipientes Eliminables",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Limpieza de datos</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Limpieza de datos</span>"
     ]
   },
   {
     "objectID": "limpieza_de_datos.html#archivos-shapefile-de-los-sectores-de-todo-el-estado-de-sonora",
     "href": "limpieza_de_datos.html#archivos-shapefile-de-los-sectores-de-todo-el-estado-de-sonora",
-    "title": "4  Limpieza de datos",
-    "section": "4.3 Archivos shapefile de los sectores de todo el estado de Sonora",
-    "text": "4.3 Archivos shapefile de los sectores de todo el estado de Sonora",
+    "title": "5  Limpieza de datos",
+    "section": "5.3 Archivos shapefile de los sectores de todo el estado de Sonora",
+    "text": "5.3 Archivos shapefile de los sectores de todo el estado de Sonora",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Limpieza de datos</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Limpieza de datos</span>"
     ]
   },
   {
     "objectID": "limpieza_de_datos.html#data-cleaning",
     "href": "limpieza_de_datos.html#data-cleaning",
-    "title": "4  Limpieza de datos",
-    "section": "4.4 Data cleaning",
-    "text": "4.4 Data cleaning\nResolución de inconsistencia de tipo de dato:\nFormato de títulos de las variables Tipo de dato POSIX a las variables de fecha Asignar tipo de dato correcto(carácter) Dividir variables compuestas\nAjuste entre tipos de datos shapefile para empatar con un dataframe Carga el archivo .shp (sp) Cambiar la proyección EPSG 4326(sp) Guardar como un archivo .shp\nCarga el archivo .shp (maptools) Transforma en un dataframe con datos geoespaciales\n““descripcion de la base de datos formato de los datos variables de interes Data cleaning””",
+    "title": "5  Limpieza de datos",
+    "section": "5.4 Data cleaning",
+    "text": "5.4 Data cleaning\nResolución de inconsistencia de tipo de dato:\nFormato de títulos de las variables Tipo de dato POSIX a las variables de fecha Asignar tipo de dato correcto(carácter) Dividir variables compuestas\nAjuste entre tipos de datos shapefile para empatar con un dataframe Carga el archivo .shp (sp) Cambiar la proyección EPSG 4326(sp) Guardar como un archivo .shp\nCarga el archivo .shp (maptools) Transforma en un dataframe con datos geoespaciales\n““descripcion de la base de datos formato de los datos variables de interes Data cleaning””",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Limpieza de datos</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Limpieza de datos</span>"
     ]
   },
   {
     "objectID": "referencia.html",
     "href": "referencia.html",
-    "title": "5  References",
+    "title": "6  Referencias",
     "section": "",
     "text": "Giordano, Rosanna, Ravi Kiran Donthu, Aleksey V. Zimin, Irene Consuelo\nJulca Chavez, Toni Gabaldon, Manuella van Munster, Lawrence Hon, et al.\n2020. “Soybean Aphid Biotype 1 Genome: Insights into the Invasive\nBiology and Adaptive Evolution of a Major Agricultural Pest.”\nInsect Biochemistry and Molecular Biology 120: 103334.\nhttps://doi.org/https://doi.org/10.1016/j.ibmb.2020.103334.\n\n\nOrganization, World Health. 2016. “Entomological Surveillance for\nAedes Spp. In the Context of Zika Virus: Interim Guidance for\nEntomologists.” Technical documents. World Health Organization.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>References</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Referencias</span>"
     ]
   }
 ]
