@@ -3,15 +3,20 @@ project:
 
 book:
   title: "tesis_qmd"
-  author: "Jane Doe"
+  author: "Javier Edgar Verdugo Molina"
   date: "16/5/2023"
   chapters:
+     #- Agradecimientos.qmd
      - index.qmd
      - intro.qmd
-     - obtencion_datos.qmd
-     - preliminares.qmd
+     #- resumen.qmd
+     - Marco_teorico.qmd
+     - preliminares.qmd 
+     #- objetivo.qmd 
+     #- Desarrollo.qmd
      - paquete_de_R_stegomia.qmd
      - limpieza_de_datos.qmd
+     #- Conclusiones.qmd
      - referencia.qmd
 
 bibliography: references.bib
