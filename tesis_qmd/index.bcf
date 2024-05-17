@@ -2362,36 +2362,17 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1" intorder="1">GIORDANO2020</bcf:citekey>
-    <bcf:citekey order="1" intorder="2">who2016zikasurvirus</bcf:citekey>
-  </bcf:section>
-  <!-- SORTING TEMPLATES -->
-  <bcf:sortingtemplate name="nty">
-    <bcf:sort order="1">
-      <bcf:sortitem order="1">presort</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="2" final="1">
-      <bcf:sortitem order="1">sortkey</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="3">
-      <bcf:sortitem order="1">sortname</bcf:sortitem>
-      <bcf:sortitem order="2">author</bcf:sortitem>
-      <bcf:sortitem order="3">editor</bcf:sortitem>
-      <bcf:sortitem order="4">translator</bcf:sortitem>
-      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="6">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="4">
-      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="2">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="5">
-      <bcf:sortitem order="1">sortyear</bcf:sortitem>
-      <bcf:sortitem order="2">year</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="6">
-      <bcf:sortitem order="1">volume</bcf:sortitem>
-      <bcf:sortitem literal="1" order="2">0</bcf:sortitem>
-    </bcf:sort>
-  </bcf:sortingtemplate>
-  <!-- DATALISTS -->
-</bcf:controlfile>
+    <bcf:citekey order="2" intorder="1">who2016zikasurvirus</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">Garjito2020</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">Quintero2015</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">Bowman2014</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">TunLin1996</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">Organization2016</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">SouthEastAsia.2011</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">Tedjou2020</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">Braks2003</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">Kamgang2010</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">Kamgang2013</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">Weetman2018</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">Tomia</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">Praptowibowo2015</bcf:citekey>

@@ -1,5 +1,5 @@
-source: project
+source: book
 quarto-pub:
   - id: "qpa_kkXiEPkBAbzegouvaF2cZYZcKBQJsBgyTpXqRXnfbHS5xKNYMjsCXw5vvx2PsF2E"
-    url: "https://javier-verdugo.quarto.pub/tesis_qmd"
+    url: "https://javier-verdugo.quarto.pub/estimación-de-riesgo-entomológico-con-georeferenciación-en-hermosillo-sonora-méxico"
     

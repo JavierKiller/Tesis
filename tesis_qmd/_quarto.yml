@@ -2,9 +2,25 @@ project:
   type: book
 
 book:
-  title: "tesis_qmd"
+  title: "Estimación de riesgo entomológico con georeferenciación en Hermosillo, Sonora, México"
   author: "Javier Edgar Verdugo Molina"
   date: "16/5/2023"
+#
+#  cover-image: cover.jpg
+#  favicon: cover.jpg
+  site-url: https://github.com/JavierKiller/tesismcd.git
+  repo-url: https://github.com/JavierKiller/tesismcd.git
+  repo-branch: main
+  repo-actions: [edit, issue]
+  reader-mode: true
+  page-footer:
+    left: |
+      Esta tesis ha sido escrita por Edgar Javier Verdugo Molina
+      y dirigida por Saúl Díaz Infante Velasco, en cumplimiento
+      para obtener el grado de Maestro en Ciencia de Datos.
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
+  
   chapters:
      #- Agradecimientos.qmd
      - index.qmd
@@ -12,14 +28,17 @@ book:
      #- resumen.qmd
      - Marco_teorico.qmd
      - preliminares.qmd 
-     #- objetivo.qmd 
+     # - objetivo.qmd 
      #- Desarrollo.qmd
      - paquete_de_R_stegomia.qmd
      - limpieza_de_datos.qmd
-     #- Conclusiones.qmd
+     # - Conclusiones.qmd
      - referencia.qmd
 
+
 bibliography: references.bib
+
+
 
 format:
   latex:
@@ -28,16 +47,17 @@ format:
     lof: true
     lot: true
   html:
-    theme: cosmo
-  pdf:
-    documentclass: scrbook
-    toc: true
-    toc-depth: 2
-    toc-title: Contents
-    number-sections: true
-    colorlinks: true
-    cite-method: biblatex
-
+    theme:
+      light: flatly
+      dark: darkly
+#  pdf:
+    # documentclass: scrbook
+    # toc: true
+    # toc-depth: 2
+    # toc-title: Contents
+    # number-sections: true
+    # colorlinks: true
+#    cite-method: biblatex
 editor: visual
 
 

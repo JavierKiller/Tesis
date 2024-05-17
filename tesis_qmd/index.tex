@@ -124,15 +124,15 @@
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-%\usepackage[]{biblatex}
-%\addbibresource{references.bib}
+\usepackage[]{biblatex}
+\addbibresource{references.bib}
 \usepackage{bookmark}
 
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
-  pdftitle={tesis\_qmd},
-  pdfauthor={Jane Doe},
+  pdftitle={Estimación de riesgo entomológico con georeferenciación en Hermosillo, Sonora, México},
+  pdfauthor={Javier Edgar Verdugo Molina},
   colorlinks=true,
   linkcolor={Maroon},
   filecolor={Maroon},
@@ -140,8 +140,9 @@
   urlcolor={Blue},
   pdfcreator={LaTeX via pandoc}}
 
-\title{tesis\_qmd}
-\author{Jane Doe}
+\title{Estimación de riesgo entomológico con georeferenciación en
+Hermosillo, Sonora, México}
+\author{Javier Edgar Verdugo Molina}
 \date{Invalid Date}
 
 \begin{document}
@@ -174,7 +175,13 @@ de enfermedades trasmitidas por vector.
 sistema integral de monitoreo de vectores
 http://geosis.mx/aplicaciones/sismv/
 
-ver \cite{GIORDANO2020,who2016zikasurvirus}
+ver {[}\textcite{GIORDANO2020}; \textcite{who2016zikasurvirus};
+\textcite{Garjito2020}; \textcite{Quintero2015}; \textcite{Bowman2014};
+\textcite{TunLin1996}; \textcite{Organization2016};
+\textcite{SouthEastAsia.2011}; \textcite{Tedjou2020};
+\textcite{Braks2003}; \textcite{Kamgang2010}; \textcite{Kamgang2013};
+\textcite{Weetman2018}; \textcite{Tomia}; \textcite{Praptowibowo2015};
+{]}
 
 Vigilancia Entomológica y Control Integral del Vector
 http://geosis.mx/Aplicaciones/EntomologiayControlIntegral/login.aspx
@@ -248,47 +255,73 @@ brindará la oportunidad de comprobar la efectividad de la solución en
 situaciones reales y aplicables al contexto de vigilancia entomológica y
 control de enfermedades transmitidas por vectores.
 
-\section{Descripcion de la base de
-datos}\label{descripcion-de-la-base-de-datos}
-
 \bookmarksetup{startatroot}
 
-\chapter{Prelimilares}\label{prelimilares}
+\chapter{Marco teorico}\label{marco-teorico}
 
-Guias operaticas de WHO para la vigilancia entomologica
+\section{Vigilancia Epidemiológica y Entomológica del
+Dengue}\label{vigilancia-epidemioluxf3gica-y-entomoluxf3gica-del-dengue}
 
-\section{Vigilancia entomologica}\label{vigilancia-entomologica}
+Enfermedades transmitidas por vector (ETV), a los padecimientos en los
+que el agente causal o infeccioso requiere la participación de un
+artrópodo como hospedero o transmisor para completar su ciclo de vida y
+para mantener su población en hospederos vertebrados susceptibles. Se
+incluyen: paludismo, dengue, leishmaniasis, oncocercosis,
+tripanosomiasis, rickettsiosis, Fiebre del Oeste del Nilo, Fiebre
+Chikungunya, otras arbovirosis, erliquiosis, anaplasmosis.
 
-Vigilancia de entomologica es importante para determinar la
-distribución, la densidad de población, los principales hábitats de las
-larvas y los factores de riesgo espaciales y temporales relacionados con
-la transmisión de arbovirosis, y los niveles de susceptibilidad o
-resistencia a los insecticidas,con el fin de priorizar áreas y
-estaciones para el control de vectores. Estos datos permitirán la
-selección y el uso de las herramientas de control de vectores más
-apropiadas y pueden usarse para monitorear su efectividad. Existen
-varios métodos disponibles para la detección y seguimiento de
-poblaciones larvarias y adultos. La selección de métodos apropiados
-depende de los objetivos de vigilancia, los niveles de infestación y la
-disponibilidad de recursos.
+Las (ETV) representan un importante problema de salud pública en México.
+Se estima que donde se localiza la mayor parte de centros agrícolas,
+ganaderos, industriales, pesqueros, petroleros y turísticos, es decir;
+en cerca de 60\% del territorio nacional, se tienen condiciones
+ambientales que favorecen su transmisión.
+\href{https://www.gob.mx/salud/cenaprece/acciones-y-programas/direccion-del-programa-de-enfermedades-transmitidas-por-vectores}{referencia}
 
-\section{Indices estegomia}\label{indices-estegomia}
+El dengue es una ETV (mosquitos) que representa un grave problema de
+salud pública en diversas regiones del mundo. Para prevenir y controlar
+eficazmente su propagación, se hace indispensable la implementación de
+sistemas de vigilancia epidemiológica y entomológica.
 
-Las metodologías más comunes emplean procedimientos de muestreo de
-larvas en lugar de recolecciones de huevos o adultos. La unidad básica
-de muestreo es la casa o localidad, donde se busca sistemáticamente
-recipientes para almacenar agua.
+\subsection{Vigilancia
+Epidemiológica:}\label{vigilancia-epidemioluxf3gica}
 
-\subsection{indice de casa positiva
-(HI)}\label{indice-de-casa-positiva-hi}
+La vigilancia epidemiológica del dengue comprende la recopilación
+sistemática, el análisis y la difusión de información sobre la
+enfermedad. Sus objetivos abarcan la detección temprana de brotes, la
+medición de la carga de la enfermedad, el monitoreo de tendencias, la
+evaluación del impacto social y económico, y la guía para la
+planificación y asignación de recursos.
+
+\subsection{Vigilancia Entomológica:}\label{vigilancia-entomoluxf3gica}
+
+La vigilancia entomológica se centra en el estudio de artrópodos
+vectores de enfermedades, particularmente Aedes aegypti, es el principal
+vector del dengue. Esta vigilancia es fundamental para determinar la
+distribución y densidad de mosquitos, conocer la presencia y abundancia
+de mosquitos permite identificar áreas de mayor riesgo de transmisión.
+Evaluar los principales hábitats larvales, esto ayudar a dirigir las
+acciones de control hacia los criaderos preferidos por los mosquitos.
+
+\subsection{Índices Estegomía}\label{uxedndices-estegomuxeda}
+
+Para evaluar la presencia y densidad de mosquitos Aedes, se utilizan
+diversos índices entomológicos particularmente los índices de estegomía
+se calculan en los estudios entomológicos de fase larvar y pupal. Las
+metodologías más comunes emplean procedimientos de muestreo de larvas en
+lugar de recolecciones de huevos o adultos. La unidad básica de muestreo
+es la casa o localidad, donde se busca sistemáticamente recipientes para
+almacenar agua.
+
+\subsubsection{índice de casa positiva
+(HI)}\label{uxedndice-de-casa-positiva-hi}
 
 El índice de casa positiva se ha utilizado más ampliamente para
 monitorear los niveles de infestación, pero no toma en cuenta la
 cantidad de contenedores positivos ni la productividad de esos
 contenedores.
 
-\subsection{indice de contenedor positivo
-(CI)}\label{indice-de-contenedor-positivo-ci}
+\subsubsection{índice de contenedor positivo
+(CI)}\label{uxedndice-de-contenedor-positivo-ci}
 
 El índice de contenedores sólo proporciona información sobre la
 proporción de contenedores con agua que son positivos con larvas o pupas
@@ -301,12 +334,12 @@ mosquito, o podrá continuar hasta que se hayan examinado todos los
 contenedores. Es necesaria la recolección de especímenes para examinar
 en laboratorio para confirmar las especies presente.
 
-\subsection{indice de bretau (BI)}\label{indice-de-bretau-bi}
+\subsubsection{índice de Breteau (BI)}\label{uxedndice-de-breteau-bi}
 
-El índice Breateau establece una relación entre contenedores positivos y
+El índice Breteau establece una relación entre contenedores positivos y
 casas, y se considera el más informativo, pero nuevamente no refleja la
 productividad de los contenedores. Sin embargo, en el curso de la
-recopilación de información básica para calcular el índice de Breateau,
+recopilación de información básica para calcular el índice de Breteau,
 es posible y deseable obtener un perfil de las características del
 hábitat de las larvas registrando simultáneamente la abundancia relativa
 de los diversos tipos de contenedores, ya sea como sitios potenciales o
@@ -316,12 +349,203 @@ etc.). Estos datos son particularmente relevantes para centrar esfuerzos
 para la gestión o eliminación de los hábitats más comunes y para la
 orientación de mensajes educativos en apoyo de iniciativas comunitarias.
 
+\subsubsection{Los índices Estegomía: herramientas clave para la lucha
+contra el
+dengue}\label{los-uxedndices-estegomuxeda-herramientas-clave-para-la-lucha-contra-el-dengue}
+
+Los índices entomológicos son medidas que permiten evaluar la presencia,
+abundancia y distribución del mosquito Aedes aegypti, vector del dengue.
+Estos índices son herramientas valiosas para la prevención y control de
+esta enfermedad.
+
+La presencia y densidad de mosquitos Aedes se correlacionan directamente
+con la probabilidad de transmisión del virus. Los índices entomológicos,
+como el índice de casa positiva o el índice de Breteau, permiten
+determinar el nivel de riesgo en una comunidad y, en consecuencia, tomar
+las medidas de prevención y control necesarias.
+
+Los índices entomológicos ayudan a identificar las zonas con mayor
+riesgo de transmisión, permitiendo a las autoridades sanitarias enfocar
+sus esfuerzos y recursos en aquellas áreas donde las acciones de control
+vectorial son más urgentes. De esta manera se puede priorizar las áreas
+de intervención.
+
+También sirven para monitorear la efectividad de las medidas de control.
+Al comparar los índices entomológicos antes(encuesta) y
+después(verificación) de la implementación de medidas de control, como
+la aplicación de larvicidas, el rociado de insecticidas en casos de
+dengue o campañas de descacharrización, se puede evaluar la eficacia de
+estas medidas y determinar si se están alcanzando los objetivos
+deseados. Esta información permite realizar ajustes y mejoras en las
+estrategias de control para optimizar su rendimiento.
+
+\subsection{}\label{section}
+
+La vigilancia epidemiológica y entomológica son fundamentales para la
+prevención y control del dengue. Mediante la recopilación sistemática de
+datos sobre la enfermedad y los vectores, se pueden tomar decisiones
+informadas para mitigar su impacto y proteger a la población. los
+índices entomológicos son indispensables para la vigilancia y el control
+del dengue. Proporcionando información valiosa para evaluar el riesgo de
+transmisión, y permiten la tomar decisiones estratégicas para priorizar
+acciones y monitorear la efectividad de las intervenciones, para
+prevenir la transmisión del dengue y proteger la salud de la población
+
+\section{Obtención de datos}\label{obtenciuxf3n-de-datos}
+
+El Programa estatal de vigilancia entomología y control integral de
+enfermedades trasmitidas por vector, realiza diversas actividades (ver
+Table~\ref{tbl-tabla-2.1}) para la prevención de enfermedades (Control
+Larvario (CL), Rociado a caso (RaC), Rociado intra domiciliario (RI) y
+Nebulización espacial (N)) las cuales se guían con actividades de
+vigilancia (Vigilancia entomológica con ovitrampas, (VO) las cuales
+proporcionan índices de riesgo entomológico (EE), Estudios entomológicos
+en fase larval y pupal, y Estudios entomovirológicos (EEV)). Todo lo
+anterior con el fin de prevenir y controlar brotes de enfermedades
+trasmitidas por vector (ETV). El objetivo de todas estas acciones es
+prevenir y controlar brotes de enfermedades transmitidas por vectores.
+Las ETV son aquellas causadas por un agente vivo (como los insectos) que
+ingieren microorganismos de la sangre que consumen de otros seres vivos
+y después los transmiten mediante sus picaduras.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1205}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0580}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8214}}@{}}
+\caption{Actividades de prevencion y
+control}\label{tbl-tabla-2.1}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Actividades
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Abrebiatura
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Descripcion
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Actividades
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Abrebiatura
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Descripcion
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Control Larvario & CL & Búsqueda intencionada de criaderos potenciales
+de mosquitos de un área determinada para la aplicación de medidas de
+prevención, en todas las casas que permitan la entrada. \\
+Rociado a caso probable & RaC & Aplicación intradomiciliar de
+insecticida con efecto residual en casas dentro de un cerco de 5 a 9
+casas en respuesta a un caso probable o confirmado a Dengue, Zika o
+Chicungunya. \\
+Rociado intradomiciliario & RI & Aplicación intradomiciliar de
+insecticida con efecto residual en casas de un área que se considere de
+riesgo entomológico y susceptible a contagios de ETV. \\
+Nebulización espacial & N & Aplicación de rociado espacial de
+insecticidas sin efecto residual en un área con alto riesgo entomológico
+o en respuesta a casos probables o confirmados. \\
+\end{longtable}
+
+Todas las actividades mencionadas (ver Table~\ref{tbl-tabla-2.2}) se
+registran diariamente en una plataforma, donde se pueden descargar los
+datos para su análisis y reporte. En el caso de la actividad de EE, se
+calcula por cada área trabajada y se requiere informar semanalmente
+según la localidad de riesgo.
+
+La actividad de EE consiste en muestrear larvas (inmaduras activas,
+incluyendo pupas) en lugar de capturar huevos o mosquitos adultos. Se
+realizan búsquedas sistemáticas para detectar recipientes que contengan
+agua, y se inspeccionan para detectar la presencia de larvas, pupas y
+restos de larvas y pupas de mosquitos. Esta actividad evalúa una muestra
+antes (encuesta) y después (verificación) de las actividades de control
+integral para determinar el riesgo entomológico en un área trabajada
+(sectores o localidades) y si es necesario reforzar las acciones de
+control.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1205}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0580}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.8214}}@{}}
+\caption{Actividades de prevencion y
+control}\label{tbl-tabla-2.2}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Actividades
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Abrebiatura
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Descripcion
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Actividades
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Abrebiatura
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Descripcion
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Control Larvario & CL & Búsqueda intencionada de criaderos potenciales
+de mosquitos de un área determinada para la aplicación de medidas de
+prevención, en todas las casas que permitan la entrada. \\
+Rociado a caso probable & RaC & Aplicación intradomiciliar de
+insecticida con efecto residual en casas dentro de un cerco de 5 a 9
+casas en respuesta a un caso probable o confirmado a Dengue, Zika o
+Chicungunya. \\
+Rociado intradomiciliario & RI & Aplicación intradomiciliar de
+insecticida con efecto residual en casas de un área que se considere de
+riesgo entomológico y susceptible a contagios de ETV. \\
+Nebulización espacial & N & Aplicación de rociado espacial de
+insecticidas sin efecto residual en un área con alto riesgo entomológico
+o en respuesta a casos probables o confirmados. \\
+\end{longtable}
+
+\subsection{Descripción de la base de
+datos}\label{descripciuxf3n-de-la-base-de-datos}
+
+La descarga de datos sobre la actividad de EE de la p
+
+\bookmarksetup{startatroot}
+
+\chapter{Prelimilares}\label{prelimilares}
+
+\section{descripcion del
+problematica}\label{descripcion-del-problematica}
+
+\section{deacuerdo al marco teorico como se
+soliciona}\label{deacuerdo-al-marco-teorico-como-se-soliciona}
+
+\section{}\label{section-1}
+
 \bookmarksetup{startatroot}
 
 \chapter{Cálculo de los índices de
 estegomía}\label{cuxe1lculo-de-los-uxedndices-de-estegomuxeda}
 
-\section{}\label{section}
+Índice de casa (local) (IC), es decir, porcentaje de casas infestadas
+con larvas, pupas o ambas. CI = Casas infestadas/casas inspeccionadas X
+100
+
+Índice de recipiente (IR), es decir, porcentaje de recipientes que
+contienen agua y están infestados con larvas o pupas. IR = Recipientes
+positivos / recipientes inspeccionados X 100
+
+Dengue: guías para el diagnóstico, tratamiento, prevención y control.
+Índice de Breteau (IB) -- es decir, número de recipientes positivos por
+cada 100 casas inspeccionadas. IB = Número de recipientes positivos /
+casas inspeccionadas X 100
+
+\section{}\label{section-2}
 
 Se sigue el modelo de desarrollo basado test driven development Se
 desarrollaron basado en tidyr y devtools tidyr Manipulación de los datos
@@ -347,7 +571,7 @@ Vector'', tiene 121 variables de las cuales consideramos 16 de interés,
 3 de ellas se dividen en dos por lo que resultan en 19
 
 \section{descripcion de la base de
-datos}\label{descripcion-de-la-base-de-datos-1}
+datos}\label{descripcion-de-la-base-de-datos}
 
 La base de datos de estudio entomológico es un archivo .txt de la
 Plataforma Vigilancia Entomológica y Control Integral del Vector
@@ -405,13 +629,12 @@ interes Data cleaning''''
 
 \bookmarksetup{startatroot}
 
-\chapter{References}\label{references}
+\chapter{Referencias}\label{referencias}
 
-
+\printbibliography[heading=none]
 
 
 \backmatter
 
-\bibliography{references}{}
-\bibliographystyle{plain}
+
 \end{document}
