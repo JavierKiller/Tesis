@@ -27,11 +27,11 @@ book:
      - intro.qmd
      #- resumen.qmd
      - Marco_teorico.qmd
-     - preliminares.qmd 
+     - limpieza_de_datos.qmd 
      # - objetivo.qmd 
      #- Desarrollo.qmd
-     - paquete_de_R_stegomia.qmd
-     - limpieza_de_datos.qmd
+     #- paquete_de_R_stegomia.qmd
+     #- preliminares.qmd
      # - Conclusiones.qmd
      - referencia.qmd
 

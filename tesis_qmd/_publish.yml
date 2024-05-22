@@ -1,5 +1,9 @@
 source: book
 quarto-pub:
-  - id: "qpa_kkXiEPkBAbzegouvaF2cZYZcKBQJsBgyTpXqRXnfbHS5xKNYMjsCXw5vvx2PsF2E"
-    url: "https://javier-verdugo.quarto.pub/estimación-de-riesgo-entomológico-con-georeferenciación-en-hermosillo-sonora-méxico"
+  - id: "qpa_VC6OurLnb3Xcs4lCeUMXpt9bX9NSnxPHfuThnencoBAutfFxsnVJjUQQm0mVzQaB"
+    url: "https://javier-verdugo.quarto.pub/Tesis/"
     
+
+# en el archivo _quarto.yml poner # a toda la seccion de pdf: 
+
+#quarto publish

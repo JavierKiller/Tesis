@@ -3,7 +3,7 @@
 ## Vigilancia Epidemiológica y Entomológica del Dengue
 
 Las enfermedades transmitidas por vectores (ETV), son padecimientos en los que un artrópodo(mosquitos, chinches, garrapatas, etc.) actúa como el agente infeccioso. A este tipo de artrópodos se le denomina “vector”. Este vector actúa como hospedero y/o transmisor de la enfermedad, mientras completa su ciclo de vida tienen diferentes hospederos y es cuando adquiere la enfermedad y puede trasmitirla a hospederos vertebrados como los humanos. Un ejemplo de este tipo de enfermedades son: paludismo, dengue, leishmaniasis, oncocercosis, tripanosomiasis, rickettsiosis, Fiebre del Oeste del Nilo, Fiebre Chikungunya, erliquiosis, anaplasmosis y otras arbovirosis.
-Las ETV representan un problema de salud pública en México. Se estima que donde se localiza la mayor parte de centros agrícolas, ganaderos, industriales, pesqueros, petroleros y turísticos, es decir; en cerca de 60 % del territorio nacional, se tienen condiciones ambientales que favorecen su transmisión (Secretaría de Salud (2023)). Entre ellas, el dengue representa una grave amenaza, con brotes recurrentes en diversas regiones del país. Para prevenir y controlar eficazmente las enfermedades antes mencionadas, en México existen los programas de vigilancia entomológica y control integral de enfermedades transmitidas por vectores para nivel federal y estatal.
+Las ETV representan un problema de salud pública en México. Se estima que donde se localiza la mayor parte de centros agrícolas, ganaderos, industriales, pesqueros, petroleros y turísticos, es decir; en cerca de 60 % del territorio nacional, se tienen condiciones ambientales que favorecen su transmisión [@gobmx2023;]. Entre ellas, el dengue representa una grave amenaza, con brotes recurrentes en diversas regiones del país. Para prevenir y controlar eficazmente las enfermedades antes mencionadas, en México existen los programas de vigilancia entomológica y control integral de enfermedades transmitidas por vectores para nivel federal y estatal.
 
 
 <!-- Las (ETV) representan un importante problema de salud pública en México. Se estima que donde se localiza la mayor parte de centros agrícolas, ganaderos, industriales, pesqueros, petroleros y turísticos, es decir; en cerca de 60% del territorio nacional, se tienen condiciones ambientales que favorecen su transmisión. [referencia](https://www.gob.mx/salud/cenaprece/acciones-y-programas/direccion-del-programa-de-enfermedades-transmitidas-por-vectores) -->
@@ -16,48 +16,65 @@ La vigilancia epidemiológica del dengue comprende el recopilar, analizar y difu
 
 ### Índices Estegomía
 
-Para evaluar la presencia y densidad de los mosquitos Aedes, los los programas estatales de prevención y control del dengue utilizan los llamados índices de estegomía. Estos índices cuantifican el riesgo entomológico con respecto a criade- ros potenciales y criaderos habitados por larvas o pupas del mosquito Aedes a través del muestreo en campo. El muestreo debe ser uniformemente en el área de estudio y la unidad de muestreo básica es la casa o localidad (Organization (2016)). Al muestrear, el objetivo es observar sistemáticamente contenedores de almacenamiento de agua. Los contenedores se examinan para detectar la presencia de larvas y pupas de mosquitos.
+Para evaluar la presencia y densidad de los mosquitos Aedes, los los programas estatales de prevención y control del dengue utilizan los llamados índices de estegomía. Estos índices cuantifican el riesgo entomológico con respecto a criade- ros potenciales y criaderos habitados por larvas o pupas del mosquito Aedes a través del muestreo en campo. El muestreo debe ser uniformemente en el área de estudio y la unidad de muestreo básica es la casa o localidad [@gobmx2023;]. Al muestrear, el objetivo es observar sistemáticamente contenedores de almacenamiento de agua. Los contenedores se examinan para detectar la presencia de larvas y pupas de mosquitos.
 
-La Organización Mundial de la Salud (OMS) recomienda el uso de los índices estegomía para evaluar la presencia y la densidad de criaderos de mosquitos en las comunidades. Los índices utilizados son el índice de casa positiva (HI), el índice de contenedor positivo y el índice de Breteau.
+La Organización Mundial de la Salud (OMS)[@Organization2016] recomienda el uso de los índices estegomía para evaluar la presencia y la densidad de criaderos de mosquitos en las comunidades. Los índices utilizados son el índice de casa positiva (HI), el índice de contenedor positivo y el índice de Breteau.
 En el estado de Sonora el "Programa de Acción Específico de Enfermedades Transmitidas por Vector"(PAE-ETV) usa estos índices para ayudar a determinar las acciones que mitigan el riesgo entomológico. A continuación, presento los índices de estegomía empleados por el PAE-ETV.
 
 
 
-#### índice de casa positiva (HI)
-
-El índice de casa positiva (HI) es definido como el la fracción de casas infestadas con larvas o pupas. La OMS [(Organization (2016))] recomienda usar la siguiente expresión para su cálculo
+#### índice de casa positiva (HI){.unnumbered}
 
 
-Número de casas infestadas
-HI = Número de casas inspeccionadas × 100	(1.1)
+El índice de casa positiva (HI) es definido como el la fracción de casas infestadas con larvas o pupas. La OMS [@Organization2016] recomienda usar la siguiente expresión para su cálculo
+
+
+$$         
+  HI = \frac{
+   \text{Número de casas infestadas}
+  }{
+    \text{Número de casas inspeccionadas}
+  } \times 100
+$$ {#eq-hi-index}
 
 En Sonora el PAE-ETV utiliza este índice HI para monitorear la infestación de casas. Además, permiten evaluar la presencia, y estimar la distribución del mosquito. Este índice considera a las casas como unidad de observación, no toma en cuenta la cantidad de contenedores positivos ni la productividad de esos contenedores.
 
 
 El índice de casa positiva se ha utilizado más ampliamente para monitorear los niveles de infestación, pero no toma en cuenta la cantidad de contenedores positivos ni la productividad de esos contenedores.
 
-Dentro de una área dada, el calculo de este índice asume la misma probabilidad de transmisión del virus. Así, si calculamos el índice HI en una muestras de un sector se puede inferir para todo el sector. La OMS considera en riesgo entomológico cuando al menos uno de los índices de estegomía es igual o mayor a 5(Organization (2016))
+Dentro de una área dada, el calculo de este índice asume la misma probabilidad de transmisión del virus. Así, si calculamos el índice HI en una muestras de un sector se puede inferir para todo el sector. La OMS considera en riesgo entomológico cuando al menos uno de los índices de estegomía es igual o mayor a 5[@Organization2016]
 
-#### índice de contenedor positivo (CI)
+#### índice de contenedor positivo (CI){.unnumbered}
+
 
 El índice de contenedor positivo (CI) se define como la proporción de contenedores con presencia de larvas o pupas de mosquito en relación con todos los contenedores que tienen agua (Organization, 2016). A continuación, se muestra la siguiente expresión para su cálculo.
 
 
-Número de contenedores infestados
-CI = Número de contenedores inspeccionados × 100.	(1.2)
+$$         
+  CI = \frac{
+   \text{Número de contenedores infestados}
+  }{
+    \text{Número de contenedores inspeccionados}
+  } \times 100
+$$ {#eq-ci-index}
 
 El índice CI es útil para conocer la proporción de contenedores con agua que tienen larvas o pupas de mosquito, y permite estimar el riesgo en el área estudiada. Este índice ayuda a estimar la densidad de criaderos en la zona. Por ello, proporciona información para identificar las áreas con mayor riesgo de infestación. Así pues, en caso de que el índice CI sea bajo y el HI sea alto, inferimos que el riesgo es mínimo por cada casa muestreada, pero está muy disperso. Lo cual sugiere el realizar acciones de control y prevención en toda el área de estudio (sector, colonia o localidad).
 
 El clasificar el tipo de contenedor permite elegir la estrategia especifica para las condiciones particulares del área de estudio, como puede ser aplicar control físico para mantener bajo control o eliminar criaderos potenciales, dependiendo de la cantidad y el tamaño se puede solo tirar a la basura u organizar campañas de eliminación o descacharre d ser necesario. Otra estrategia seria el uso de químicos larvisidas como apoyo al control fisico
 
-#### índice de Breteau (BI)
+#### índice de Breteau (BI){.unnumbered}
+
 
 El índice Breteau (BI) describe, número de recipientes positivos por cada 100 casas inspeccionadas.
  
 
-BI =
- 
-Número de contenedores infestados × 100	(1.3) Número de casas inspeccionadas
+$$         
+  BI = \frac{
+   \text{Número de contenedores infestados}
+  }{
+    \text{Número de casas inspeccionadas}
+  } \times 100
+$$ {#eq-bi-index}
  
 
 El BI proporciona una relación directa entre la cantidad de recipientes positivos y el número de casas inspeccionadas. Cunado el los contenedores positivos tienen a ser uno por casa positiva el BI valdrá igual al HI. En el caso que el BI salga alto pese a que los otros dos índices sean bajos esto indica una alta concentración de recipientes por casa aunque la proporción de casas positivas sea baja y la proporción de recipientes positivos también sea baja, en este caso el riesgo es que mas recipientes El BI evalúa la distribución espacial de los criaderos y sirve para orientar las acciones de control y prevención. Sin embargo, no refleja la productividad de los contenedores, lo que limita su capacidad para proporcionar una evaluación completa del riesgo de transmisión del virus. Estos datos son particularmente relevantes para centrar esfuerzos para la gestión o eliminación de los hábitats más comunes y para la orientación de mensajes educativos en apoyo de iniciativas comunitarias.
