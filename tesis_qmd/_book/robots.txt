@@ -1,1 +1,1 @@
-Sitemap: https://github.com/JavierKiller/tesismcd.git/sitemap.xml
+Sitemap: https://github.com/JavierKiller/Tesis.git/sitemap.xml

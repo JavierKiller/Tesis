@@ -8,8 +8,8 @@ book:
 #
 #  cover-image: cover.jpg
 #  favicon: cover.jpg
-  site-url: https://github.com/JavierKiller/tesismcd.git
-  repo-url: https://github.com/JavierKiller/tesismcd.git
+  site-url: https://github.com/JavierKiller/Tesis.git
+  repo-url: https://github.com/JavierKiller/Tesis.git
   repo-branch: main
   repo-actions: [edit, issue]
   reader-mode: true
@@ -41,23 +41,23 @@ bibliography: references.bib
 
 
 format:
-  latex:
-    documentclass: report
-    classoption: [twocolumn, landscape]
-    lof: true
-    lot: true
+   latex:
+     documentclass: report
+     classoption: [twocolumn, landscape]
+     lof: true
+     lot: true
   html:
     theme:
       light: flatly
       dark: darkly
-#  pdf:
-    # documentclass: scrbook
-    # toc: true
-    # toc-depth: 2
-    # toc-title: Contents
-    # number-sections: true
-    # colorlinks: true
-#    cite-method: biblatex
+  #pdf:
+   #  documentclass: scrbook
+   # toc: true
+   #  toc-depth: 2
+   # toc-title: Contents
+   #  number-sections: true
+   #   colorlinks: true
+    cite-method: biblatex
 editor: visual
 
 
