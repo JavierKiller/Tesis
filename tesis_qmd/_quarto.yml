@@ -13,6 +13,9 @@ book:
   repo-branch: main
   repo-actions: [edit, issue]
   reader-mode: true
+  comments:
+    hypothesis:
+      theme: classic
   page-footer:
     left: |
       Esta tesis ha sido escrita por Edgar Javier Verdugo Molina
@@ -24,10 +27,13 @@ book:
   chapters:
      #- Agradecimientos.qmd
      - index.qmd
-     - intro.qmd
+     - 02_reporte_de_logros.qmd
+     - 03_resumen_ejecutivo.qmd
+     - 04_reporte_tecnico.qmd
+     #- intro.qmd
      #- resumen.qmd
-     - Marco_teorico.qmd
-     - limpieza_de_datos.qmd 
+     #- Marco_teorico.qmd
+     #- limpieza_de_datos.qmd 
      # - objetivo.qmd 
      #- Desarrollo.qmd
      #- paquete_de_R_stegomia.qmd
@@ -37,7 +43,7 @@ book:
 
 
 bibliography: references.bib
-
+#csl: nature.csl
 
 
 format:
@@ -46,7 +52,7 @@ format:
      classoption: [twocolumn, landscape]
      lof: true
      lot: true
-  html:
+   html:
     theme:
       light: flatly
       dark: darkly
@@ -57,7 +63,7 @@ format:
    # toc-title: Contents
    #  number-sections: true
    #   colorlinks: true
-    cite-method: biblatex
+    #cite-method: biblatex
 editor: visual
 
 

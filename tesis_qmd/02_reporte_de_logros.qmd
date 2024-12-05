@@ -1,0 +1,15 @@
+# Descripción de logros 
+
+## Descripción del trabajo
+
+* Descripción clara del problema y de productos o entregables del proyecto que se elaboraron
+
+* Incluir el acceso  para obtener más información (e.g. el repositorio de Github, una página web donde se encuentre el reporte completo).
+\cite{@gobmx2023}
+\textcolor{gray}{\lipsum[1-1]}
+
+## Logros
+
+Logros e impacto del proyecto: cambio logrado y posible cambio futuro como un resultado del proyecto, se pueden utilizar declaraciones breves, estadísticas, citas, etcétera.
+
+
