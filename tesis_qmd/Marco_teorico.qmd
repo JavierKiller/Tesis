@@ -69,7 +69,7 @@ El BI proporciona una relación directa entre la cantidad de recipientes positiv
 El Programa de Acción Específico de Enfermedades Transmitidas por Vector"(PAE- ETV), realiza diversas actividades para la prevención y control de ETV. Estas actividades se pueden dividir en dos grupos: las de vigilancia entomológicas y las de prevención y control (). El objetivo de todas estas acciones es prevenir y controlar brotes de enfermedades transmitidas por vectores. Las ETV son aquellas causadas por un agente vivo (como los insectos) que ingieren microorganismos de la sangre que consumen de otros seres vivos y después los transmiten mediante sus picaduras (@Vigilanciaentomologica2019).
 
 | Actividades | Abreviatura | Descripción |
-|-------------------|-------------------|-----------------------------------|
+|----|----|----|
 | Vigilancia entomológica con ovitrampas | OV | Las ovitrampas son contenedores con atributos ideales para que los mosquitos utilicen como criadero De esta forma, el personal del programa de vectores se encarga de revisar, colectar y contabilizar los huevecillos de los mosquitos y realizar una comparación de la densidad. |
 | Estudios entomológicos en fase larval y pupal | EE | Búsqueda de criaderos con larvas o pupas de mosquitos dentro de las casas de una zona a trabajar, se realiza una búsqueda previa a las acciones de control de ETV y una búsqueda posterior cuando el área ya ha sido intervenida por las acciones de prevención y control. |
 | Estudios Entomovirológicos | EEV | Colecta de mosquitos adultos dentro de viviendas para identificar las especies transmisoras de ETV, asimismo para el análisis por PCR de los mosquitos buscando encontrar ETV circulando en las áreas antes de que se reporten casos en personas. |
@@ -77,7 +77,7 @@ El Programa de Acción Específico de Enfermedades Transmitidas por Vector"(PAE-
 : Actividades de prevencion y control {#tbl-tabla-2.1} {.striped .hover}
 
 | Actividades | Abrebiatura | Descripcion |
-|-------------------|-------------------|----------------------------------|
+|----|----|----|
 | Control Larvario | CL | Búsqueda intencionada de criaderos potenciales de mosquitos de un área determinada para la aplicación de medidas de prevención, en todas las casas que permitan la entrada. |
 | Rociado a caso probable | RaC | Aplicación intradomiciliar de insecticida con efecto residual en casas dentro de un cerco de 5 a 9 casas en respuesta a un caso probable o confirmado a Dengue, Zika o Chicungunya. |
 | Rociado intradomiciliario | RI | Aplicación intradomiciliar de insecticida con efecto residual en casas de un área que se considere de riesgo entomológico y susceptible a contagios de ETV. |
