@@ -1,4 +1,4 @@
-# Reporte tecnico 
+# Reporte tecnico
 
 {{< include intro.qmd >}}
 
