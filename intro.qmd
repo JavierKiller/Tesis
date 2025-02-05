@@ -1,0 +1,132 @@
+## Introduccion
+
+El análisis de riesgo entomológico se realiza actualmente mediante hojas de cálculo, lo que resulta en una gestión ineficiente de la información. La estructura de la base de datos es compleja teniedo 121 variables, dificulta la adaptación de consultas a pequeñas modificaciones, lo que complica aún más. La visualización georreferenciada de la plataforma es limitada e inestable, lo que afecta negativamente la interpretación de los datos. sistema integral de monitoreo de vectores
+
+[http://geosis.mx/aplicaciones/sismv/](http://geosis.mx/aplicaciones/sismv/)
+
+Los índices de estegomía se calculan de la siguiente manera:
+
+-   Índice de casas : $$         
+      HI = \frac{
+       \text{Número de casas infestadas}
+      }{
+        \text{Número de casas inspeccionadas}
+      } \times 100
+    $$ {#eq-hi-index}
+
+-   Índice de contenedores : $$         
+    CI = \frac{
+     \text{Número de contenedores infestados}
+    }{
+      \text{Número de contenedores inspeccionados}
+      } \times 100
+    $$ {#eq-ci-index}
+
+-   Índice de Breteau : $$         
+      BI = \frac{
+       \text{Número de contenedores infestados}
+      }{
+    \text{Número de casas inspeccionadas}
+      } \times 100
+    $$ {#eq-bi-index}
+
+Una vez que se ha determinado riesgo entomológico en una localidad se analizan los tipos de criaderos y su proporción entre sí, para tomar las medidas pertinentes según sea el caso, considerando si la mayor proporción de los criaderos son tratables se requiere reforzar con campañas de promoción a la salud y actividades integrales de control de vectores, en el caso de mayor proporción de criaderos controlables se requieren refuerzos de promoción a la salud, y en caso de que la mayor proporción sean criaderos eliminables se requieren refuerzos de campañas de promoción a la salud. En estos dos últimos casos dependiendo de las particularidades se puede requerir también una campaña de descacharre por parte de la localidad o el municipio. 
+
+La base de datos de estudio entomológico es un archivo .txt de la “Plataforma Vigilancia Entomológica y Control Integral del Vector”. Este formato requiere ajustes para leerlo en el programa de R. Además, hay inconsistencia en el tipo de dato de algunas variables de interés por lo que se crea una función para cambiarlas al formato adecuado que le corresponde a cada una para poder trabajar con los datos
+
+
+
+## Funciones para limpieza y formato de los datos de entrada {.unnumbered}
+
+### load_raw_data() {.unnumbered}
+
+Carga datos crudos de un archivo .txt y selecciona variables relevantes. Asegura que la columna 'Tipo de Estudio' esté presente y limpia los nombres de las columnas reemplazando espacios por guiones bajos. Si se seleccionan las columnas 'Localidad', 'Municipio' o 'Jurisdicción', cada una se separa en nuevas columnas.
+
+### clean_raw_data() {.unnumbered}
+
+Limpia y reformatea un dataframe generado por load_raw_data. Permite especificar tipos de datos para las columnas y guarda el dataframe limpio en un archivo .csv.
+
+## Funciones que calculan índices de estegomía
+
+Generando un dataframe a partir del archivo .csv que se obtuvo con la función clean_raw_data() se usa en las siguientes funciones que calculan los índices de riesgo entomológico filtrando por tiempo y lugar según la función. Cada función filtra los datos basándose en detalles del estudio y gestiona advertencias si se encuentra división por cero, asegurando que los datos sean válidos para evitar errores en los cálculos.
+
+### get_stegomyia_indices_by_type_of_study_and_ew() {.unnumbered}
+
+Calcula los índices estegomía (CI, HI, BI) para un tipo de estudio y semana epidemiológica específicos.
+
+### get_stegomyia_indices_by_type_of_study_and_loc() {.unnumbered}
+
+calcula índices estegomía para un tipo de estudio y una localidad específica, agrupando y calculando los índices.
+
+### get_stegomyia_indices_by_type_of_study_and_star_date() {.unnumbered}
+
+calcula los índices estegomía para un tipo de estudio y fechas específicas.
+
+### get_stegomyia_indices_by_type_of_study_and_geo_is() {.unnumbered}
+
+similar a las funciones anteriores, pero se centra en sectores específicos y tipo de estudio. Permite la generación de índices para áreas geográficas delimitadas.
+
+### get_stegomyia_indices_by_type_of_study_star_date_and_geo() {.unnumbered}
+
+calcula índices estegomía combinando tipo de estudio, fechas y sectores.
+
+
+### get_typology_container_by_type_of_study_and_location() {.unnumbered}
+
+identifica el tipo de criaderos de contenedores positivos en localidades en riesgo, calculando porcentajes de cada tipología respecto al total de recipientes positivos.
+
+Estas funciones permiten calcular los índices de estegomía bajo diferentes criterios de filtrado (semana epidemiológica, localidad, fecha, sector, o combinación de fecha y sector), proporcionando flexibilidad para el análisis.
+
+## Funciones que hacen mapas con los datos generados}
+
+### get_maps_stegomyia_indices() {.unnumbered}
+
+genera mapas geográficos para visualizar los índices estegomía en varios sectores, facilitando la identificación de áreas de riesgo. Utiliza shapefiles y los guarda como archivos PNG.
+
+### get_1map_stegomyia_indices() {.unnumbered}
+
+crea un mapa interactivo utilizando la librería Leaflet, lo que permite explorar los índices estegomía de forma dinámica. Permite al usuario seleccionar el índice a visualizar y obtener información detallada al hacer clic en cada sector, guardándose como un archivo HTML.
+
+## Resultados y conclusiones {.unnumbered}
+
+En este trabajo creamos funciones para procesar y limpieza de datos crudos, y realizar un análisis eficiente de los mismos. También se crearon funciones para el cálculo automatizado de índices de estegomía, utilizando esos datos ya limpios y con formato adecuado. Asimismo, diferentes funciones según el parámetro de tiempo y/o delimitación geográfica que se desee analizar.
+
+Además, se crearon funciones para visualizar espacialmente los índices calculados previamente obteniendo imágenes fijas de cada índice (HI, CI y BI) que se pueden usar para reportes o un mapa interactivo que se puede revisar en formato HTML.
+
+Al tener acceso a información procesada y visualizada de manera eficiente, los responsables del programa podrían tomar decisiones más informadas y oportunas sobre las intervenciones de control y prevención. La automatización permitiría realizar análisis de tendencias y evaluar el impacto de las intervenciones de manera más efectiva para tomar decisiones más informadas y oportunas sobre las intervenciones de control y prevención.
+
+## Impacto del proyecto {.unnumbered}
+
+Al automatizar los cálculos y la generación de informes, se eliminaría la necesidad de realizar análisis manuales en hojas de cálculo, lo que ahorraría una cantidad considerable de tiempo y recursos humanos. También se minimizarían los errores humanos asociados con el manejo manual de datos y los cálculos, asegurando la precisión y consistencia de los resultados.
+
+Al identificar con mayor precisión las áreas de riesgo, se podrían optimizar los recursos destinados a las actividades de control, enfocándolos en las zonas que más lo necesitan.
+
+Los informes y visualizaciones generados con R podrían ser utilizados para comunicar los resultados a diferentes audiencias (autoridades, comunidad, etc.) de una manera más clara y efectiva.
+
+La implementación de este paquete de R fortalecería el programa de vigilancia entomológica al proporcionar herramientas más robustas y eficientes para el análisis y la gestión de la información. Al mejorar la vigilancia y el control de vectores, se contribuiría a la prevención de enfermedades transmitidas por estos, como el dengue, Zika y Chikungunya.
+
+<!-- ### Motivacion -->
+
+<!-- Queremos Analizar los datos de la actividad de vigilancia entomológica de forma oportuna y automática utilizando herramientas de Ciencia de Datos utilizando la base de datos de la plataforma de “Vigilancia Entomológica y Control Integral del Vector” del INSTITUTO NACIONAL DE SALUD PÚBLICA en colaboración con Secretaría de Salud y el Centro Nacional de Prevencion y Control de enfermedades (CENAPRECE). Con el fin de calcular y analizar los índices de riesgo entomológico, y con esto gestionar información para la toma de decisiones en la prevención de enfermedades transmitidas por vector. -->
+
+<!-- El análisis de riesgo entomológico se hace en hojas de cálculo El manejo de la información es ineficiente: La estructura de la base de datos es compleja Adaptar consultas a pequeñas modificaciones es impráctico La visualización georreferenciada de esta plataforma es pobre e inestable -->
+
+<!-- Usar R para visualizar la información en tiempo y espacio Automatizar el manejo de la información Generar visualización georreferenciada con los índices de estegomía -->
+
+<!-- ### Descripción del problema -->
+
+<!-- El Programa estatal de vigilancia entomología y control integral de enfermedades trasmitidas por vector, realiza diversas actividades para la prevención de enfermedades, las cuales se guían con actividades de vigilancia que proporcionan índices de riesgo entomológico, por ello se hará una API para calcular los índices de riesgo entomológico de forma automática y oportuna para la toma de decisione. -->
+
+<!-- Todas las actividades se capturan diariamente en una plataforma, donde es posible descargar los datos para su reporte y análisis. En el caso de Vigilancia por Ovitrampa(VO), la plataforma calcula los índices de riesgo pero para la actividad de Estudio Entomológico (EE) los calcula por manzana trabajada, estos índices se requiere por localidad de riesgo de manera semanal. -->
+
+<!-- Se requiere poder calcular índices de riesgo del EE por tipo de estudio, localidad de riesgo y por semana epidemiológica de manera automatizada. -->
+
+<!-- La actividad de EE evalúa una muestra antes(encuesta) y después(verificación) de las actividades de control integral para determinar el riesgo entomológico\ -->
+
+<!-- que hay en un área grande a trabajar (Sectores o Localidad) y si requiere reforzar acciones de control y prevención. -->
+
+<!-- Tener la información oportuna de los índices de riego entomológicos permiten tomar decisiones informades de ¿En Dónde? y ¿Cuándo? focalizar intervenciones. -->
+
+<!-- ### Gestion de datos -->
+
+<!-- Para validar y poner a prueba la solución propuesta, se plantea la utilización de una base de datos ficticia que sea representativa con las bases de datos reales descargadas de la plataforma. Esto permitirá evaluar el funcionamiento del paquete de R en un entorno controlado. Una vez realizadas las pruebas iniciales y asegurada la confiabilidad de los resultados obtenidos,se establecerá un convenio de confidencialidad con el fin de acceder a los datos reales y evaluar el desempeño del paquete de R en un escenario más cercano a la realidad. Esta estrategia garantizará la confidencialidad de los datos utilizados, a la vez que brindará la oportunidad de comprobar la efectividad de la solución en situaciones reales y aplicables al contexto de vigilancia entomológica y control de enfermedades transmitidas por vectores. -->

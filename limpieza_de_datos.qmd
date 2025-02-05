@@ -1,0 +1,40 @@
+## Limpieza de datos
+
+Los datos para calcular índices de riesgo entomológico son de las actividades de vigilancia entomológica con ovitrampas y estudios entomológicos para fase larvaria y pupal. Estos datos se descargan de la plataforma en archivos .txt y requieren de un tratamiento previo, que incluye un código particular para leer el tipo de archivo, selección de variables de interés, cambiar el formato de los títulos de las variables y cambios en los tipos de datos, antes de poder realizar cálculos y análisis.
+
+La base de datos de Estudio entomológico se descarga en un archivo .txt de la Plataforma “Vigilancia Entomológica y Control Integral del Vector”, tiene 121 variables de las cuales consideramos 16 de interés, 3 de ellas se dividen en dos por lo que resultan en 19 variables de interés.
+
+### descripcion de la base de datos de estudio Entomologico de fase larvar y pupal(EE)
+
+La base de datos de estudio entomológico es un archivo .txt de la “Plataforma Vigilancia Entomológica y Control Integral del Vector” (https://geosis.mx/Aplicaciones/EntomologiayControlIntegral/). Este formato requiere ajustes para leerlo en el programa de R. Además, hay inconsistencia en el tipo de dato de algunas variables de interés por lo que se crea una función para cambia las al formato adecuado que le corresponde a cada una para poder trabajar con los datos
+
+Tiene 121 variables de las cuales 16 son de interés para los cálculos de índices de estegomía. En general el titulo de las variables tiene un problema para leerse por ello se cambió los espacios entre palabras por un guion bajo(\_) en los títulos de cada variable.
+
+#### variables de interes {.unnumbered}
+
+##### Variable para determinar el tipo de estudio entomológico: {.unnumbered}
+
+Tipo de Estudio es el nombre de una variable que divide todos los datos de esta actividad en 2 tipos, el primer tipo es “encuesta” que significa que los datos se tomaron antes de realizar acciones de “control larvario (CL)” en el área donde se hiso el estudio entomológico. El segundo tipo es “verificación” que indica que los datos de ese estudio entomológico se hicieron después de realizar acciones de CL. De tal manera se pueden comparar los datos antes y después en un área determinada y evaluar si las intervenciones del PAE-ETV al mitigado el riesgo entomológico o si requieren realizar más acciones.
+
+#### Variables para la georreferenciación: {.unnumbered}
+
+Estas variables son las que se utilizan para determinar un lugar en el espacio donde se calcula un riesgo entomólogo. a estas variables se les asigno el formato de Carácter Estas variables son cuatro: Jurisdicción, Municipio, Localidad y Sector, Cada una es parte de la anterior, el estado de Sonora esta dividido en 6, jurisdicciones (ahora llamados distritos) y cada jurisdicción tiene determinados municipios que la conforman, a su vez cada municipio tiene localidades que pueden ser desde ciudades a ejidos. En el caso de sectores cuanto mas grande la localidad como una ciudad puede tener hasta cientos de sectores que la conformen, pero cuando son lugares pequeños como un pueblo o ejido tienen pocos sectores (de uno a 10). Los sectores corresponden a un formato de división geográfica que usa el Instituto Nacional Electoral (INE). Las primeras tres variables antes mencionadas tienen un numero antes del nombre que corresponde al lugar (que numero de jurisdicción es, que numero de municipio es y que numero de localidad es, respectivamente), para evitar confusiones en la selección de datos geográficos separamos este número del resto del nombre y lo colocamos en variables independiente, estas tres nuevas variables son: Clave_Jurisdicción, Clave_Municipio y Clave_Localidad
+
+#### Variables de intervalos de tiempo: {.unnumbered}
+
+Se selecciono dos variables para elegir el tiempo la primera es Fecha de Inicio la cual viene en formato de carácter y se cambia a Tipo de dato POSIX para poder usarla como fecha. Esta es la fecha en que se realiza el EE y se puede comparar entre lugares o en el mismo lugar en diferentes tiempos o en tiempos cercanos en el mismo lugar con diferente tipo de estudio la segunda variable es Semana Epidemiológica la cual se usa de forma preestablecida, en secretaria de salud y el PAE-ETV reporta usando como unidad de tiempo el número de semana epidemiológica
+
+#### Variables para índices de estegomía: {.unnumbered}
+
+Para calcular los índices de estegomía se utilizan seis variables #(o las primeras 4 solamente) Las variables de Casas Revisadas y Casas Positivas se utilizan para calcular el IH. El Total de Recipientes con Agua, y Total de Recipientes Positivos se utilizan para calcular el IC. (El Total de Recipientes Positivos a Pupas, y No. Total, de Pupas en Recipientes, se utilizan para calcular índices de contenedor positiva a pupa, porcentaje de pupas en los contenedores positivos) Otras variables de interés son la tipología de recipiente positivo que consiste en clasificar en tres grupos diferentes a los contenedores según la estrategia de control que se ejecuta en dicho contenedor. Estas tres variables son: Recipientes Tratables, Recipientes Controlables y Recipientes Eliminables. Cuando se determina un riesgo entomológico alto se hace un análisis de la tipología de contenedor para escoger la estrategia ha emplear
+
+### Georeferenciacion de las actividades en (datos Archivos shapefile de los sectores de todo) el estado de Sonora
+
+Para poder georefereciar los indicadores de EE en un mapa se utilizan los datos de Sector para definir en un mapa del estado de Sonora, esto se hace con un archivo shapefile que contiene todos los sectores del estado de sonora, este archivo fue proporcionado por el PAE-ETV.
+
+### Shapefile de los Sectores de Sonora
+
+Ajuste entre tipos de datos shapefile para empatar con un dataframe Carga el archivo .shp (sp) Cambiar la proyección EPSG 4326(sp) Guardar como un archivo .shp\
+Carga el archivo .shp (maptools) Transforma en un dataframe con datos geoespaciales
+
+<!-- ""descripcion de la base de datos formato de los datos variables de interes Data cleaning"" -->

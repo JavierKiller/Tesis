@@ -1,0 +1,11 @@
+## Conclusiones
+
+Este proyecto desarrolló un paquete de R para automatizar el cálculo, análisis y visualización de los índices de Estegomía (HI, CI, BI), abordando las limitaciones del actual manejo de datos de control vectorial basado en hojas de cálculo y la restricción de la plataforma a cálculos por manzana. El objetivo principal fue proveer una herramienta eficiente para la toma de decisiones en salud pública, permitiendo un análisis más granular y una mejor comprensión del riesgo entomológico.
+
+Las funciones implementadas en el paquete permiten el cálculo automatizado de los índices de riesgo entomológico por tipo de estudio (encuesta/verificación), la localidad, sector, la fecha de inicio de actividad, y la semana epidemiológica, obteniendo resultados rápidos y consistentes. Lo que permite evaluar el impacto de las actividades de control integral e identificar áreas que requieren refuerzos.
+
+La generación de mapas dinámicos y detallados facilita la identificación de patrones espaciales y temporales en la distribución de los índices, proporcionando una visualización georreferenciada superior a la disponible anteriormente.
+
+Se superaron las dificultades asociadas al uso de hojas de cálculo, proporcionando un flujo de trabajo estructurado que optimiza el tiempo y minimiza errores en la manipulación de datos.
+
+Este paquete de R representa un avance en la gestión y control de enfermedades transmitidas por vectores. No solo refuerza la comprensión del riesgo entomológico mediante el cálculo y visualización de índices de Estegomía, sino que establece una base sólida para el desarrollo de herramientas más avanzadas en el futuro. Al automatizar procesos, mejorar la precisión de los análisis y proporcionar visualizaciones robustas, este proyecto impacta positivamente en la toma de decisiones y, en última instancia, en la salud pública del estado de Sonora.

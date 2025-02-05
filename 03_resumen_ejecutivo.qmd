@@ -1,0 +1,3 @@
+# Resumen ejecutivo
+
+{{< include intro.qmd >}}

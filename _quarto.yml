@@ -1,0 +1,78 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Estimación de riesgo entomológico con georreferenciación en Hermosillo, Sonora, México"
+  author: "Javier Edgar Verdugo Molina"
+  date: "2025/01/27"
+#
+#  cover-image: cover.jpg
+#  favicon: cover.jpg
+  site-url: https://github.com/JavierKiller/Tesis.git #https://javierkiller.github.io/Tesis/
+  repo-url: https://github.com/JavierKiller/Tesis.git
+  repo-branch: main
+  repo-actions: [edit, issue]
+  reader-mode: true
+  comments:
+    hypothesis:
+      theme: classic
+  page-footer:
+    left: |
+      Esta tesis ha sido escrita por Edgar Javier Verdugo Molina
+      y dirigida por Saúl Díaz Infante Velasco, en cumplimiento
+      para obtener el grado de Maestro en Ciencia de Datos.
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
+  
+  chapters:
+     #- Agradecimientos.qmd
+     - index.qmd
+     - 02_reporte_de_logros.qmd
+     - 03_resumen_ejecutivo.qmd
+      #- intro.qmd
+     - 04_reporte_tecnico.qmd
+     #- Marco_teorico.qmd
+     #- paquete_de_R_stegomia.qmd
+     # - Conclusiones.qmd
+     - referencia.qmd
+
+
+bibliography: references.bib
+#csl: nature.csl
+
+
+format:
+   #latex:
+    # documentclass: report
+     #classoption: [twocolumn, landscape]
+     #lof: true
+     #lot: true
+   html:
+    theme:
+      light: flatly
+      dark: darkly
+  #pdf:
+   #  documentclass: scrbook
+   # toc: true
+   #  toc-depth: 2
+   # toc-title: Contents
+   #  number-sections: true
+   #   colorlinks: true
+    #cite-method: biblatex
+editor: visual
+
+
+#source: project
+#quarto-pub:
+#  - id: "qpa_yxruFpN2RyUyiqLBDGzlYgxn3K0XFUgxV0qX8QVS3wWEvRZLM10JrDs0USXjeDKv"
+#    url: "https://javier-verdugo.quarto.pub/tesis_qmd"
+
+#qpa_yxruFpN2RyUyiqLBDGzlYgxn3K0XFUgxV0qX8QVS3wWEvRZLM10JrDs0USXjeDKv
+
+
+#url  https://javier-verdugo.quarto.pub/tesis_qmd/
+
+#quarto render index.qmd --to pdf
+
+#quarto publish quarto-pub

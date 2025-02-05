@@ -1,0 +1,41 @@
+{
+  "index.qmd": {
+    "index.html": "8fd6db5d"
+  },
+  "intro.qmd": {
+    "intro.html": "bee3234f"
+  },
+  "prelimilares.qmd": {
+    "prelimilares.html": "46238bf3"
+  },
+  "limpieza_de_datos.qmd": {
+    "limpieza_de_datos.html": "cabe5ac4"
+  },
+  "references.qmd": {
+    "references.html": "b6e71ff1"
+  },
+  "paquete_de_R_stegomia.qmd": {
+    "paquete_de_R_stegomia.html": "62831071"
+  },
+  "preliminares.qmd": {
+    "preliminares.html": "2ab9ca9d"
+  },
+  "referencia.qmd": {
+    "referencia.html": "0c192581"
+  },
+  "obtencion_datos.qmd": {
+    "obtencion_datos.html": "2353a97a"
+  },
+  "Marco_teorico.qmd": {
+    "Marco_teorico.html": "19221da6"
+  },
+  "02_reporte_de_logros.qmd": {
+    "02_reporte_de_logros.html": "1845b099"
+  },
+  "03_resumen_ejecutivo.qmd": {
+    "03_resumen_ejecutivo.html": "6194e27e"
+  },
+  "04_reporte_tecnico.qmd": {
+    "04_reporte_tecnico.html": "1135c8ea"
+  }
+}

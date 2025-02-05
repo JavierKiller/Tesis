@@ -1,0 +1,23 @@
+# Descripción de logros
+
+El Programa Estatal de Vigilancia Entomológica y Control Integral de Enfermedades Transmitidas por Vector requiere mejorar el análisis de datos de Estudios Entomológicos (EE) para una toma de decisiones más efectiva. Actualmente el análisis es realizado en hojas de cálculo, lo que resulta ineficiente, complejo de adaptar a cambios y con visualizaciones geográficas limitadas.
+
+## Descripción del trabajo
+
+El objetivo del proyecto es crear un paquete de R para automatizar el cálculo de índices de riesgo entomológico de EE (Índice de Casa "HI", Índice de Contenedor "CI" e Índice de Breteau "BI"). Además, generar visualizaciones geográficas para una mejor comprensión del riesgo y facilitar la toma de decisiones.
+
+Repositorio [https://github.com/JavierKiller/rStegomyia](https://github.com/JavierKiller/rStegomyia)
+
+Pagina web del paquete de R [https://javierkiller.github.io/rStegomyia/](https://javierkiller.github.io/rStegomyia/)
+
+El paquete de R incluye funciones para cargar y limpiar datos, calcular los índices de estegomía (HI, CI y BI) según diferentes criterios de filtrado por tiempo y/o área, y generar mapas tanto estáticos como interactivos que facilitan el análisis y la visualización.
+
+## Logros
+
+El paquete de R desarrolló automatiza el cálculo de índices para el Programa Estatal de Vigilancia Entomológica y Control Integral de Enfermedades Transmitidas por Vector. Esta herramienta reduce el tiempo necesario para el análisis y minimiza los errores humanos, transformando un proceso manual basado en hojas de cálculo en un flujo de trabajo automatizado y reproducible.
+
+Además, el paquete permite analizar el riesgo entomológico por tipo de estudio, localidad sector, semana epidemiológica, y/o Fecha de inicio, brindando una comprensión más detallada de la dinámica de las poblaciones de vectores y el impacto de las intervenciones.
+
+La información procesada y las visualizaciones geográficas permiten una toma de decisiones más informada y oportuna sobre las estrategias de control y prevención. Se facilita la identificación de zonas de alto riesgo y la priorización de recursos.
+
+Se generan mapas estáticos e interactivos que representan espacialmente el riesgo, superando las limitaciones de la plataforma actual. Esto facilita la comunicación de la información a diferentes audiencias.

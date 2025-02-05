@@ -1,0 +1,151 @@
+## Marco teorico
+
+### Vigilancia Epidemiológica y Entomológica del Dengue
+
+Las enfermedades transmitidas por vectores (ETV), son padecimientos en los que un artrópodo (mosquitos, chinches, garrapatas, etc.) actúa como agente infeccioso. A este tipo de artrópodos se le denomina “vector” (@gobmx2023). Este vector actúa como hospedero y/o transmisor de la enfermedad, durante su ciclo de vida tienen diferentes hospederos periodo en el cual adquiere la enfermedad y puede transmitirla a hospederos vertebrados como los humanos (@gobmx2023). Algunos ejemplos de este tipo de enfermedades son: paludismo, dengue, leishmaniasis, oncocercosis, tripanosomiasis, rickettsiosis, fiebre del oeste del Nilo, fiebre chikungunya, erliquiosis, anaplasmosis y otras arbovirosis (@Braks2003; @Kamgang2013; @gobmx2023).
+
+Las ETV son un problema de salud pública en México, se estima que donde se localiza la mayor parte de centros agrícolas, ganaderos, industriales, pesqueros, petroleros y turísticos, es decir; en cerca del 60 % del territorio nacional, se tienen condiciones ambientales que favorecen su transmisión ( @Braks2003; @gobmx2023). Entre ellas, el dengue representa una grave amenaza, con brotes recurrentes en diversas regiones del país (@Braks2003; @gobmx2023). Para prevenir y controlar eficazmente las enfermedades antes mencionadas, en México existen los programas de vigilancia entomológica y control integral de enfermedades transmitidas por vectores a nivel federal y estatal (@Braks2003; @gobmx2023).
+
+#### Vigilancia Epidemiológica:
+
+La vigilancia epidemiológica del dengue comprende recopilar, analizar y difundir sistemáticamente información sobre la enfermedad. Sus objetivos incluyen la detección temprana de brotes, la medición de la carga de la enfermedad, el seguimiento de las tendencias, la evaluación del impacto social y económico (@Bowman2014; @Weetman2018; @SouthEastAsia2011; @Organization2016; @gobmx2023). Asimismo ayuda en la asignación de recursos, planificación de acciones preventivas y de contención. Por ello, la vigilancia epidemiológica es esencial para el control y la gestión eficaz contra la enfermedad ( @Bowman2014; @Weetman2018; @SouthEastAsia2011; @Organization2016; @gobmx2023).
+
+#### Índices Estegomía
+
+Para evaluar la presencia y densidad de los mosquitos *Aedes*, los programas estatales de prevención y control del dengue utilizan los llamados índices de estegomía. Estos índices cuantifican el riesgo entomológico con respecto a criaderos potenciales y criaderos habitados por larvas o pupas del mosquito *Aedes* a través del muestreo en campo. El muestreo debe ser uniforme en el área de estudio y la unidad de muestreo básica es la casa o localidad (@Garjito2020; @gobmx2023). Al muestrear, el objetivo es observar sistemáticamente contenedores de almacenamiento de agua (@TunLin1996; @Kamgang2010; @Kamgang2013; @Bowman2014; @Quintero2015;@SouthEastAsia2011; @Organization2016; @Garjito2020; @Tedjou2020). Los contenedores se examinan para detectar la presencia de larvas y pupas de mosquitos (@Garjito2020).
+
+La Organización Mundial de la Salud (OMS) (@SouthEastAsia2011; @Organization2016; @Tedjou2020) recomienda el uso de los índices estegomía para evaluar la presencia y la densidad de criaderos de mosquitos en las comunidades (@Organization2016). Los índices utilizados son el índice de casa positiva (HI), el índice de contenedor positivo y el índice de Breteau (@Organization2016). En el estado de Sonora el "Programa de Acción Específico de Enfermedades Transmitidas por Vector" (PAE-ETV) usa estos índices para ayudar a determinar las acciones que mitigan el riesgo entomológico (@Vigilanciaentomologica2019). A continuación, se presentan los índices de estegomía empleados por el PAE-ETV (@Vigilanciaentomologica2019; @Tedjou2020).
+
+##### Índice de casa positiva (HI) {.unnumbered}
+
+El índice de casa positiva (HI) es definido como la proporción de casas infestadas con larvas o pupas. La OMS ( @SouthEastAsia2011; @Praptowibowo2015; @Organization2016; @Tedjou2020; @Tomia2022) recomienda usar la siguiente expresión para su cálculo (@Quintero2015; @Praptowibowo2015; @Garjito2020; @Tedjou2020; @Tomia2022).
+
+$$         
+  HI = \frac{
+   \text{Número de casas infestadas}
+  }{
+    \text{Número de casas inspeccionadas}
+  } \times 100
+$$ {#eq-hi-index}
+
+En Sonora el PAE-ETV utiliza este índice HI para monitorear la infestación de casas; además, permite evaluar la presencia, y estimar la distribución del mosquito (@Quintero2015; @Garjito2020; @Tedjou2020). Este índice considera a las casas como unidad de observación, no toma en cuenta la cantidad de contenedores positivos ni la productividad de esos contenedores (@Quintero2015; @Garjito2020).
+
+El índice de casa positiva se ha utilizado ampliamente para monitorear los niveles de infestación, pero no toma en cuenta la cantidad de contenedores positivos ni la productividad de esos contenedores (@Garjito2020; @Tedjou2020; @Tomia2022).
+
+Dentro de un área determinada, el cálculo de este índice asume la misma probabilidad de transmisión del virus. De esta manera, si calculamos el índice HI en una muestra de un sector se puede inferir para todo el sector (@Garjito2020; @Tedjou2020). La OMS considera el riesgo entomológico en emergencia cuando al menos uno de los índices de estegomía es igual o mayor a 5 (@SouthEastAsia2011; @Organization2016; @Garjito2020; @Tedjou2020).
+
+##### Índice de contenedor positivo (CI) {.unnumbered}
+
+El índice de contenedor positivo (CI) se define como la proporción de contenedores con presencia de larvas o pupas de mosquito en relación con todos los contenedores que tienen agua (@SouthEastAsia2011; @Praptowibowo2015; @Organization2016; @Garjito2020; @Tedjou2020). A continuación, se muestra la siguiente expresión para su cálculo (@SouthEastAsia2011; @Praptowibowo2015; @Organization2016; @Garjito2020; @Tedjou2020; @Tomia2022).
+
+$$         
+  CI = \frac{
+   \text{Número de contenedores infestados}
+  }{
+    \text{Número de contenedores inspeccionados}
+  } \times 100
+$$ {#eq-ci-index}
+
+El índice CI es útil para conocer la proporción de contenedores con agua que tienen larvas o pupas de mosquito, y permite estimar el riesgo en el área estudiada (@SouthEastAsia2011; @Organization2016; @Garjito2020; @Tedjou2020). Este índice ayuda a evaluar la densidad de criaderos en la zona, proporcionando información para identificar las áreas con mayor riesgo de infestación (@Quintero2015; @Praptowibowo2015; @Garjito2020; @Tedjou2020; @Tomia2022). Por lo tanto, en caso de que el índice CI sea bajo y el HI sea alto, se infiere que el riesgo es mínimo por cada casa muestreada, pero está muy disperso entre las casas del área muestreada; lo cual sugiere realizar acciones de control y prevención en toda el área de estudio (sector, colonia o localidad) (@SouthEastAsia2011; @Organization2016; @Garjito2020; @Tedjou2020).
+
+El clasificar el tipo de contenedor permite elegir la estrategia específica para las condiciones particulares del área de estudio, como puede ser aplicar control físico para mantener bajo control o eliminar criaderos potenciales, dependiendo de la cantidad y el tamaño se puede solo tirar a la basura u organizar campañas de eliminación o descacharre de ser necesario (@Organization2016). Otra estrategia sería el uso de químicos larvicidas como apoyo al control físico (@Kamgang2010; @SouthEastAsia2011; @Organization2016; @Garjito2020; @Tedjou2020).
+
+En caso de que índice CI sea alto y el HI sea bajo, esto indica que el riesgo está concentrado en pocas casas infestadas, por lo que se pueden enfocar las acciones en esa zona específica (@Quintero2015; @Praptowibowo2015; @Garjito2020; @Tedjou2020; @Tomia2022). Los índices son complementarios y se necesitan ambos para identificar correctamente el riesgo entomológico y tomar medidas efectivas para combatirlo (@TunLin1996; @SouthEastAsia2011; @Organization2016; @Garjito2020; @Tedjou2020).
+
+##### Índice de Breteau (BI) {.unnumbered}
+
+El índice Breteau (BI) describe número de recipientes positivos por cada 100 casas inspeccionadas (@TunLin1996; @Bowman2014; @Praptowibowo2015; @Quintero2015; @Garjito2020; @Tedjou2020; @Tomia2022).
+
+$$         
+  BI = \frac{
+   \text{Número de contenedores infestados}
+  }{
+    \text{Número de casas inspeccionadas}
+  } \times 100
+$$ {#eq-bi-index}
+
+El BI proporciona una relación directa entre la cantidad de recipientes positivos y el número de casas inspeccionadas. Cuando los contenedores positivos tienden a ser uno por casa positiva el BI tendrá un valor igual al HI (@TunLin1996; @Bowman2014; @Quintero2015; @Garjito2020; @Tedjou2020; @Tomia2022). En el caso que el BI salga alto pese a que los otros dos índices sean bajos, indica una alta concentración de recipientes por casa aunque la proporción de casas positivas sea baja y la proporción de recipientes positivos también sea baja, en este caso el riesgo es que más recipientes (@SouthEastAsia2011; @Organization2016; @Garjito2020; @Tedjou2020; @Tomia2022). El BI evalúa la distribución espacial de los criaderos y sirve para orientar las acciones de control y prevención. Sin embargo, no refleja la productividad de los contenedores, lo que limita su capacidad para proporcionar una evaluación completa del riesgo de transmisión del virus. Estos datos son particularmente relevantes para centrar esfuerzos para la gestión o eliminación de los hábitats más comunes y para la orientación de mensajes educativos en apoyo de iniciativas comunitarias (@SouthEastAsia2011; @Bowman2014; @Praptowibowo2015; @Organization2016; @Garjito2020; @Tedjou2020). La vigilancia epidemiológica y entomológica ayudan a dirigir las acciones necesarias para la prevención y control de ETVs como el dengue. Mediante la recopilación sistemática de datos sobre la enfermedad y los vectores, se pueden tomar decisiones informadas para mitigar su impacto y proteger a la población (@TunLin1996; @SouthEastAsia2011; @Praptowibowo2015; @Organization2016; @Garjito2020; @Tedjou2020). Los índices de estegomía son indispensables para la vigilancia y el control del dengue proporcionando información valiosa para evaluar el riesgo de transmisión, y permiten la toma de decisiones estratégicas para priorizar acciones y monitorear la efectividad de las intervenciones, para prevenir la transmisión del dengue y proteger la salud de la población (@SouthEastAsia2011; @Organization2016; @Garjito2020; @Tedjou2020).
+
+### Programa de Acción Específico de Enfermedades Transmitidas por Vector
+
+El Programa de Acción Específico de Enfermedades Transmitidas por Vector"(PAE- ETV), realiza diversas actividades para la prevención y control de ETV (@Vigilanciaentomologica2019). Estas actividades se pueden dividir en dos grupos: las de vigilancia entomológicas y las de prevención y control (@Vigilanciaentomologica2019). El objetivo de todas estas acciones es prevenir y controlar brotes de enfermedades transmitidas por vectores (@Vigilanciaentomologica2019). Las ETV son aquellas causadas por un agente vivo, como los insectos que ingieren microorganismos de la sangre que consumen de otros seres vivos y después los transmiten mediante sus picaduras (@Vigilanciaentomologica2019).
+
+| Actividades | Abreviatura | Descripción |
+|------------------------|------------------------|------------------------|
+| Vigilancia entomológica con ovitrampas | OV | Las ovitrampas son contenedores con atributos ideales para que los mosquitos utilicen como criadero; de esta forma, el personal del Programa de Vectores se encarga de revisar, colectar y contabilizar los huevecillos de los mosquitos y realizar una comparación de la densidad. |
+| Estudios entomológicos en fase larval y pupal | EE | Búsqueda de criaderos con larvas o pupas de mosquitos dentro de las casas de una zona a trabajar, se realiza una búsqueda previa a las acciones de control de ETV y una búsqueda posterior cuando el área ya ha sido intervenida por las acciones de prevención y control. |
+| Estudios Entomovirológicos | EEV | Colecta de mosquitos adultos dentro de viviendas para identificar las especies transmisoras de ETV, asimismo para el análisis por PCR de los mosquitos buscando encontrar ETV circulando en las áreas antes de que se reporten casos en personas. |
+
+: Actividades de prevención y control {#tbl-tabla-1.1} {.striped .hover}
+
+| Actividades | Abreviatura | Descripción |
+|------------------------|------------------------|------------------------|
+| Control Larvario | CL | Búsqueda intencionada de criaderos potenciales de mosquitos de un área determinada para la aplicación de medidas de prevención, en todas las casas que permitan la entrada. |
+| Rociado a caso probable | RaC | Aplicación intradomiciliar de insecticida con efecto residual en casas dentro de un cerco de 5 a 9 casas en respuesta a un caso probable o confirmado a Dengue, Zika o Chicungunya. |
+| Rociado intradomiciliario | RI | Aplicación intradomiciliar de insecticida con efecto residual en casas de un área que se considere de riesgo entomológico y susceptible a contagios de ETV. |
+| Nebulización espacial | N | Aplicación de rociado espacial de insecticidas sin efecto residual en un área con alto riesgo entomológico o en respuesta a casos probables o confirmados. |
+
+: Actividades de prevención y control {#tbl-tabla-1.2} {.striped .hover}
+
+#### Plataforma de Vigilancia Entomológica y Control Integral del Vector
+
+El Programa de Acción Específico de Enfermedades Transmitidas por Vector (PAE-ETV) registra diariamente en una plataforma todas las actividades mencionadas en las tablas @ref(tbl-tabla-1.1) y Tabla @ref(tbl-tabla-1.2) (@Vigilanciaentomologica2019). Esto permite al programa estatal descargar y analizar los datos. Para la actividad de EE, el programa calcula los resultados por área trabajada y requiere el reporte semanal con base en la ubicación, como se observa en la Tabla @ref(tbl-tabla-1.2) y el sistema integral de vigilancia de vectores (@Vigilanciaentomologica2019). La actividad de EE implica el muestreo de formas inmaduras de los mosquitos (las larvas y las pupas) en lugar de capturar huevos o mosquitos adultos (@Vigilanciaentomologica2019). Se realizan búsquedas sistemáticas para detectar recipientes que contengan agua e inspeccionar la presencia de larvas y pupas de mosquitos (@Vigilanciaentomologica2019). Esta actividad evalúa una muestra antes (encuesta) y después (verificación) de las actividades de control integral para determinar el riesgo entomológico en un área trabajada (sectores o localidades) y si es necesario reforzar las acciones de control, ver Tabla @ref(tbl-tabla-1.1) y Tabla @ref(tbl-tabla-1.2). (@Vigilanciaentomologica2019; @Garjito2020).
+
+![Figura 1.1: Plataforma de Vigilancia Entomológica y Control Integral del Vector](imagenes/plataforma.gif)
+
+#### Datos Geográficos
+
+El PAE-ETV proporcionó shapefiles del estado de Sonora, los cuales se encuentran divididos en sectores (@Vigilanciaentomologica2019). Con base en ellos se hace la distribución de todas las actividades del PAE-ETV y se usan para poder georreferenciar las áreas intervenidas, determinar el riesgo entomológico y planear las actividades de control y prevención que se requieran (@Vigilanciaentomologica2019). Los shapefiles pueden usarse para crear mapas con los indices de estegomía específicos en tiempo y lugar según se necesite (@Vigilanciaentomologica2019).
+
+### Creación de un paquete de R con desarrollo basado en pruebas (TDD)
+
+Para determinar el riesgo entomológico delimitado por área geográfica (desde un sector específico o hasta una localidad o municipio) (@rpkgs2023). Es necesario obtener la información de la vigilancia entomología de forma periódica y comprender la estructura de la base de datos de EE (@rpkgs2023). Por lo cual, se implementaron herramientas de ciencias de datos para aplicar una metodología en la gestión y análisis de esta información (@rpkgs2023). Esto implicaría calcular los índices de estegomía para un lugar y un tiempo determinado, para la toma de decisiones (@rpkgs2023). Este trabajo presenta el desarrollo de un paquete R para el análisis de los datos de vigilancia entomológica del dengue, siguiendo una metodología de desarrollo basado en pruebas (TDD) (@rpkgs2023). El paquete combina la potencia de Tidyverse para la manipulación de datos, Devtools para la gestión de Testthat para la escritura de pruebas unitarias (@rpkgs2023).
+
+El desarrollo de software en R ha evolucionado hacia metodologías más sofistica- das y automatizadas (@rpkgs2023). El uso combinado de frameworks como Tidyverse, Devtools y Testthat permite crear un trabajo con desarrollo basado en pruebas (TDD) para proyectos de R (ver Figura 1.1) (@rpkgs2023). Tidyverse es una colección de paquetes R enfocados en la manipulación de datos, análisis estadístico y visualización (@rpkgs2023). Su filosofía funcional facilita la escritura de código modular y limpio (@rpkgs2023). Devtools es un paquete R indispensable para la gestión de proyectos, creación de paquetes y publicación en CRAN. Automatiza tareas comunes como la ejecución de pruebas y generación de documentación. Testthat es un paquete R crucial para implementar TDD (@rpkgs2023). Permite escribir pruebas unitarias que garantizan el funcionamiento correcto de cada función o módulo del código (@rpkgs2023).
+
+![figura1.2](imagenes/TDD.jpg)
+
+Figura 1.2: Diagrama del Paradigma TDD
+
+- El desarrollo basado en pruebas (TDD): es una metodología de creación de software en la que se escriben pruebas antes de escribir el código (@rpkgs2023). Esto ayuda a garantizar que el código esté bien escrito y cumpla con los requisitos (@rpkgs2023).
+
+- Escribir pruebas: se definen pruebas unitarias para cada función utilizando Testthat (@rpkgs2023). 
+
+- Desarrollar código: se implementa el código que satisface las pruebas escritas (@rpkgs2023). 
+
+- Ejecutar pruebas: se ejecutan las pruebas para verificar el funcionamiento del código (@rpkgs2023). 
+
+- Refactorizar: se mejora la legibilidad y mantenimiento del código sin alterar su funcionalidad (@rpkgs2023). 
+
+- Repetir: se repiten los pasos anteriores hasta completar el desarrollo (@rpkgs2023). 
+
+Combinar Tidyverse, Devtools y Testthat en un flujo de trabajo TDD es una práctica recomendada para el desarrollo de software en R (@rpkgs2023). Esta metodología permite tener menos errores, crear un código más robusto, legible y eficiente, facilitando la colaboración y el mantenimiento a largo plazo de los proyectos (@rpkgs2023).
+
+El paquete de R del presente trabajo constituye una valiosa herramienta para la vigilancia entomológica del dengue (@rpkgs2023). Su uso puede contribuir a mejorar la toma de decisiones en materia de prevención y control de la enfermedad, fortaleciendo las estrategias de Salud Pública en México (@rpkgs2023).
+
+### Limpieza de datos
+
+Los datos para calcular índices de riesgo entomológico son de las actividades de vigilancia entomológica con ovitrampas y estudios entomológicos para fase larvaria y pupal (@Vigilanciaentomologica2019). Estos datos se descargan de la plataforma en archivos .txt y requieren de un tratamiento previo, que incluye un código particular para leer el tipo de archivo, selección de variables de interés, cambiar el formato de los títulos de las variables y cambios en los tipos de datos, antes de poder realizar cálculos y análisis (@rpkgs2023; @Vigilanciaentomologica2019).
+
+La base de datos de EE se descarga en un archivo .txt de la Plataforma “Vigilancia Entomológica y Control Integral del Vector”, tiene 121 variables de las cuales consideramos 16 de interés, tres de ellas se dividen en dos por lo que resultan en 19 variables de interés (@Vigilanciaentomologica2019).En general el titulo de las variables tiene un problema para leerse por ello se cambió los espacios entre palabras por un guion bajo (\_) en los títulos de cada variable (@Vigilanciaentomologica2019). Este formato requiere ajustes para leerlo en el programa de R (@Vigilanciaentomologica2019). Además, hay inconsistencia en el tipo de dato de algunas variables de interés por lo que se crea una función para cambiarlas al formato adecuado que le corresponde a cada una para poder trabajar con dicha información (@Vigilanciaentomologica2019).
+
+
+#### Variable para determinar el tipo de Estudio Entomológico {.unnumbered}
+
+"Tipo de Estudio" es el nombre de una variable que divide todos los datos de esta actividad en 2 tipos, el primer tipo es “encuesta” que significa que los datos se tomaron antes de realizar acciones de “control larvario (CL)” en el área donde se hizo el estudio entomológico (@Vigilanciaentomologica2019). El segundo tipo es “verificación” que indica que los datos de ese EE se hicieron después de realizar acciones de CL (@Vigilanciaentomologica2019). De tal manera se pueden comparar los datos antes y después en un área determinada y evaluar si las intervenciones del PAE-ETV han mitigado el riesgo entomológico o si es necesario realizar más acciones (@Vigilanciaentomologica2019).
+
+#### Variable para la georreferenciación}
+
+Las variables para la georreferenciación son las que se utilizan para determinar un lugar en el espacio donde se calcula un riesgo entomológico (@Vigilanciaentomologica2019; @moraga2023) a estas variables se les asignó el formato de caracter para su uso adecuado (@moraga2023). Se escogieron estas cuatro variables: "Jurisdicción", "Municipio", "Localidad" y "Sector"; cada una es parte de la anterior. El estado de Sonora está dividido en seis jurisdicciones (ahora llamados distritos) y cada jurisdicción tiene determinados municipios que la conforman; a su vez cada municipio tiene localidades que pueden ser desde ciudades a ejidos. En el caso de sectores cuanto más grande la localidad como una ciudad puede tener hasta cientos de sectores que la conformen, pero cuando son lugares pequeños como un pueblo o ejido tienen pocos sectores (de uno a 15). Los sectores corresponden a un formato de división geográfica que usa el Instituto Nacional Electoral (INE) (@Vigilanciaentomologica2019; @moraga2023). Las primeras tres variables antes mencionadas tienen un número antes del nombre que corresponde al lugar (qué número de jurisdicción es, qué número de municipio es y qué número de localidad es, respectivamente); para evitar confusiones en la selección de datos geográficos separamos este número del resto del nombre y lo colocamos en variables independientes, estas tres nuevas variables son: "Clave_Jurisdiccion", "Clave_Municipio" y "Clave_Localidad" (@Vigilanciaentomologica2019; @moraga2023).
+
+#### Variables de intervalos de tiempo {.unnumbered}
+
+Se seleccionaron dos variables para elegir el tiempo, la primera es "Fecha de Inicio" la cual viene en formato de caracter y se cambia a Tipo de dato POSIX para poder usarla como fecha. Esta es la fecha en que se realiza el EE y se puede comparar entre lugares o en el mismo lugar en diferentes tiempos o en tiempos cercanos en el mismo lugar con diferente tipo de estudio. La segunda variable es Semana Epidemiológica la cual se usa de forma preestablecida, en Secretaría de Salud y el PAE-ETV reporta usando como unidad de tiempo el número de semana epidemiológica (@Vigilanciaentomologica2019).
+
+#### Variables para índices de estegomía {.unnumbered}
+
+Para calcular los índices de estegomía se utilizan seis variables (o las primeras cuatro solamente). Las variables de Casas Revisadas y Casas Positivas se utilizan para calcular el HI. El Total de Recipientes con Agua, y Total de Recipientes Positivos se utilizan para calcular el CI. El Total de Recipientes Positivos a Pupas, y No. Total, de Pupas en Recipientes, se utilizan para calcular índices de contenedor positiva a pupa, porcentaje de pupas en los contenedores positivos (@Vigilanciaentomologica2019). Otras variables de interés son la tipología de recipiente positivo que consiste en clasificar en tres grupos diferentes a los contenedores según la estrategia de control que se ejecuta en dicho contenedor (@Vigilanciaentomologica2019). Estas tres variables son: Recipientes Tratables, Recipientes Controlables y Recipientes Eliminables. Cuando se determina un riesgo entomológico alto se realiza un análisis de la tipología de contenedor para escoger la estrategia a emplear (@Vigilanciaentomologica2019).
+
+#### Georreferenciación de las actividades {.unnumbered}
+
+Para poder georrefereciar los indicadores de EE en un mapa se utilizan los datos de Sector para definir en un mapa del estado de Sonora, esto se realiza con un archivo shapefile que contiene todos los sectores del estado de Sonora, este archivo fue proporcionado por el PAE-ETV (@Vigilanciaentomologica2019; @moraga2023).

@@ -1,0 +1,9 @@
+source: book
+quarto-pub:
+  - id: "qpa_VC6OurLnb3Xcs4lCeUMXpt9bX9NSnxPHfuThnencoBAutfFxsnVJjUQQm0mVzQaB"
+    url: "https://javier-verdugo.quarto.pub/Tesis/"
+    
+
+# en el archivo _quarto.yml poner # a toda la seccion de pdf: 
+
+#quarto publish
