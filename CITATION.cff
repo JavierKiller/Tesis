@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Verdugo Molina"
+  given-names: "Javier Edgar"
+  title: "Estimación de riesgo entomológico con georreferenciación en Hermosillo, Sonora, México"
+version: 2.0.4
+date-released: 2025-02-11
+url: "https://github.com/github-linguist/linguist"
+type: Tesis
+repository-code:"https://github.com/JavierKiller/Tesis"
+keywords:
+      - Stegomyia
+      - House Index 
+      - Container Index
+      - Breteau Index
