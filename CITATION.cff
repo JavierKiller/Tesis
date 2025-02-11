@@ -1,12 +1,12 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
+message: "El objetivo del proyecto es crear un paquete de R para automatizar el cálculo de índices de riesgo entomológico de EE (Índice de Casa “HI”, Índice de Contenedor “CI” e Índice de Breteau “BI”If you use this software, please cite it as below."
 authors:
 - family-names: "Verdugo Molina"
   given-names: "Javier Edgar"
   title: "Estimación de riesgo entomológico con georreferenciación en Hermosillo, Sonora, México"
 version: 2.0.4
 date-released: 2025-02-11
-url: "https://github.com/github-linguist/linguist"
+url: "https://javierkiller.github.io/Tesis/"
 type: Tesis
 repository-code:"https://github.com/JavierKiller/Tesis"
 keywords:
