@@ -149,5 +149,3 @@ Para calcular los índices de estegomía se utilizan seis variables (o las prime
 
 Para poder georreferenciar los indicadores de EE en un mapa se utilizan los datos de Sector para definir en un mapa del estado de Sonora, esto se realiza con un archivo shapefile que contiene todos los sectores del estado de Sonora, este archivo fue proporcionado por el PAE-ETV (@Vigilanciaentomologica2019; @moraga2023).
 
-
-
