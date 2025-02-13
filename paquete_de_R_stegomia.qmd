@@ -6,7 +6,7 @@
 
 La función load_raw_data está diseñada para cargar datos sin procesar de un archivo .txt relacionado con un estudio de entomología realizado en la plataforma "Vigilancia Entomológica y Control Integral del Vector". La función recibe el parámetro denominado "path" (cadena de texto): la cual es ruta del archivo .txt que contiene los datos sin procesar. Se espera que siga el formato utilizado en la actividad "Estudios entomológicos en fase larval y pupal" de la plataforma "Vigilancia Entomológica".
 
-Asimismo el parámetro "col_name" (vector de cadenas de texto, opcional): los nombres de las variables que se desean seleccionar del archivo. Si no se especifica este parámetro, la función selecciona por defecto las siguientes variables:
+Asimismo, el parámetro "col_name" (vector de cadenas de texto, opcional): los nombres de las variables que se desean seleccionar del archivo. Si no se especifica este parámetro, la función selecciona por defecto las siguientes variables:
 
 "Tipo de Estudio", "Jurisdiccion", "Localidad", "Sector", "Fecha de Inicio", "Semana Epidemiologica", "Casas Revisadas", "Casas Positivas", "Total de Recipientes con Agua" y "Total de Recipientes Positivos"
 
@@ -14,9 +14,9 @@ Una vez que se agregan estos parámetros la función carga el archivo para leerl
 
 Luego continúa a verificar si la columna "Tipo de Estudio" está presente en el archivo. Si no lo está, o si el archivo está vacío, la función marca un error para evitar que se procesen datos incorrectos.
 
-Con la selecciona variables, si se proporciono el parámetro col_name, se usaran solo esas las variables; se limpiara los nombres de columna reemplazando todos los espacios en blanco de los nombres de las columnas con guiones bajos (\_) para garantizar la compatibilidad con el formato estándar de datos de R.
+Con la selecciona variables, si se proporcionó el parámetro col_name, se usarán solo esas las variables; se limpiará los nombres de columna reemplazando todos los espacios en blanco de los nombres de las columnas con guiones bajos (\_) para garantizar la compatibilidad con el formato estándar de datos de R.
 
-Si se selecionaron las columnas "Localidad", "Municipio", o "Jurisdiccion" en el archivo, cada una se separa en dos columnas nuevas. Por ejemplo, si "Localidad" tiene un formato que convina numeros con nombres, por lo que se dividirá en "Clave_Localidad" y "Localidad" (eliminando el espacio y reemplazándolo con un guion bajo).
+Si se seleccionaron las columnas "Localidad", "Municipio", o "Jurisdiccion" en el archivo, cada una se separa en dos columnas nuevas. Por ejemplo, si "Localidad" tiene un formato que combina números con nombres, por lo que se dividirá en "Clave_Localidad" y "Localidad" (eliminando el espacio y reemplazándolo con un guion bajo).
 
 Al final se devuelve un marco de datos de R (data.frame) que contiene las variables seleccionadas y limpiadas del archivo .txt. Este marco de datos está listo para ser utilizado en sus análisis posteriores.
 
@@ -47,9 +47,9 @@ col_name (lista): Una lista que define los tipos de datos y niveles de factor (e
 
 Tipo_de_Estudio = col_factor(levels = c( "Encuesta", "Verificacion")), Clave_Jurisdiccion = col_factor(levels = as.character(c( 2601, 2602, 2603, 2604, 2605, 2606))), Jurisdiccion = col_factor(levels = c( "Hermosillo", "Caborca", "Cananea", "Cajeme", "Navojoa", "San_Luis_Río_Colorado" )), Clave_Municipio = col_factor(levels = as.character(1:72)), Municipio = col_factor(), Clave_Localidad = col_factor(), Localidad = col_factor(), Sector = col_factor(levels = as.character(1:2000)), Fecha_de_Inicio = col_date(format = "%d/%m/%Y"), Semana_Epidemiologica = col_factor(levels = as.character(1:53)), Casas_Revisadas = col_double(), Casas_Positivas = col_double(), Total_de_Recipientes_con_Agua = col_double(), Total_de_Recipientes_Positivos = col_double()
 
-Una vez agregados los parametros la función guarda el dataframe sin procesar en un archivo .csv temporal utilizando la ruta especificada en path_out o la ruta predeterminada. Continua en lee el archivo con tipos de datos: Luego, la función lee el archivo .csv recién creado utilizando read_csv. Aquí, se especifica el parámetro col_types como la lista col_name para establecer los tipos de datos correctos para cada columna.
+Una vez agregados los parámetros la función guarda el dataframe sin procesar en un archivo .csv temporal utilizando la ruta especificada en path_out o la ruta predeterminada. Continua en leer el archivo con tipos de datos: Luego, la función lee el archivo .csv recién creado utilizando read_csv. Aquí, se especifica el parámetro col_types como la lista col_name para establecer los tipos de datos correctos para cada columna.
 
-Asigna el dataframe limpio(con los tipos de datos corregidos) a una nueva variable temporal para reemplaza el dataframe original de forma que ahora df contiene el marco de datos limpios, y los guarda en el mismo archivo .csv original utilizando la ruta especificada o la ruta predeterminada.
+Asigna el dataframe limpio (con los tipos de datos corregidos) a una nueva variable temporal para reemplaza el dataframe original de forma que ahora df contiene el marco de datos limpios, y los guarda en el mismo archivo .csv original utilizando la ruta especificada o la ruta predeterminada.
 
 Al final devuelve el dataframe de datos limpios, que también se ha guardado en el archivo .csv.
 
@@ -64,19 +64,19 @@ df_clean <- clean_raw_data(dfsm, path_out = path_of_example)
 
 <!-- head(df_clean) -->
 
-### Funciones para calcula los índices Stegomyia
+### Funciones para calcula los índices Estegomía
 
-Las siguientes funciones se utilizan para calcula los índices Stegomyia (índice de Contenedores - CI, índice de Casas - HI, e índice de Breteau - BI) siempre para un tipo de estudio y una o dos variables para filtrar y especificar los datos segun la intension del analisis. Es necesario que el dataframe se proporcione haya sido previamente procesado por las funciones load_raw_data y clean_raw_data
+Las siguientes funciones se utilizan para calcula los índices Estegomía(índice de Contenedores - CI, índice de Casas - HI, e índice de Breteau - BI) siempre para un tipo de estudio y una o dos variables para filtrar y especificar los datos según la intensión del análisis. Es necesario que el dataframe se proporcione haya sido previamente procesado por las funciones load_raw_data y clean_raw_data
 
 #### Función get_stegomyia_indices_by_type_of_study_and_ew
 
-Esta función calcula los índices Stegomyia para un tipo de estudio y una semana epidemiológica específicos.
+Esta función calcula los índices Estegomíapara un tipo de estudio y una semana epidemiológica específicos.
 
 Recibe el parámetro df: dataframe que contiene la información limpia procesada por la función clean_raw_data. st (cadena de texto, opcional): El tipo de estudio seleccionado. Debe ser "Encuesta" o "Verificacion" (por defecto, "Verificacion"). ew (cadena de texto, opcional): El número de la semana epidemiológica utilizada para calcular los índices (por defecto, "1").
 
-Una vez agregados los parametros se filtra los datos del dataframe original (df) para seleccionar solo las filas que cumplen con las siguientes condiciones: - Tipo_de_Estudio: El tipo de estudio debe coincidir con el valor especificado en st. - Semana_Epidemiologica: La semana epidemiológica debe coincidir con el valor especificado en ew. - Comprueba la validez de los datos: Si el filtrado no tiene datos en ninguna fila se genera un error para indicar que no hay datos disponibles con los filtros aplicados. Si hay filas con valor 0 en la columna Casas_Revisadas, se genera una advertencia y filtra esas filas para evitar un error al dividir entre cero.
+Una vez agregados los parámetros se filtra los datos del dataframe original (df) para seleccionar solo las filas que cumplen con las siguientes condiciones: - Tipo_de_Estudio: El tipo de estudio debe coincidir con el valor especificado en st. - Semana_Epidemiologica: La semana epidemiológica debe coincidir con el valor especificado en ew. - Comprueba la validez de los datos: Si el filtrado no tiene datos en ninguna fila se genera un error para indicar que no hay datos disponibles con los filtros aplicados. Si hay filas con valor 0 en la columna Casas_Revisadas, se genera una advertencia y filtra esas filas para evitar un error al dividir entre cero.
 
-Si los datos son validos se Calcula los índices Stegomyia selecciona las columnas necesarias: Sector, Casas_Revisadas, Casas_Positivas, Total_de_Recipientes_con_Agua, Total_de_Recipientes_Positivos. Agrupa los datos por sector para calcula: - El Índice de Casa (HI) - El Índice de Contenedor (CI) - El Índice Breteau (BI)
+Si los datos son válidos se Calcula los índices Estegomíaselecciona las columnas necesarias: Sector, Casas_Revisadas, Casas_Positivas, Total_de_Recipientes_con_Agua, Total_de_Recipientes_Positivos. Agrupa los datos por sector para calcula: - El Índice de Casa (HI) - El Índice de Contenedor (CI) - El Índice Breteau (BI)
 
 Utilizando las fórmulas especificadas; además se agrega nuevas columnas que representan el estado de riesgo en el valor del índice calculado (index_status_HI, index_status_CI, index_status_BI). Estas columnas utilizan un sistema de clasificación basado en rangos predefinidos (Óptimo, Bueno, Alarma, Emergencia).
 
@@ -93,13 +93,13 @@ df_stegomyia_sd <- get_stegomyia_indices_by_type_of_study_and_ew(df_indx,
 
 #### Función get_stegomyia_indices_by_type_of_study_and_loc
 
-Esta función calcula los índices Stegomyia para un tipo de estudio y una Localidad específicas del estado de Sonora,
+Esta función calcula los índices Estegomíapara un tipo de estudio y una Localidad específicas del estado de Sonora,
 
-Recibe el parámetro df: dataframe que contiene la información limpia procesada por la función clean_raw_data. st (cadena de texto, opcional): El tipo de estudio seleccionado. Debe ser "Encuesta" o "Verificacion" (por defecto, "Verificacion"). El parámetro var (cadena de texto): Indica la Localidad ha utilizar para calcular los índices. El parámetro path_out (cadena de texto, opcional): es la ruta y nombre del archivo .csv donde se guardarán los datos de los indices Estegomíacalculados y sus correspondientes estatus. El valor predeterminado es "data-raw/statusindicesloc.csv".
+Recibe el parámetro df: dataframe que contiene la información limpia procesada por la función clean_raw_data. st (cadena de texto, opcional): El tipo de estudio seleccionado. Debe ser "Encuesta" o "Verificacion" (por defecto, "Verificacion"). El parámetro var (cadena de texto): Indica la Localidad a utilizar para calcular los índices. El parámetro path_out (cadena de texto, opcional): es la ruta y nombre del archivo .csv donde se guardarán los datos de los índices Estegomíacalculados y sus correspondientes estatus. El valor predeterminado es "data-raw/statusindicesloc.csv".
 
-Una vez agregados los parametros se filtra los datos del dataframe original (df) para seleccionar solo las filas que cumplen con las siguientes condiciones: - Tipo_de_Estudio: El tipo de estudio debe coincidir con el valor especificado en st. - Localidad: La Localidad o localidades debe coincidir con el valor especificado en var. - Comprueba la validez de los datos: Si el filtrado no tiene datos en ninguna fila se genera un error para indicar que no hay datos disponibles con los filtros aplicados. Si hay filas con valor 0 en la columna Casas_Revisadas, se genera una advertencia y filtra esas filas para evitar un error al dividir entre cero.
+Una vez agregados los parámetros se filtra los datos del dataframe original (df) para seleccionar solo las filas que cumplen con las siguientes condiciones: - Tipo_de_Estudio: El tipo de estudio debe coincidir con el valor especificado en st. - Localidad: La Localidad o localidades debe coincidir con el valor especificado en var. - Comprueba la validez de los datos: Si el filtrado no tiene datos en ninguna fila se genera un error para indicar que no hay datos disponibles con los filtros aplicados. Si hay filas con valor 0 en la columna Casas_Revisadas, se genera una advertencia y filtra esas filas para evitar un error al dividir entre cero.
 
-Si los datos son validos se Calcula los índices Estegomíaselecciona las columnas necesarias: Localidad, Casas_Revisadas, Casas_Positivas, Total_de_Recipientes_con_Agua, Total_de_Recipientes_Positivos. Agrupa los datos por sector para calcula: - El Índice de Casa (HI) - El Índice de Contenedor (CI) - El Índice Breteau (BI)
+Si los datos son válidos se Calcula los índices Estegomíaselecciona las columnas necesarias: Localidad, Casas_Revisadas, Casas_Positivas, Total_de_Recipientes_con_Agua, Total_de_Recipientes_Positivos. Agrupa los datos por sector para calcula: - El Índice de Casa (HI) - El Índice de Contenedor (CI) - El Índice Breteau (BI)
 
 Utilizando las fórmulas especificadas; además se agrega nuevas columnas que representan el estado de riesgo en del valor del índice calculado (index_status_HI, index_status_CI, index_status_BI). Estas columnas utilizan un sistema de clasificación basado en rangos predefinidos (Óptimo, Bueno, Alarma, Emergencia).
 
@@ -126,13 +126,13 @@ df_stegomyia_l <- get_stegomyia_indices_by_type_of_study_and_loc(df_indx,
 
 #### Función get_stegomyia_indices_by_type_of_study_and_star_date
 
-Esta función calcula los índices Estegomíapara un tipo de estudio y un o mas Fechas específicas.
+Esta función calcula los índices Estegomía para un tipo de estudio y un o más Fechas específicas.
 
 Recibe el parámetro df: dataframe que contiene la información limpia procesada por la función clean_raw_data. st (cadena de texto, opcional): El tipo de estudio seleccionado. Debe ser "Encuesta" o "Verificacion" (por defecto, "Verificacion"). date (cadena de texto, opcional): Es la fecha utilizada para calcular los índices (por defecto, "2021/01/07").
 
-Una vez agregados los parametros se filtra los datos del dataframe original (df) para seleccionar solo las filas que cumplen con las siguientes condiciones: - Tipo_de_Estudio: El tipo de estudio debe coincidir con el valor especificado en st. - Fecha_de_Inicio: La fecha debe coincidir con el valor especificado en date. - Comprueba la validez de los datos: Si el filtrado no tiene datos en ninguna fila se genera un error para indicar que no hay datos disponibles con los filtros aplicados. Si hay filas con valor 0 en la columna Casas_Revisadas, se genera una advertencia y filtra esas filas para evitar un error al dividir entre cero.
+Una vez agregados los parámetros se filtra los datos del dataframe original (df) para seleccionar solo las filas que cumplen con las siguientes condiciones: - Tipo_de_Estudio: El tipo de estudio debe coincidir con el valor especificado en st. - Fecha_de_Inicio: La fecha debe coincidir con el valor especificado en date. - Comprueba la validez de los datos: Si el filtrado no tiene datos en ninguna fila se genera un error para indicar que no hay datos disponibles con los filtros aplicados. Si hay filas con valor 0 en la columna Casas_Revisadas, se genera una advertencia y filtra esas filas para evitar un error al dividir entre cero.
 
-Si los datos son validos se calcula los índices Estegomíaselecciona las columnas necesarias: Sector, Casas_Revisadas, Casas_Positivas, Total_de_Recipientes_con_Agua, Total_de_Recipientes_Positivos. Agrupa los datos por sector para calcula: - El Índice de Casa (HI) - El Índice de Contenedor (CI) - El Índice Breteau (BI)
+Si los datos son válidos se calcula los índices Estegomía seleccionando las columnas necesarias: Sector, Casas_Revisadas, Casas_Positivas, Total_de_Recipientes_con_Agua, Total_de_Recipientes_Positivos. Agrupa los datos por sector para calcula: - El Índice de Casa (HI) - El Índice de Contenedor (CI) - El Índice Breteau (BI)
 
 Utilizando las fórmulas especificadas; además se agregan nuevas columnas que representan el estado de riesgo en el valor del índice calculado (index_status_HI, index_status_CI, index_status_BI). Estas columnas utilizan un sistema de clasificación basado en rangos predefinidos (Óptimo, Bueno, Alarma, Emergencia).
 
@@ -149,17 +149,17 @@ df_stegomyia_sd <- get_stegomyia_indices_by_type_of_study_and_star_date(df_indx,
 
 #### Función get_stegomyia_indices_by_type_of_study_and_geo_is
 
-Esta función calcula los índices Estegomíapara un tipo de estudio y uno o más Sectores específicas del estado de Sonora,
+Esta función calcula los índices Estegomía para un tipo de estudio y uno o más Sectores específicas del estado de Sonora,
 
-Recibe el parámetro df: dataframe que contiene la información limpia procesada por la función clean_raw_data. st (cadena de texto, opcional): El tipo de estudio seleccionado. Debe ser "Encuesta" o "Verificacion" (por defecto, "Verificacion"). El parámetro var (el numero del sector): Indica el o los sectores ha utilizar para calcular los índices. El parámetro path_out (cadena de texto, opcional): es la ruta y nombre del archivo .csv donde se guardarán los datos de los indices Estegomíacalculados y sus correspondientes estatus. El valor predeterminado es "data-raw/statusindicesector.csv".
+Recibe el parámetro df: dataframe que contiene la información limpia procesada por la función clean_raw_data. st (cadena de texto, opcional): El tipo de estudio seleccionado. Debe ser "Encuesta" o "Verificacion" (por defecto, "Verificacion"). El parámetro var (el numero del sector): Indica el o los sectores a utilizar para calcular los índices. El parámetro path_out (cadena de texto, opcional): es la ruta y nombre del archivo .csv donde se guardarán los datos de los índices Estegomía calculados y sus correspondientes estatus. El valor predeterminado es "data-raw/statusindicesector.csv".
 
-Una vez agregados los parametros se filtra los datos del dataframe original (df) para seleccionar solo las filas que cumplen con las siguientes condiciones: - Tipo_de_Estudio: El tipo de estudio debe coincidir con el valor especificado en st. - Sector: Los sectores deben coincidir con el valor especificado en var. - Comprueba la validez de los datos: Si el filtrado no tiene datos en ninguna fila se genera un error para indicar que no hay datos disponibles con los filtros aplicados. Si hay filas con valor 0 en la columna Casas_Revisadas, se genera una advertencia y filtra esas filas para evitar un error al dividir entre cero.
+Una vez agregados los parámetros se filtra los datos del dataframe original (df) para seleccionar solo las filas que cumplen con las siguientes condiciones: - Tipo_de_Estudio: El tipo de estudio debe coincidir con el valor especificado en st. - Sector: Los sectores deben coincidir con el valor especificado en var. - Comprueba la validez de los datos: Si el filtrado no tiene datos en ninguna fila se genera un error para indicar que no hay datos disponibles con los filtros aplicados. Si hay filas con valor 0 en la columna Casas_Revisadas, se genera una advertencia y filtra esas filas para evitar un error al dividir entre cero.
 
-Si los datos son válidos se calcula los índices Estegomíaselecciona las columnas necesarias: Sector, Casas_Revisadas, Casas_Positivas, Total_de_Recipientes_con_Agua, Total_de_Recipientes_Positivos. Agrupa los datos por sector para calcular: - El Índice de Casa (HI) - El Índice de Contenedor (CI) - El Índice Breteau (BI)
+Si los datos son válidos se calcula los índices Estegomía seleccionado las columnas necesarias: Sector, Casas_Revisadas, Casas_Positivas, Total_de_Recipientes_con_Agua, Total_de_Recipientes_Positivos. Agrupa los datos por sector para calcular: - El Índice de Casa (HI) - El Índice de Contenedor (CI) - El Índice Breteau (BI)
 
-Utilizando las fórmulas especificadas; Ademas se agrega nuevas columnas que representan el estado de riesgo en del valor del índice calculado (index_status_HI, index_status_CI, index_status_BI). Estas columnas utilizan un sistema de clasificación basado en rangos predefinidos (Óptimo, Bueno, Alarma, Emergencia).
+Utilizando las fórmulas especificadas; Además se agrega nuevas columnas que representan el estado de riesgo en del valor del índice calculado (index_status_HI, index_status_CI, index_status_BI). Estas columnas utilizan un sistema de clasificación basado en rangos predefinidos (Óptimo, Bueno, Alarma, Emergencia).
 
-Al final devuelve el dataframe con los datos calculados, Ademas se ha guardado en el archivo .csv.
+Al final devuelve el dataframe con los datos calculados, Además se ha guardado en el archivo .csv.
 
 Ejemplo de uso:
 
@@ -181,13 +181,13 @@ df_stegomyia <- get_stegomyia_indices_by_type_of_study_and_geo_is(df_indx,
 
 #### Función get_stegomyia_indices_by_type_of_study_star_date_and_geo
 
-Esta función calcula los índices Stegomyia para un tipo de estudio, una o más fechas y uno o más Sectores específicas del estado de Sonora,
+Esta función calcula los índices Estegomía para un tipo de estudio, una o más fechas y uno o más Sectores específicas del estado de Sonora,
 
-Recibe el parámetro df: dataframe que contiene la información limpia procesada por la función clean_raw_data. st (cadena de texto, opcional): El tipo de estudio seleccionado. Debe ser "Encuesta" o "Verificacion" (por defecto, "Verificacion"). El parámetro var (el numero del sector): Indica el o los sectores ha utilizar para calcular los índices. El parámetro date (cadena de texto, opcional): Es la fecha utilizada para calcular los índices (por defecto, "2021/01/07"). - Fecha_de_Inicio: La fecha debe coincidir con el valor especificado en date. Una vez agregados los parametros se filtra los datos del dataframe original (df) para seleccionar solo las filas que cumplen con las siguientes condiciones: - Tipo_de_Estudio: El tipo de estudio debe coincidir con el valor especificado en st. - Sector: Los sectores deben coincidir con el valor especificado en var.
+Recibe el parámetro df: dataframe que contiene la información limpia procesada por la función clean_raw_data. st (cadena de texto, opcional): El tipo de estudio seleccionado. Debe ser "Encuesta" o "Verificacion" (por defecto, "Verificacion"). El parámetro var (el número del sector): Indica el o los sectores a utilizar para calcular los índices. El parámetro date (cadena de texto, opcional): Es la fecha utilizada para calcular los índices (por defecto, "2021/01/07"). - Fecha_de_Inicio: La fecha debe coincidir con el valor especificado en date. Una vez agregados los parámetros se filtra los datos del dataframe original (df) para seleccionar solo las filas que cumplen con las siguientes condiciones: - Tipo_de_Estudio: El tipo de estudio debe coincidir con el valor especificado en st. - Sector: Los sectores deben coincidir con el valor especificado en var.
 
-Comprueba la validez de los datos: Si el filtrado no tiene datos en ninguna fila se genera un error para indicar que no hay datos disponibles con los filtros aplicados. Si hay filas con valor 0 en la columna Casas_Revisadas, se genera una advertencia y filtra esas filas para evitar un errror al divisiones entre cero.
+Comprueba la validez de los datos: Si el filtrado no tiene datos en ninguna fila se genera un error para indicar que no hay datos disponibles con los filtros aplicados. Si hay filas con valor 0 en la columna Casas_Revisadas, se genera una advertencia y filtra esas filas para evitar un error al dividir entre cero.
 
-Si los datos son validos se Calcula los índices Stegomyia selecciona las columnas necesarias: Sector, Casas_Revisadas, Casas_Positivas, Total_de_Recipientes_con_Agua, Total_de_Recipientes_Positivos. Agrupa los datos por sector para calcula: - El Índice de Casa (HI) - El Índice de Contenedor (CI) - El Índice Breteau (BI)
+Si los datos son válidos se Calcula los índices Estegomía seleccionando las columnas necesarias: Sector, Casas_Revisadas, Casas_Positivas, Total_de_Recipientes_con_Agua, Total_de_Recipientes_Positivos. Agrupa los datos por sector para calcula: - El Índice de Casa (HI) - El Índice de Contenedor (CI) - El Índice Breteau (BI)
 
 Utilizando las fórmulas especificadas; además se agrega nuevas columnas que representan el estado de riesgo en el valor del índice calculado (index_status_HI, index_status_CI, index_status_BI). Estas columnas utilizan un sistema de clasificación basado en rangos predefinidos (Óptimo, Bueno, Alarma, Emergencia).
 
@@ -206,13 +206,13 @@ df_tc <-get_typology_container_by_type_of_study_and_location(df_typ,
 
 Cuando ya se ha identificado una localidad en emergencia por riego entomológico se necesita saber qué tipo de criaderos son los que están presentes para tomar las medidas apropiadas. Esta función proporciona una herramienta útil para entender la distribución de los tipos de recipientes positivos en diferentes localidades y, por lo tanto, para diseñar estrategias más efectivas de control de vectores
 
-Recibe el parámetro df: dataframe que contiene la información limpia procesada por la función clean_raw_data. st (cadena de texto, opcional): El tipo de estudio seleccionado. Debe ser "Encuesta" o "Verificacion" (por defecto, "Verificacion"). El parámetro var (cadena de texto): Indica la Localidad ha utilizar para calcular el porcentaje de los contenedores positivos.
+Recibe el parámetro df: dataframe que contiene la información limpia procesada por la función clean_raw_data. st (cadena de texto, opcional): El tipo de estudio seleccionado. Debe ser "Encuesta" o "Verificacion" (por defecto, "Verificacion"). El parámetro var (cadena de texto): Indica la Localidad a utilizar para calcular el porcentaje de los contenedores positivos.
 
-Una vez agregados los parametros se filtra los datos del dataframe original (df) para seleccionar solo las filas que cumplen con las siguientes condiciones: - Tipo_de_Estudio: El tipo de estudio debe coincidir con el valor especificado en st. - Localidad: La Localidad o localidades debe coincidir con el valor especificado en var. - Comprueba la validez de los datos: Si el filtrado no tiene datos en ninguna fila se genera un error para indicar que no hay datos disponibles con los filtros aplicados. Si hay filas con valor 0 en la columna Casas_Revisadas, se genera una advertencia y filtra esas filas para evitar un errror al divisiones entre cero.
+Una vez agregados los parámetros se filtra los datos del dataframe original (df) para seleccionar solo las filas que cumplen con las siguientes condiciones: - Tipo_de_Estudio: El tipo de estudio debe coincidir con el valor especificado en st. - Localidad: La Localidad o localidades debe coincidir con el valor especificado en var. - Comprueba la validez de los datos: Si el filtrado no tiene datos en ninguna fila se genera un error para indicar que no hay datos disponibles con los filtros aplicados. Si hay filas con valor 0 en la columna Casas_Revisadas, se genera una advertencia y filtra esas filas para evitar un error al dividir entre cero.
 
 Calcula los porcentajes: Para cada localidad, se calculan los porcentajes de recipientes positivos de cada tipología (tratables, controlables y eliminables) respecto al total de recipientes positivos.
 
-Los resultados se agrupan por localidad y se presentan en un nuevo data frame.
+Los resultados se agrupan por localidad y se presentan en un nuevo dataframe.
 
 Ejemplo de uso:
 
@@ -229,15 +229,15 @@ df_tc <-get_typology_container_by_type_of_study_and_location(df_typ,
 
 ### Función get_maps_stegomyia_indices
 
-Esta función genera mapas geográficos de los índices Stegomyia calculados para diferentes sectores, lo que permite visualizar espacialmente los índices Stegomyia, lo que facilita la identificación de áreas de riesgo y la toma de decisiones informadas para el control de vectores.
+Esta función genera mapas geográficos de los índices Estegomía calculados para diferentes sectores, lo que permite visualizar espacialmente los índices Estegomía, lo que facilita la identificación de áreas de riesgo y la toma de decisiones informadas para el control de vectores.
 
-Recibe el parámetro df: Un data frame que contiene información sobre los sectores y sus respectivos índices Stegomyia (HI, CI, BI).
+Recibe el parámetro df: Un dataframe que contiene información sobre los sectores y sus respectivos índices Estegomía (HI, CI, BI).
 
-Además utiliza por defaul objetos shapefile para generar los mapas: - m1 es un shapefile que contiene información geográfica sobre los sectores de Hermosillo (geometría de los sectores). - m0 es un shapefile que contiene información geográfica sobre los límites de Hermosillo (geometría de la ciudad).
+Además, utiliza por default objetos shapefile para generar los mapas: - m1 es un shapefile que contiene información geográfica sobre los sectores de Hermosillo (geometría de los sectores). - m0 es un shapefile que contiene información geográfica sobre los límites de Hermosillo (geometría de la ciudad).
 
-Una vez que resive el dataframe, verifica los datos entrada contenga las columnas necesarias para calcular los índices Estegomía.
+Una vez que resibe el dataframe, verifica los datos entrada contenga las columnas necesarias para calcular los índices Estegomía.
 
-Prepara el shapefile que se transforma el shapefile m1 a un sistema de coordenadas adecuado (EPSG:4326) y se renombra la columna "SECCION" a "Sector" para poder unirlo con el data frame.
+Prepara el shapefile que se transforma el shapefile m1 a un sistema de coordenadas adecuado (EPSG:4326) y se renombra la columna "SECCION" a "Sector" para poder unirlo con el dataframe.
 
 Une el dataframe con el shapefile la columna "Sector" como clave.
 
@@ -265,13 +265,13 @@ Sindx_maps
 
 Esta función genera una visualización más interactiva y completa de los índices Estegomía, permitiendo al usuario explorar los datos de manera más flexible y comparar los diferentes índices en un mismo mapa de los índices Estegomía calculados para diferentes sectores.
 
-Recibe el parámetro df: Un data frame que contiene información sobre los sectores y sus respectivos índices Estegomía (HI, CI, BI).
+Recibe el parámetro df: Un dataframe que contiene información sobre los sectores y sus respectivos índices Estegomía (HI, CI, BI).
 
-Además utiliza por defaul objetos shapefile para generar los mapas: - m1 es un shapefile que contiene información geográfica sobre los sectores de Hermosillo (geometría de los sectores). - m0 es un shapefile que contiene información geográfica sobre los límites de Hermosillo (geometría de la ciudad).
+Además, utiliza por default objetos shapefile para generar los mapas: - m1 es un shapefile que contiene información geográfica sobre los sectores de Hermosillo (geometría de los sectores). - m0 es un shapefile que contiene información geográfica sobre los límites de Hermosillo (geometría de la ciudad).
 
 Una vez que recibe el dataframe, verifica que los datos de entrada contengan las columnas necesarias para calcular los índices Estegomía.
 
-Prepara el shapefile que se transforma el shapefile m1 a un sistema de coordenadas adecuado (EPSG:4326) y se renombra la columna "SECCION" a "Sector" para poder unirlo con el data frame.
+Prepara el shapefile que se transforma el shapefile m1 a un sistema de coordenadas adecuado (EPSG:4326) y se renombra la columna "SECCION" a "Sector" para poder unirlo con el dataframe.
 
 Une el dataframe con el shapefile la columna "Sector" como clave.
 

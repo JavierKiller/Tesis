@@ -6,9 +6,9 @@ El Programa Estatal de Vigilancia Entomológica y Control Integral de Enfermedad
 
 El objetivo del proyecto es crear un paquete de R para automatizar el cálculo de índices de riesgo entomológico de EE (Índice de Casa "HI", Índice de Contenedor "CI" e Índice de Breteau "BI"). Además, generar visualizaciones geográficas para una mejor comprensión del riesgo y facilitar la toma de decisiones.
 
-Repositorio [https://github.com/JavierKiller/rStegomyia](https://github.com/JavierKiller/rStegomyia)
+Repositorio <https://github.com/JavierKiller/rStegomyia>
 
-Pagina web del paquete de R [https://javierkiller.github.io/rStegomyia/](https://javierkiller.github.io/rStegomyia/)
+Página web del paquete de R <https://javierkiller.github.io/rStegomyia/>
 
 El paquete de R incluye funciones para cargar y limpiar datos, calcular los índices de estegomía (HI, CI y BI) según diferentes criterios de filtrado por tiempo y/o área, y generar mapas tanto estáticos como interactivos que facilitan el análisis y la visualización.
 

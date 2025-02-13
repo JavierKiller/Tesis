@@ -12,7 +12,7 @@ book:
   site-url: https://github.com/JavierKiller/Tesis.git #https://javierkiller.github.io/Tesis/
   repo-url: https://github.com/JavierKiller/Tesis.git
   repo-branch: main
-  repo-actions: [edit, issue]
+  #repo-actions: [edit, issue]
   reader-mode: true
   comments:
     hypothesis:

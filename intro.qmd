@@ -1,8 +1,8 @@
 ## Introduccion
 
-El análisis de riesgo entomológico se realiza actualmente mediante hojas de cálculo, lo que resulta en una gestión ineficiente de la información. La estructura de la base de datos es compleja teniedo 121 variables, dificulta la adaptación de consultas a pequeñas modificaciones, lo que complica aún más. La visualización georreferenciada de la plataforma es limitada e inestable, lo que afecta negativamente la interpretación de los datos. sistema integral de monitoreo de vectores
+El análisis de riesgo entomológico se realiza actualmente mediante hojas de cálculo, lo que resulta en una gestión ineficiente de la información. La estructura de la base de datos es compleja teniendo 121 variables, dificulta la adaptación de consultas a pequeñas modificaciones, lo que complica aún más. La visualización georreferenciada de la plataforma es limitada e inestable, lo que afecta negativamente la interpretación de los datos. sistema integral de monitoreo de vectores
 
-[http://geosis.mx/aplicaciones/sismv/](http://geosis.mx/aplicaciones/sismv/)
+<http://geosis.mx/aplicaciones/sismv/>
 
 Los índices de estegomía se calculan de la siguiente manera:
 
@@ -30,11 +30,9 @@ Los índices de estegomía se calculan de la siguiente manera:
       } \times 100
     $$ {#eq-bi-index}
 
-Una vez que se ha determinado riesgo entomológico en una localidad se analizan los tipos de criaderos y su proporción entre sí, para tomar las medidas pertinentes según sea el caso, considerando si la mayor proporción de los criaderos son tratables se requiere reforzar con campañas de promoción a la salud y actividades integrales de control de vectores, en el caso de mayor proporción de criaderos controlables se requieren refuerzos de promoción a la salud, y en caso de que la mayor proporción sean criaderos eliminables se requieren refuerzos de campañas de promoción a la salud. En estos dos últimos casos dependiendo de las particularidades se puede requerir también una campaña de descacharre por parte de la localidad o el municipio. 
+Una vez que se ha determinado riesgo entomológico en una localidad se analizan los tipos de criaderos y su proporción entre sí, para tomar las medidas pertinentes según sea el caso, considerando si la mayor proporción de los criaderos son tratables se requiere reforzar con campañas de promoción a la salud y actividades integrales de control de vectores, en el caso de mayor proporción de criaderos controlables se requieren refuerzos de promoción a la salud, y en caso de que la mayor proporción sean criaderos eliminables se requieren refuerzos de campañas de promoción a la salud. En estos dos últimos casos dependiendo de las particularidades se puede requerir también una campaña de descacharre por parte de la localidad o el municipio.
 
 La base de datos de estudio entomológico es un archivo .txt de la “Plataforma Vigilancia Entomológica y Control Integral del Vector”. Este formato requiere ajustes para leerlo en el programa de R. Además, hay inconsistencia en el tipo de dato de algunas variables de interés por lo que se crea una función para cambiarlas al formato adecuado que le corresponde a cada una para poder trabajar con los datos
-
-
 
 ## Funciones para limpieza y formato de los datos de entrada {.unnumbered}
 
@@ -69,7 +67,6 @@ similar a las funciones anteriores, pero se centra en sectores específicos y ti
 ### get_stegomyia_indices_by_type_of_study_star_date_and_geo() {.unnumbered}
 
 calcula índices estegomía combinando tipo de estudio, fechas y sectores.
-
 
 ### get_typology_container_by_type_of_study_and_location() {.unnumbered}
 

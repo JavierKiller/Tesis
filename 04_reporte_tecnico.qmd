@@ -1,7 +1,5 @@
 # Reporte tecnico
 
-<!-- {{< include intro.qmd >}} -->
-
 {{< include Marco_teorico.qmd >}}
 
 {{< include paquete_de_R_stegomia.qmd >}}
