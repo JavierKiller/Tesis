@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.547">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Estimación de riesgo entomológico con georreferenciación en Hermosillo, Sonora, México - 3&nbsp; Reporte tecnico</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./referencia.html" rel="next">
+<link href="./03_resumen_ejecutivo.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "classic"
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04_reporte_tecnico.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Reporte tecnico</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Estimación de riesgo entomológico con georreferenciación en Hermosillo, Sonora, México</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/JavierKiller/Tesis.git" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Resumen</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_reporte_de_logros.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Descripción de logros</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_resumen_ejecutivo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Resumen ejecutivo</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_reporte_tecnico.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Reporte tecnico</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./referencia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Referencias</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#marco-teórico" id="toc-marco-teórico" class="nav-link active" data-scroll-target="#marco-teórico"><span class="header-section-number">3.1</span> Marco teórico</a>
+  <ul class="collapse">
+  <li><a href="#vigilancia-epidemiológica-y-entomológica-del-dengue" id="toc-vigilancia-epidemiológica-y-entomológica-del-dengue" class="nav-link" data-scroll-target="#vigilancia-epidemiológica-y-entomológica-del-dengue"><span class="header-section-number">3.1.1</span> Vigilancia Epidemiológica y Entomológica del Dengue</a></li>
+  <li><a href="#programa-de-acción-específico-de-enfermedades-transmitidas-por-vector" id="toc-programa-de-acción-específico-de-enfermedades-transmitidas-por-vector" class="nav-link" data-scroll-target="#programa-de-acción-específico-de-enfermedades-transmitidas-por-vector"><span class="header-section-number">3.1.2</span> Programa de Acción Específico de Enfermedades Transmitidas por Vector</a></li>
+  <li><a href="#creación-de-un-paquete-de-r-con-desarrollo-basado-en-pruebas-tdd" id="toc-creación-de-un-paquete-de-r-con-desarrollo-basado-en-pruebas-tdd" class="nav-link" data-scroll-target="#creación-de-un-paquete-de-r-con-desarrollo-basado-en-pruebas-tdd"><span class="header-section-number">3.1.3</span> Creación de un paquete de R con desarrollo basado en pruebas (TDD)</a></li>
+  <li><a href="#limpieza-de-datos" id="toc-limpieza-de-datos" class="nav-link" data-scroll-target="#limpieza-de-datos"><span class="header-section-number">3.1.4</span> Limpieza de datos</a></li>
+  </ul></li>
+  <li><a href="#paquete-de-r-para-cálculos-de-índices-estegomía" id="toc-paquete-de-r-para-cálculos-de-índices-estegomía" class="nav-link" data-scroll-target="#paquete-de-r-para-cálculos-de-índices-estegomía"><span class="header-section-number">3.2</span> Paquete de R para cálculos de índices Estegomía</a>
+  <ul class="collapse">
+  <li><a href="#funciones-para-limpieza-y-formato-de-las-bases-de-datos" id="toc-funciones-para-limpieza-y-formato-de-las-bases-de-datos" class="nav-link" data-scroll-target="#funciones-para-limpieza-y-formato-de-las-bases-de-datos"><span class="header-section-number">3.2.1</span> Funciones para limpieza y formato de las bases de datos</a></li>
+  <li><a href="#funciones-para-calcula-los-índices-estegomía" id="toc-funciones-para-calcula-los-índices-estegomía" class="nav-link" data-scroll-target="#funciones-para-calcula-los-índices-estegomía"><span class="header-section-number">3.2.2</span> Funciones para calcula los índices Estegomía</a></li>
+  <li><a href="#funciones-para-hacer-mapas" id="toc-funciones-para-hacer-mapas" class="nav-link" data-scroll-target="#funciones-para-hacer-mapas"><span class="header-section-number">3.2.3</span> Funciones para hacer mapas</a></li>
+  </ul></li>
+  <li><a href="#conclusiones" id="toc-conclusiones" class="nav-link" data-scroll-target="#conclusiones"><span class="header-section-number">3.3</span> Conclusiones</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Reporte tecnico</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="marco-teórico" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="marco-teórico"><span class="header-section-number">3.1</span> Marco teórico</h2>
+<section id="vigilancia-epidemiológica-y-entomológica-del-dengue" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="vigilancia-epidemiológica-y-entomológica-del-dengue"><span class="header-section-number">3.1.1</span> Vigilancia Epidemiológica y Entomológica del Dengue</h3>
+<p>Las enfermedades transmitidas por vectores (ETV), son padecimientos en los que un artrópodo (mosquitos, chinches, garrapatas, etc.) actúa como agente infeccioso. A este tipo de artrópodos se le denomina “vector” <span class="citation" data-cites="gobmx2023">(<a href="referencia.html#ref-gobmx2023" role="doc-biblioref">CENAPRECE 2024</a>)</span>. Este vector actúa como hospedero y/o transmisor de la enfermedad, durante su ciclo de vida tienen diferentes hospederos periodo en el cual adquiere la enfermedad y puede transmitirla a hospederos vertebrados como los humanos <span class="citation" data-cites="gobmx2023">(<a href="referencia.html#ref-gobmx2023" role="doc-biblioref">CENAPRECE 2024</a>)</span>. Algunos ejemplos de este tipo de enfermedades son: paludismo, dengue, leishmaniasis, oncocercosis, tripanosomiasis, rickettsiosis, fiebre del oeste del Nilo, fiebre chikungunya, erliquiosis, anaplasmosis y otras arbovirosis <span class="citation" data-cites="Braks2003 Kamgang2013 gobmx2023">(<a href="referencia.html#ref-Braks2003" role="doc-biblioref">Braks et al. 2003</a>; <a href="referencia.html#ref-Kamgang2013" role="doc-biblioref">Basile Kamgang et al. 2013</a>; <a href="referencia.html#ref-gobmx2023" role="doc-biblioref">CENAPRECE 2024</a>)</span>.</p>
+<p>Las ETV son un problema de salud pública en México, se estima que donde se localiza la mayor parte de centros agrícolas, ganaderos, industriales, pesqueros, petroleros y turísticos, es decir; en cerca del 60 % del territorio nacional, se tienen condiciones ambientales que favorecen su transmisión <span class="citation" data-cites="Braks2003 gobmx2023">(<a href="referencia.html#ref-Braks2003" role="doc-biblioref">Braks et al. 2003</a>; <a href="referencia.html#ref-gobmx2023" role="doc-biblioref">CENAPRECE 2024</a>)</span>. Entre ellas, el dengue representa una grave amenaza, con brotes recurrentes en diversas regiones del país <span class="citation" data-cites="Braks2003 gobmx2023">(<a href="referencia.html#ref-Braks2003" role="doc-biblioref">Braks et al. 2003</a>; <a href="referencia.html#ref-gobmx2023" role="doc-biblioref">CENAPRECE 2024</a>)</span>. Para prevenir y controlar eficazmente las enfermedades antes mencionadas, en México existen los programas de vigilancia entomológica y control integral de enfermedades transmitidas por vectores a nivel federal y estatal <span class="citation" data-cites="Braks2003 gobmx2023">(<a href="referencia.html#ref-Braks2003" role="doc-biblioref">Braks et al. 2003</a>; <a href="referencia.html#ref-gobmx2023" role="doc-biblioref">CENAPRECE 2024</a>)</span>.</p>
+<section id="vigilancia-epidemiológica" class="level4" data-number="3.1.1.1">
+<h4 data-number="3.1.1.1" class="anchored" data-anchor-id="vigilancia-epidemiológica"><span class="header-section-number">3.1.1.1</span> Vigilancia Epidemiológica:</h4>
+<p>La vigilancia epidemiológica del dengue comprende recopilar, analizar y difundir sistemáticamente información sobre la enfermedad. Sus objetivos incluyen la detección temprana de brotes, la medición de la carga de la enfermedad, el seguimiento de las tendencias, la evaluación del impacto social y económico <span class="citation" data-cites="Bowman2014 Weetman2018 SouthEastAsia2011 Organization2016 gobmx2023">(<a href="referencia.html#ref-Bowman2014" role="doc-biblioref">Bowman, Runge-Ranzinger, and McCall 2014</a>; <a href="referencia.html#ref-Weetman2018" role="doc-biblioref">Weetman et al. 2018</a>; <a href="referencia.html#ref-SouthEastAsia2011" role="doc-biblioref">South-East Asia. 2011</a>; <a href="referencia.html#ref-Organization2016" role="doc-biblioref">Organization 2016</a>; <a href="referencia.html#ref-gobmx2023" role="doc-biblioref">CENAPRECE 2024</a>)</span>. Asimismo, ayuda en la asignación de recursos, planificación de acciones preventivas y de contención. Por ello, la vigilancia epidemiológica es esencial para el control y la gestión eficaz contra la enfermedad <span class="citation" data-cites="Bowman2014 Weetman2018 SouthEastAsia2011 Organization2016 gobmx2023">(<a href="referencia.html#ref-Bowman2014" role="doc-biblioref">Bowman, Runge-Ranzinger, and McCall 2014</a>; <a href="referencia.html#ref-Weetman2018" role="doc-biblioref">Weetman et al. 2018</a>; <a href="referencia.html#ref-SouthEastAsia2011" role="doc-biblioref">South-East Asia. 2011</a>; <a href="referencia.html#ref-Organization2016" role="doc-biblioref">Organization 2016</a>; <a href="referencia.html#ref-gobmx2023" role="doc-biblioref">CENAPRECE 2024</a>)</span>.</p>
+</section>
+<section id="índices-estegomía" class="level4" data-number="3.1.1.2">
+<h4 data-number="3.1.1.2" class="anchored" data-anchor-id="índices-estegomía"><span class="header-section-number">3.1.1.2</span> Índices Estegomía</h4>
+<p>Para evaluar la presencia y densidad de los mosquitos <em>Aedes</em>, los programas estatales de prevención y control del dengue utilizan los llamados índices de estegomía. Estos índices cuantifican el riesgo entomológico con respecto a criaderos potenciales y criaderos habitados por larvas o pupas del mosquito <em>Aedes</em> a través del muestreo en campo <span class="citation" data-cites="Garjito2020 gobmx2023">(<a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>; <a href="referencia.html#ref-gobmx2023" role="doc-biblioref">CENAPRECE 2024</a>)</span>. El muestreo debe ser uniforme en el área de estudio y la unidad de muestreo básica es la casa o localidad <span class="citation" data-cites="Garjito2020 gobmx2023">(<a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>; <a href="referencia.html#ref-gobmx2023" role="doc-biblioref">CENAPRECE 2024</a>)</span>. Al muestrear, el objetivo es observar sistemáticamente contenedores de almacenamiento de agua <span class="citation" data-cites="TunLin1996 Kamgang2010 Kamgang2013 Bowman2014 Quintero2015 SouthEastAsia2011 Organization2016 Garjito2020 Tedjou2020">(<a href="referencia.html#ref-TunLin1996" role="doc-biblioref">Tun-Lin et al. 1996</a>; <a href="referencia.html#ref-Kamgang2010" role="doc-biblioref">B. Kamgang et al. 2010</a>; <a href="referencia.html#ref-Kamgang2013" role="doc-biblioref">Basile Kamgang et al. 2013</a>; <a href="referencia.html#ref-Bowman2014" role="doc-biblioref">Bowman, Runge-Ranzinger, and McCall 2014</a>; <a href="referencia.html#ref-Quintero2015" role="doc-biblioref">Quintero et al. 2015</a>; <a href="referencia.html#ref-SouthEastAsia2011" role="doc-biblioref">South-East Asia. 2011</a>; <a href="referencia.html#ref-Organization2016" role="doc-biblioref">Organization 2016</a>; <a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>)</span>. Los contenedores se examinan para detectar la presencia de larvas y pupas de mosquitos <span class="citation" data-cites="Garjito2020">(<a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>)</span>.</p>
+<p>La Organización Mundial de la Salud (OMS) <span class="citation" data-cites="SouthEastAsia2011 Organization2016 Tedjou2020">(<a href="referencia.html#ref-SouthEastAsia2011" role="doc-biblioref">South-East Asia. 2011</a>; <a href="referencia.html#ref-Organization2016" role="doc-biblioref">Organization 2016</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>)</span> recomienda el uso de los índices estegomía para evaluar la presencia y la densidad de criaderos de mosquitos en las comunidades <span class="citation" data-cites="Organization2016">(<a href="referencia.html#ref-Organization2016" role="doc-biblioref">Organization 2016</a>)</span>. Los índices utilizados son el índice de casa positiva (HI), el índice de contenedor positivo y el índice de Breteau <span class="citation" data-cites="Organization2016">(<a href="referencia.html#ref-Organization2016" role="doc-biblioref">Organization 2016</a>)</span>. En el estado de Sonora el “Programa de Acción Específico de Enfermedades Transmitidas por Vector” (PAE-ETV) usa estos índices para ayudar a determinar las acciones que mitigan el riesgo entomológico <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>. A continuación, se presentan los índices de estegomía empleados por el PAE-ETV <span class="citation" data-cites="Vigilanciaentomologica2019 Tedjou2020">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>)</span>.</p>
+<section id="índice-de-casa-positiva-hi" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="índice-de-casa-positiva-hi">Índice de casa positiva (HI)</h5>
+<p>El índice de casa positiva (HI) es definido como la proporción de casas infestadas con larvas o pupas. La OMS <span class="citation" data-cites="SouthEastAsia2011 Praptowibowo2015 Organization2016 Tedjou2020 Tomia2022">(<a href="referencia.html#ref-SouthEastAsia2011" role="doc-biblioref">South-East Asia. 2011</a>; <a href="referencia.html#ref-Praptowibowo2015" role="doc-biblioref">Praptowibowo 2015</a>; <a href="referencia.html#ref-Organization2016" role="doc-biblioref">Organization 2016</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>; <a href="referencia.html#ref-Tomia2022" role="doc-biblioref">Tomia and Tuhatea, n.d.</a>)</span> recomienda usar la siguiente expresión para su cálculo <span class="citation" data-cites="Quintero2015 Praptowibowo2015 Garjito2020 Tedjou2020 Tomia2022">(<a href="referencia.html#ref-Quintero2015" role="doc-biblioref">Quintero et al. 2015</a>; <a href="referencia.html#ref-Praptowibowo2015" role="doc-biblioref">Praptowibowo 2015</a>; <a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>; <a href="referencia.html#ref-Tomia2022" role="doc-biblioref">Tomia and Tuhatea, n.d.</a>)</span>.</p>
+<p><span id="eq-hi-index"><span class="math display">\[         
+  HI = \frac{
+   \text{Número de casas infestadas}
+  }{
+    \text{Número de casas inspeccionadas}
+  } \times 100
+. \tag{3.1}\]</span></span></p>
+<p>En Sonora el PAE-ETV utiliza este índice HI para monitorear la infestación de casas; además, permite evaluar la presencia, y estimar la distribución del mosquito <span class="citation" data-cites="Quintero2015 Garjito2020 Tedjou2020">(<a href="referencia.html#ref-Quintero2015" role="doc-biblioref">Quintero et al. 2015</a>; <a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>)</span>. Este índice considera a las casas como unidad de observación, no toma en cuenta la cantidad de contenedores positivos ni la productividad de esos contenedores <span class="citation" data-cites="Quintero2015 Garjito2020">(<a href="referencia.html#ref-Quintero2015" role="doc-biblioref">Quintero et al. 2015</a>; <a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>)</span>.</p>
+<p>El índice de casa positiva se ha utilizado ampliamente para monitorear los niveles de infestación, pero no toma en cuenta la cantidad de contenedores positivos ni la productividad de esos contenedores <span class="citation" data-cites="Garjito2020 Tedjou2020 Tomia2022">(<a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>; <a href="referencia.html#ref-Tomia2022" role="doc-biblioref">Tomia and Tuhatea, n.d.</a>)</span>.</p>
+<p>Dentro de un área determinada, el cálculo de este índice asume la misma probabilidad de transmisión del virus. De esta manera, si calculamos el índice HI en una muestra de un sector se puede inferir para todo el sector <span class="citation" data-cites="Garjito2020 Tedjou2020">(<a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>)</span>. La OMS considera el riesgo entomológico en emergencia cuando al menos uno de los índices de estegomía es igual o mayor a 5 <span class="citation" data-cites="SouthEastAsia2011 Organization2016 Garjito2020 Tedjou2020">(<a href="referencia.html#ref-SouthEastAsia2011" role="doc-biblioref">South-East Asia. 2011</a>; <a href="referencia.html#ref-Organization2016" role="doc-biblioref">Organization 2016</a>; <a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>)</span>.</p>
+</section>
+<section id="índice-de-contenedor-positivo-ci" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="índice-de-contenedor-positivo-ci">Índice de contenedor positivo (CI)</h5>
+<p>El índice de contenedor positivo (CI) se define como la proporción de contenedores con presencia de larvas o pupas de mosquito en relación con todos los contenedores que tienen agua <span class="citation" data-cites="SouthEastAsia2011 Praptowibowo2015 Organization2016 Garjito2020 Tedjou2020">(<a href="referencia.html#ref-SouthEastAsia2011" role="doc-biblioref">South-East Asia. 2011</a>; <a href="referencia.html#ref-Praptowibowo2015" role="doc-biblioref">Praptowibowo 2015</a>; <a href="referencia.html#ref-Organization2016" role="doc-biblioref">Organization 2016</a>; <a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>)</span>. A continuación, se muestra la siguiente expresión para su cálculo <span class="citation" data-cites="SouthEastAsia2011 Praptowibowo2015 Organization2016 Garjito2020 Tedjou2020 Tomia2022">(<a href="referencia.html#ref-SouthEastAsia2011" role="doc-biblioref">South-East Asia. 2011</a>; <a href="referencia.html#ref-Praptowibowo2015" role="doc-biblioref">Praptowibowo 2015</a>; <a href="referencia.html#ref-Organization2016" role="doc-biblioref">Organization 2016</a>; <a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>; <a href="referencia.html#ref-Tomia2022" role="doc-biblioref">Tomia and Tuhatea, n.d.</a>)</span>.</p>
+<p><span id="eq-ci-index"><span class="math display">\[         
+  CI = \frac{
+   \text{Número de contenedores infestados}
+  }{
+    \text{Número de contenedores inspeccionados}
+  } \times 100
+\tag{3.2}\]</span></span></p>
+<p>El índice CI es útil para conocer la proporción de contenedores con agua que tienen larvas o pupas de mosquito, y permite estimar el riesgo en el área estudiada <span class="citation" data-cites="SouthEastAsia2011 Organization2016 Garjito2020 Tedjou2020">(<a href="referencia.html#ref-SouthEastAsia2011" role="doc-biblioref">South-East Asia. 2011</a>; <a href="referencia.html#ref-Organization2016" role="doc-biblioref">Organization 2016</a>; <a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>)</span>. Este índice ayuda a evaluar la densidad de criaderos en la zona, proporcionando información para identificar las áreas con mayor riesgo de infestación <span class="citation" data-cites="Quintero2015 Praptowibowo2015 Garjito2020 Tedjou2020 Tomia2022">(<a href="referencia.html#ref-Quintero2015" role="doc-biblioref">Quintero et al. 2015</a>; <a href="referencia.html#ref-Praptowibowo2015" role="doc-biblioref">Praptowibowo 2015</a>; <a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>; <a href="referencia.html#ref-Tomia2022" role="doc-biblioref">Tomia and Tuhatea, n.d.</a>)</span>. Por lo tanto, en caso de que el índice CI sea bajo y el HI sea alto, se infiere que el riesgo es mínimo por cada casa muestreada, pero está muy disperso entre las casas del área muestreada; lo cual sugiere realizar acciones de control y prevención en toda el área de estudio (sector, colonia o localidad) <span class="citation" data-cites="SouthEastAsia2011 Organization2016 Garjito2020 Tedjou2020">(<a href="referencia.html#ref-SouthEastAsia2011" role="doc-biblioref">South-East Asia. 2011</a>; <a href="referencia.html#ref-Organization2016" role="doc-biblioref">Organization 2016</a>; <a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>)</span>.</p>
+<p>El clasificar el tipo de contenedor permite elegir la estrategia específica para las condiciones particulares del área de estudio, como puede ser aplicar control físico para mantener bajo control o eliminar criaderos potenciales, dependiendo de la cantidad y el tamaño se puede solo tirar a la basura u organizar campañas de eliminación o descacharre de ser necesario <span class="citation" data-cites="Organization2016">(<a href="referencia.html#ref-Organization2016" role="doc-biblioref">Organization 2016</a>)</span>. Otra estrategia sería el uso de químicos larvicidas como apoyo al control físico <span class="citation" data-cites="Kamgang2010 SouthEastAsia2011 Organization2016 Garjito2020 Tedjou2020">(<a href="referencia.html#ref-Kamgang2010" role="doc-biblioref">B. Kamgang et al. 2010</a>; <a href="referencia.html#ref-SouthEastAsia2011" role="doc-biblioref">South-East Asia. 2011</a>; <a href="referencia.html#ref-Organization2016" role="doc-biblioref">Organization 2016</a>; <a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>)</span>.</p>
+<p>En caso de que índice CI sea alto y el HI sea bajo, esto indica que el riesgo está concentrado en pocas casas infestadas, por lo que se pueden enfocar las acciones en esa zona específica <span class="citation" data-cites="Quintero2015 Praptowibowo2015 Garjito2020 Tedjou2020 Tomia2022">(<a href="referencia.html#ref-Quintero2015" role="doc-biblioref">Quintero et al. 2015</a>; <a href="referencia.html#ref-Praptowibowo2015" role="doc-biblioref">Praptowibowo 2015</a>; <a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>; <a href="referencia.html#ref-Tomia2022" role="doc-biblioref">Tomia and Tuhatea, n.d.</a>)</span>. Los índices son complementarios y se necesitan ambos para identificar correctamente el riesgo entomológico y tomar medidas efectivas para combatirlo <span class="citation" data-cites="TunLin1996 SouthEastAsia2011 Organization2016 Garjito2020 Tedjou2020">(<a href="referencia.html#ref-TunLin1996" role="doc-biblioref">Tun-Lin et al. 1996</a>; <a href="referencia.html#ref-SouthEastAsia2011" role="doc-biblioref">South-East Asia. 2011</a>; <a href="referencia.html#ref-Organization2016" role="doc-biblioref">Organization 2016</a>; <a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>)</span>.</p>
+</section>
+<section id="índice-de-breteau-bi" class="level5 unnumbered">
+<h5 class="unnumbered anchored" data-anchor-id="índice-de-breteau-bi">Índice de Breteau (BI)</h5>
+<p>El índice Breteau (BI) describe número de recipientes positivos por cada 100 casas inspeccionadas <span class="citation" data-cites="TunLin1996 Bowman2014 Praptowibowo2015 Quintero2015 Garjito2020 Tedjou2020 Tomia2022">(<a href="referencia.html#ref-TunLin1996" role="doc-biblioref">Tun-Lin et al. 1996</a>; <a href="referencia.html#ref-Bowman2014" role="doc-biblioref">Bowman, Runge-Ranzinger, and McCall 2014</a>; <a href="referencia.html#ref-Praptowibowo2015" role="doc-biblioref">Praptowibowo 2015</a>; <a href="referencia.html#ref-Quintero2015" role="doc-biblioref">Quintero et al. 2015</a>; <a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>; <a href="referencia.html#ref-Tomia2022" role="doc-biblioref">Tomia and Tuhatea, n.d.</a>)</span>.</p>
+<p><span id="eq-bi-index"><span class="math display">\[         
+  BI = \frac{
+   \text{Número de contenedores infestados}
+  }{
+    \text{Número de casas inspeccionadas}
+  } \times 100
+\tag{3.3}\]</span></span></p>
+<p>El BI proporciona una relación directa entre la cantidad de recipientes positivos y el número de casas inspeccionadas. Cuando los contenedores positivos tienden a ser uno por casa positiva el BI tendrá un valor igual al HI <span class="citation" data-cites="TunLin1996 Bowman2014 Quintero2015 Garjito2020 Tedjou2020 Tomia2022">(<a href="referencia.html#ref-TunLin1996" role="doc-biblioref">Tun-Lin et al. 1996</a>; <a href="referencia.html#ref-Bowman2014" role="doc-biblioref">Bowman, Runge-Ranzinger, and McCall 2014</a>; <a href="referencia.html#ref-Quintero2015" role="doc-biblioref">Quintero et al. 2015</a>; <a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>; <a href="referencia.html#ref-Tomia2022" role="doc-biblioref">Tomia and Tuhatea, n.d.</a>)</span>. En el caso que el BI salga alto pese a que los otros dos índices sean bajos, indica una alta concentración de recipientes por casa, aunque la proporción de casas positivas sea baja y la proporción de recipientes positivos también sea baja, en este caso el riesgo es que más recipientes <span class="citation" data-cites="SouthEastAsia2011 Organization2016 Garjito2020 Tedjou2020 Tomia2022">(<a href="referencia.html#ref-SouthEastAsia2011" role="doc-biblioref">South-East Asia. 2011</a>; <a href="referencia.html#ref-Organization2016" role="doc-biblioref">Organization 2016</a>; <a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>; <a href="referencia.html#ref-Tomia2022" role="doc-biblioref">Tomia and Tuhatea, n.d.</a>)</span>. El BI evalúa la distribución espacial de los criaderos y sirve para orientar las acciones de control y prevención. Sin embargo, no refleja la productividad de los contenedores, lo que limita su capacidad para proporcionar una evaluación completa del riesgo de transmisión del virus. Estos datos son particularmente relevantes para centrar esfuerzos para la gestión o eliminación de los hábitats más comunes y para la orientación de mensajes educativos en apoyo de iniciativas comunitarias <span class="citation" data-cites="SouthEastAsia2011 Bowman2014 Praptowibowo2015 Organization2016 Garjito2020 Tedjou2020">(<a href="referencia.html#ref-SouthEastAsia2011" role="doc-biblioref">South-East Asia. 2011</a>; <a href="referencia.html#ref-Bowman2014" role="doc-biblioref">Bowman, Runge-Ranzinger, and McCall 2014</a>; <a href="referencia.html#ref-Praptowibowo2015" role="doc-biblioref">Praptowibowo 2015</a>; <a href="referencia.html#ref-Organization2016" role="doc-biblioref">Organization 2016</a>; <a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>)</span>. La vigilancia epidemiológica y entomológica ayudan a dirigir las acciones necesarias para la prevención y control de ETVs como el dengue. Mediante la recopilación sistemática de datos sobre la enfermedad y los vectores, se pueden tomar decisiones informadas para mitigar su impacto y proteger a la población <span class="citation" data-cites="TunLin1996 SouthEastAsia2011 Praptowibowo2015 Organization2016 Garjito2020 Tedjou2020">(<a href="referencia.html#ref-TunLin1996" role="doc-biblioref">Tun-Lin et al. 1996</a>; <a href="referencia.html#ref-SouthEastAsia2011" role="doc-biblioref">South-East Asia. 2011</a>; <a href="referencia.html#ref-Praptowibowo2015" role="doc-biblioref">Praptowibowo 2015</a>; <a href="referencia.html#ref-Organization2016" role="doc-biblioref">Organization 2016</a>; <a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>)</span>. Los índices de estegomía son indispensables para la vigilancia y el control del dengue proporcionando información valiosa para evaluar el riesgo de transmisión, y permiten la toma de decisiones estratégicas para priorizar acciones y monitorear la efectividad de las intervenciones, para prevenir la transmisión del dengue y proteger la salud de la población <span class="citation" data-cites="SouthEastAsia2011 Organization2016 Garjito2020 Tedjou2020">(<a href="referencia.html#ref-SouthEastAsia2011" role="doc-biblioref">South-East Asia. 2011</a>; <a href="referencia.html#ref-Organization2016" role="doc-biblioref">Organization 2016</a>; <a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>; <a href="referencia.html#ref-Tedjou2020" role="doc-biblioref">Tedjou et al. 2020</a>)</span>.</p>
+</section>
+</section>
+</section>
+<section id="programa-de-acción-específico-de-enfermedades-transmitidas-por-vector" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="programa-de-acción-específico-de-enfermedades-transmitidas-por-vector"><span class="header-section-number">3.1.2</span> Programa de Acción Específico de Enfermedades Transmitidas por Vector</h3>
+<p>El Programa de Acción Específico de Enfermedades Transmitidas por Vector”(PAE- ETV), realiza diversas actividades para la prevención y control de ETV <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>. Estas actividades se pueden dividir en dos grupos: las de vigilancia entomológicas y las de prevención y control <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>. El objetivo de todas estas acciones es prevenir y controlar brotes de enfermedades transmitidas por vectores <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>. Las ETV son aquellas causadas por un agente vivo, como los insectos que ingieren microorganismos de la sangre que consumen de otros seres vivos y después los transmiten mediante sus picaduras <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>.</p>
+<div id="tbl-tabla-v" class="striped hover quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tabla-v-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.1: Actividades de Vigilancia Entomologíca
+</figcaption>
+<div aria-describedby="tbl-tabla-v-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped table-hover table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Actividades</th>
+<th>Abreviatura</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Vigilancia entomológica con ovitrampas</td>
+<td>OV</td>
+<td>Las ovitrampas son contenedores con atributos ideales para que los mosquitos utilicen como criadero; de esta forma, el personal del Programa de Vectores se encarga de revisar, colectar y contabilizar los huevecillos de los mosquitos y realizar una comparación de la densidad.</td>
+</tr>
+<tr class="even">
+<td>Estudios entomológicos en fase larval y pupal</td>
+<td>EE</td>
+<td>Búsqueda de criaderos con larvas o pupas de mosquitos dentro de las casas de una zona a trabajar, se realiza una búsqueda previa a las acciones de control de ETV y una búsqueda posterior cuando el área ya ha sido intervenida por las acciones de prevención y control.</td>
+</tr>
+<tr class="odd">
+<td>Estudios Entomovirológicos</td>
+<td>EEV</td>
+<td>Colecta de mosquitos adultos dentro de viviendas para identificar las especies transmisoras de ETV, asimismo para el análisis por PCR de los mosquitos buscando encontrar ETV circulando en las áreas antes de que se reporten casos en personas.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="tbl-tabla-a" class="striped hover quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tabla-a-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.2: Actividades de prevención y control
+</figcaption>
+<div aria-describedby="tbl-tabla-a-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped table-hover table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Actividades</th>
+<th>Abreviatura</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Control Larvario</td>
+<td>CL</td>
+<td>Búsqueda intencionada de criaderos potenciales de mosquitos de un área determinada para la aplicación de medidas de prevención, en todas las casas que permitan la entrada.</td>
+</tr>
+<tr class="even">
+<td>Rociado a caso probable</td>
+<td>RaC</td>
+<td>Aplicación intradomiciliar de insecticida con efecto residual en casas dentro de un cerco de 5 a 9 casas en respuesta a un caso probable o confirmado a Dengue, Zika o Chicungunya.</td>
+</tr>
+<tr class="odd">
+<td>Rociado intradomiciliario</td>
+<td>RI</td>
+<td>Aplicación intradomiciliar de insecticida con efecto residual en casas de un área que se considere de riesgo entomológico y susceptible a contagios de ETV.</td>
+</tr>
+<tr class="even">
+<td>Nebulización espacial</td>
+<td>N</td>
+<td>Aplicación de rociado espacial de insecticidas sin efecto residual en un área con alto riesgo entomológico o en respuesta a casos probables o confirmados.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<section id="plataforma-de-vigilancia-entomológica-y-control-integral-del-vector" class="level4" data-number="3.1.2.1">
+<h4 data-number="3.1.2.1" class="anchored" data-anchor-id="plataforma-de-vigilancia-entomológica-y-control-integral-del-vector"><span class="header-section-number">3.1.2.1</span> Plataforma de Vigilancia Entomológica y Control Integral del Vector</h4>
+<p>El Programa de Acción Específico de Enfermedades Transmitidas por Vector (PAE-ETV) registra diariamente en una plataforma todas las actividades mencionadas en la <a href="#tbl-tabla-v" class="quarto-xref">Table&nbsp;<span>3.1</span></a> y la [<a href="#tbl-tabla-a" class="quarto-xref">Table&nbsp;<span>3.2</span></a>; <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>. Esto permite al programa estatal descargar y analizar los datos. Para la actividad de EE, el programa calcula los resultados por área trabajada y requiere el reporte semanal con base en la ubicación, como se observa en la <a href="#tbl-tabla-a" class="quarto-xref">Table&nbsp;<span>3.2</span></a> y el sistema integral de vigilancia de vectores <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>. La actividad de EE implica el muestreo de formas inmaduras de los mosquitos (las larvas y las pupas) en lugar de capturar huevos o mosquitos adultos <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>. Se realizan búsquedas sistemáticas para detectar recipientes que contengan agua e inspeccionar la presencia de larvas y pupas de mosquitos <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>. Esta actividad evalúa una muestra antes (encuesta) y después (verificación) de las actividades de control integral para determinar el riesgo entomológico en un área trabajada (sectores o localidades) y si es necesario reforzar las acciones de control, ver la <a href="#tbl-tabla-v" class="quarto-xref">Table&nbsp;<span>3.1</span></a> y la <a href="#tbl-tabla-a" class="quarto-xref">Table&nbsp;<span>3.2</span></a>. <span class="citation" data-cites="Vigilanciaentomologica2019 Garjito2020">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>; <a href="referencia.html#ref-Garjito2020" role="doc-biblioref">Garjito et al. 2020</a>)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagenes/plataforma.gif" class="img-fluid figure-img"></p>
+<figcaption>Figura 1.1: Plataforma de Vigilancia Entomológica y Control Integral del Vector</figcaption>
+</figure>
+</div>
+</section>
+<section id="datos-geográficos" class="level4" data-number="3.1.2.2">
+<h4 data-number="3.1.2.2" class="anchored" data-anchor-id="datos-geográficos"><span class="header-section-number">3.1.2.2</span> Datos Geográficos</h4>
+<p>El PAE-ETV proporcionó shapefiles del estado de Sonora, los cuales se encuentran divididos en sectores <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>. Con base en ellos se hace la distribución de todas las actividades del PAE-ETV y se usan para poder georreferenciar las áreas intervenidas, determinar el riesgo entomológico y planear las actividades de control y prevención que se requieran <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>. Los shapefiles pueden usarse para crear mapas con los índices de estegomía específicos en tiempo y lugar según se necesite <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>.</p>
+</section>
+</section>
+<section id="creación-de-un-paquete-de-r-con-desarrollo-basado-en-pruebas-tdd" class="level3" data-number="3.1.3">
+<h3 data-number="3.1.3" class="anchored" data-anchor-id="creación-de-un-paquete-de-r-con-desarrollo-basado-en-pruebas-tdd"><span class="header-section-number">3.1.3</span> Creación de un paquete de R con desarrollo basado en pruebas (TDD)</h3>
+<p>Para determinar el riesgo entomológico delimitado por área geográfica (desde un sector específico o hasta una localidad o municipio) <span class="citation" data-cites="rpkgs2023">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>)</span>. Es necesario obtener la información de la vigilancia entomología de forma periódica y comprender la estructura de la base de datos de EE <span class="citation" data-cites="rpkgs2023">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>)</span>. Por lo cual, se implementaron herramientas de ciencias de datos para aplicar una metodología en la gestión y análisis de esta información <span class="citation" data-cites="rpkgs2023">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>)</span>. Esto implicaría calcular los índices de estegomía para un lugar y un tiempo determinado, para la toma de decisiones <span class="citation" data-cites="rpkgs2023">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>)</span>. Este trabajo presenta el desarrollo de un paquete R para el análisis de los datos de vigilancia entomológica del dengue, siguiendo una metodología de desarrollo basado en pruebas (TDD) <span class="citation" data-cites="rpkgs2023">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>)</span>. El paquete combina la potencia de Tidyverse para la manipulación de datos, Devtools para la gestión de Testthat para la escritura de pruebas unitarias <span class="citation" data-cites="rpkgs2023">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>)</span>.</p>
+<p>El desarrollo de software en R ha evolucionado hacia metodologías más sofistica- das y automatizadas (<span class="citation" data-cites="rpkgs2023">Statistical Computing (<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">2023</a>)</span>). El uso combinado de frameworks como Tidyverse, Devtools y Testthat permite crear un trabajo con desarrollo basado en pruebas (TDD) para proyectos de R (ver Figura 1.1) <span class="citation" data-cites="rpkgs2023">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>)</span>. Tidyverse es una colección de paquetes R enfocados en la manipulación de datos, análisis estadístico y visualización <span class="citation" data-cites="rpkgs2023">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>)</span>. Su filosofía funcional facilita la escritura de código modular y limpio <span class="citation" data-cites="rpkgs2023">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>)</span>. Devtools es un paquete R indispensable para la gestión de proyectos, creación de paquetes y publicación en CRAN. Automatiza tareas comunes como la ejecución de pruebas y generación de documentación. Testthat es un paquete R crucial para implementar TDD <span class="citation" data-cites="rpkgs2023">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>)</span>. Permite escribir pruebas unitarias que garantizan el funcionamiento correcto de cada función o módulo del código <span class="citation" data-cites="rpkgs2023">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="imagenes/TDD.jpg" class="img-fluid figure-img"></p>
+<figcaption>figura1.2</figcaption>
+</figure>
+</div>
+<p>Figura 1.2: Diagrama del Paradigma TDD</p>
+<ul>
+<li><p>El desarrollo basado en pruebas (TDD): es una metodología de creación de software en la que se escriben pruebas antes de escribir el código <span class="citation" data-cites="rpkgs2023">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>)</span>. Esto ayuda a garantizar que el código esté bien escrito y cumpla con los requisitos <span class="citation" data-cites="rpkgs2023">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>)</span>.</p></li>
+<li><p>Escribir pruebas: se definen pruebas unitarias para cada función utilizando Testthat <span class="citation" data-cites="rpkgs2023">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>)</span>.</p></li>
+<li><p>Desarrollar código: se implementa el código que satisface las pruebas escritas <span class="citation" data-cites="rpkgs2023">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>)</span>.</p></li>
+<li><p>Ejecutar pruebas: se ejecutan las pruebas para verificar el funcionamiento del código <span class="citation" data-cites="rpkgs2023">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>)</span>.</p></li>
+<li><p>Refactorizar: se mejora la legibilidad y mantenimiento del código sin alterar su funcionalidad <span class="citation" data-cites="rpkgs2023">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>)</span>.</p></li>
+<li><p>Repetir: se repiten los pasos anteriores hasta completar el desarrollo <span class="citation" data-cites="rpkgs2023">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>)</span>.</p></li>
+</ul>
+<p>Combinar Tidyverse, Devtools y Testthat en un flujo de trabajo TDD es una práctica recomendada para el desarrollo de software en R <span class="citation" data-cites="rpkgs2023">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>)</span>. Esta metodología permite tener menos errores, crear un código más robusto, legible y eficiente, facilitando la colaboración y el mantenimiento a largo plazo de los proyectos <span class="citation" data-cites="rpkgs2023">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>)</span>.</p>
+<p>El paquete de R del presente trabajo constituye una valiosa herramienta para la vigilancia entomológica del dengue <span class="citation" data-cites="rpkgs2023">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>)</span>. Su uso puede contribuir a mejorar la toma de decisiones en materia de prevención y control de la enfermedad, fortaleciendo las estrategias de Salud Pública en México <span class="citation" data-cites="rpkgs2023">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>)</span>.</p>
+</section>
+<section id="limpieza-de-datos" class="level3" data-number="3.1.4">
+<h3 data-number="3.1.4" class="anchored" data-anchor-id="limpieza-de-datos"><span class="header-section-number">3.1.4</span> Limpieza de datos</h3>
+<p>Los datos para calcular índices de riesgo entomológico son de las actividades de vigilancia entomológica con ovitrampas y estudios entomológicos para fase larvaria y pupal <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>. Estos datos se descargan de la plataforma en archivos .txt y requieren de un tratamiento previo, que incluye un código particular para leer el tipo de archivo, selección de variables de interés, cambiar el formato de los títulos de las variables y cambios en los tipos de datos, antes de poder realizar cálculos y análisis <span class="citation" data-cites="rpkgs2023 Vigilanciaentomologica2019">(<a href="referencia.html#ref-rpkgs2023" role="doc-biblioref">Statistical Computing 2023</a>; <a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>.</p>
+<p>La base de datos de EE se descarga en un archivo .txt de la Plataforma “Vigilancia Entomológica y Control Integral del Vector”, tiene 121 variables de las cuales consideramos 16 de interés, tres de ellas se dividen en dos por lo que resultan en 19 variables de interés <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>.En general el título de las variables tiene un problema para leerse por ello se cambió los espacios entre palabras por un guion bajo (_) en los títulos de cada variable <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>. Este formato requiere ajustes para leerlo en el programa de R <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>. Además, hay inconsistencia en el tipo de dato de algunas variables de interés por lo que se crea una función para cambiarlas al formato adecuado que le corresponde a cada una para poder trabajar con dicha información <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>.</p>
+<section id="variable-para-determinar-el-tipo-de-estudio-entomológico" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="variable-para-determinar-el-tipo-de-estudio-entomológico">Variable para determinar el tipo de Estudio Entomológico</h4>
+<p>“Tipo de Estudio” es el nombre de una variable que divide todos los datos de esta actividad en 2 tipos, el primer tipo es “encuesta” que significa que los datos se tomaron antes de realizar acciones de “control larvario (CL)” en el área donde se hizo el estudio entomológico <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>. El segundo tipo es “verificación” que indica que los datos de ese EE se hicieron después de realizar acciones de CL <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>. De tal manera se pueden comparar los datos antes y después en un área determinada y evaluar si las intervenciones del PAE-ETV han mitigado el riesgo entomológico o si es necesario realizar más acciones <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>.</p>
+</section>
+<section id="variable-para-la-georreferenciación" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="variable-para-la-georreferenciación">Variable para la georreferenciación</h4>
+<p>Las variables para la georreferenciación son las que se utilizan para determinar un lugar en el espacio donde se calcula un riesgo entomológico <span class="citation" data-cites="Vigilanciaentomologica2019 moraga2023">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>; <a href="referencia.html#ref-moraga2023" role="doc-biblioref">Moraga 2023</a>)</span> a estas variables se les asignó el formato de carácter para su uso adecuado <span class="citation" data-cites="moraga2023">(<a href="referencia.html#ref-moraga2023" role="doc-biblioref">Moraga 2023</a>)</span>. Se escogieron estas cuatro variables: “Jurisdicción”, “Municipio”, “Localidad” y “Sector”; cada una es parte de la anterior. El estado de Sonora está dividido en seis jurisdicciones (ahora llamados distritos) y cada jurisdicción tiene determinados municipios que la conforman; a su vez cada municipio tiene localidades que pueden ser desde ciudades a ejidos. En el caso de sectores cuanto más grande la localidad como una ciudad puede tener hasta cientos de sectores que la conformen, pero cuando son lugares pequeños como un pueblo o ejido tienen pocos sectores (de uno a 15). Los sectores corresponden a un formato de división geográfica que usa el Instituto Nacional Electoral (INE) <span class="citation" data-cites="Vigilanciaentomologica2019 moraga2023">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>; <a href="referencia.html#ref-moraga2023" role="doc-biblioref">Moraga 2023</a>)</span>. Las primeras tres variables antes mencionadas tienen un número antes del nombre que corresponde al lugar (qué número de jurisdicción es, qué número de municipio es y qué número de localidad es, respectivamente); para evitar confusiones en la selección de datos geográficos separamos este número del resto del nombre y lo colocamos en variables independientes, estas tres nuevas variables son: “Clave_Jurisdiccion”, “Clave_Municipio” y “Clave_Localidad” <span class="citation" data-cites="Vigilanciaentomologica2019 moraga2023">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>; <a href="referencia.html#ref-moraga2023" role="doc-biblioref">Moraga 2023</a>)</span>.</p>
+</section>
+<section id="variables-de-intervalos-de-tiempo" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="variables-de-intervalos-de-tiempo">Variables de intervalos de tiempo</h4>
+<p>Se seleccionaron dos variables para elegir el tiempo, la primera es “Fecha de Inicio” la cual viene en formato de caracter y se cambia a Tipo de dato POSIX para poder usarla como fecha. Esta es la fecha en que se realiza el EE y se puede comparar entre lugares o en el mismo lugar en diferentes tiempos o en tiempos cercanos en el mismo lugar con diferente tipo de estudio. La segunda variable es Semana Epidemiológica la cual se usa de forma preestablecida, en la Secretaría de Salud y el PAE-ETV reporta usando como unidad de tiempo el número de semana epidemiológica <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>.</p>
+</section>
+<section id="variables-para-índices-de-estegomía" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="variables-para-índices-de-estegomía">Variables para índices de estegomía</h4>
+<p>Para calcular los índices de estegomía se utilizan seis variables (o las primeras cuatro solamente). Las variables de Casas Revisadas y Casas Positivas se utilizan para calcular el HI. El Total de Recipientes con Agua, y Total de Recipientes Positivos se utilizan para calcular el CI. El Total de Recipientes Positivos a Pupas, y No.&nbsp;Total, de Pupas en Recipientes, se utilizan para calcular índices de contenedor positiva a pupa, porcentaje de pupas en los contenedores positivos <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>. Otras variables de interés son la tipología de recipiente positivo que consiste en clasificar en tres grupos diferentes a los contenedores según la estrategia de control que se ejecuta en dicho contenedor (<span class="citation" data-cites="Vigilanciaentomologica2019">CENAPRECE (<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">2019</a>)</span>). Estas tres variables son: Recipientes Tratables, Recipientes Controlables y Recipientes Eliminables. Cuando se determina un riesgo entomológico alto se realiza un análisis de la tipología de contenedor para escoger la estrategia a emplear <span class="citation" data-cites="Vigilanciaentomologica2019">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>)</span>.</p>
+</section>
+<section id="georreferenciación-de-las-actividades" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="georreferenciación-de-las-actividades">Georreferenciación de las actividades</h4>
+<p>Para poder georreferenciar los indicadores de EE en un mapa se utilizan los datos de Sector para definir en un mapa del estado de Sonora, esto se realiza con un archivo shapefile que contiene todos los sectores del estado de Sonora, este archivo fue proporcionado por el PAE-ETV <span class="citation" data-cites="Vigilanciaentomologica2019 moraga2023">(<a href="referencia.html#ref-Vigilanciaentomologica2019" role="doc-biblioref">CENAPRECE 2019</a>; <a href="referencia.html#ref-moraga2023" role="doc-biblioref">Moraga 2023</a>)</span>.</p>
+</section>
+</section>
+</section>
+<section id="paquete-de-r-para-cálculos-de-índices-estegomía" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="paquete-de-r-para-cálculos-de-índices-estegomía"><span class="header-section-number">3.2</span> Paquete de R para cálculos de índices Estegomía</h2>
+<section id="funciones-para-limpieza-y-formato-de-las-bases-de-datos" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="funciones-para-limpieza-y-formato-de-las-bases-de-datos"><span class="header-section-number">3.2.1</span> Funciones para limpieza y formato de las bases de datos</h3>
+<section id="función-load_raw_data" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="función-load_raw_data">Función load_raw_data</h4>
+<p>La función load_raw_data está diseñada para cargar datos sin procesar de un archivo .txt relacionado con un estudio de entomología realizado en la plataforma “Vigilancia Entomológica y Control Integral del Vector”. La función recibe el parámetro denominado “path” (cadena de texto): la cual es ruta del archivo .txt que contiene los datos sin procesar. Se espera que siga el formato utilizado en la actividad “Estudios entomológicos en fase larval y pupal” de la plataforma “Vigilancia Entomológica”.</p>
+<p>Asimismo, el parámetro “col_name” (vector de cadenas de texto, opcional): los nombres de las variables que se desean seleccionar del archivo. Si no se especifica este parámetro, la función selecciona por defecto las siguientes variables:</p>
+<p>“Tipo de Estudio”, “Jurisdiccion”, “Localidad”, “Sector”, “Fecha de Inicio”, “Semana Epidemiologica”, “Casas Revisadas”, “Casas Positivas”, “Total de Recipientes con Agua” y “Total de Recipientes Positivos”</p>
+<p>Una vez que se agregan estos parámetros la función carga el archivo para leerlo usando el parámetro path. Se configura la lectura para que asuma nombres de columna en la primera fila (col_names = TRUE) y establece la codificación en UTF-16 (locale = locale(encoding = “UTF-16”)) para manejar correctamente los caracteres particulares que tiene el archivo .txt cuando se descarga de la plataforma “Vigilancia Entomológica y Control Integral del Vector”.</p>
+<p>Luego continúa a verificar si la columna “Tipo de Estudio” está presente en el archivo. Si no lo está, o si el archivo está vacío, la función marca un error para evitar que se procesen datos incorrectos.</p>
+<p>Con la selecciona variables, si se proporcionó el parámetro col_name, se usarán solo esas las variables; se limpiará los nombres de columna reemplazando todos los espacios en blanco de los nombres de las columnas con guiones bajos (_) para garantizar la compatibilidad con el formato estándar de datos de R.</p>
+<p>Si se seleccionaron las columnas “Localidad”, “Municipio”, o “Jurisdiccion” en el archivo, cada una se separa en dos columnas nuevas. Por ejemplo, si “Localidad” tiene un formato que combina números con nombres, por lo que se dividirá en “Clave_Localidad” y “Localidad” (eliminando el espacio y reemplazándolo con un guion bajo).</p>
+<p>Al final se devuelve un marco de datos de R (data.frame) que contiene las variables seleccionadas y limpiadas del archivo .txt. Este marco de datos está listo para ser utilizado en sus análisis posteriores.</p>
+<p>Ejemplo de uso:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rStegomyia)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>path_raw_data <span class="ot">&lt;-</span> <span class="fu">system.file</span>(<span class="st">"extdata"</span>, <span class="st">"estudio_entomologico1.txt"</span>, <span class="at">package =</span> <span class="st">"rStegomyia"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Carga los datos con las variables predeterminadas</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>df_load_raw <span class="ot">&lt;-</span> <span class="fu">load_raw_data</span>(path_raw_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<!-- # Muestra las primeras filas del marco de datos cargado -->
+<!-- head(df_load_raw) -->
+</section>
+<section id="función-clean_raw_data" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="función-clean_raw_data">Función clean_raw_data</h4>
+<p>Está función fue diseñada para limpiar y reformatear un dataframe que ha sido generado previamente por la función load_raw_data. Dicho dataframe contiene datos de un estudio de entomología realizado en la plataforma “Vigilancia Entomológica y Control Integral del Vector”.</p>
+<p>Recibe el parámetro df: Es un dataframe que se quiere limpiar y reformatear. Este dataframe debe provenir de la función load_raw_data.</p>
+<p>El parámetro path_out (cadena de texto, opcional): es la ruta y nombre del archivo .csv donde se guardarán los datos limpios. El valor predeterminado es “data-raw/qr.csv”.</p>
+<p>col_name (lista): Una lista que define los tipos de datos y niveles de factor (en caso de ser factor) para cada columna del marco de datos. Esta lista debe ser congruente con las variables seleccionadas en la función load_raw_data.Si no se especifica este parámetro, la función selecciona por defecto las siguientes variables:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Tipo_de_Estudio <span class="ot">=</span> <span class="fu">col_factor</span>(<span class="at">levels =</span> <span class="fu">c</span>( <span class="st">"Encuesta"</span>, <span class="st">"Verificacion"</span>)),</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Clave_Jurisdiccion <span class="ot">=</span> <span class="fu">col_factor</span>(<span class="at">levels =</span> <span class="fu">as.character</span>(<span class="fu">c</span>( <span class="dv">2601</span>, <span class="dv">2602</span>, <span class="dv">2603</span>, <span class="dv">2604</span>, <span class="dv">2605</span>, <span class="dv">2606</span>))),</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>Jurisdiccion <span class="ot">=</span> <span class="fu">col_factor</span>(<span class="at">levels =</span> <span class="fu">c</span>( <span class="st">"Hermosillo"</span>, <span class="st">"Caborca"</span>, <span class="st">"Cananea"</span>, <span class="st">"Cajeme"</span>, <span class="st">"Navojoa"</span>, <span class="st">"San_Luis_Río_Colorado"</span> )),</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>Clave_Municipio <span class="ot">=</span> <span class="fu">col_factor</span>(<span class="at">levels =</span> <span class="fu">as.character</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">72</span>)),</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>Municipio <span class="ot">=</span> <span class="fu">col_factor</span>(),</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>Clave_Localidad <span class="ot">=</span> <span class="fu">col_factor</span>(),</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>Localidad <span class="ot">=</span> <span class="fu">col_factor</span>(),</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>Sector <span class="ot">=</span> <span class="fu">col_factor</span>(<span class="at">levels =</span> <span class="fu">as.character</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2000</span>)),</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>Fecha_de_Inicio <span class="ot">=</span> <span class="fu">col_date</span>(<span class="at">format =</span> <span class="st">"%d/%m/%Y"</span>),</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>Semana_Epidemiologica <span class="ot">=</span> <span class="fu">col_factor</span>(<span class="at">levels =</span> <span class="fu">as.character</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">53</span>)),</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>Casas_Revisadas <span class="ot">=</span> <span class="fu">col_double</span>(),</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>Casas_Positivas <span class="ot">=</span> <span class="fu">col_double</span>(),</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>Total_de_Recipientes_con_Agua <span class="ot">=</span> <span class="fu">col_double</span>(),</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>Total_de_Recipientes_Positivos <span class="ot">=</span> <span class="fu">col_double</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Una vez agregados los parámetros la función guarda el dataframe sin procesar en un archivo .csv temporal utilizando la ruta especificada en path_out o la ruta predeterminada. Continua en leer el archivo con tipos de datos: Luego, la función lee el archivo .csv recién creado utilizando read_csv. Aquí, se especifica el parámetro col_types como la lista col_name para establecer los tipos de datos correctos para cada columna.</p>
+<p>Asigna el dataframe limpio (con los tipos de datos corregidos) a una nueva variable temporal para reemplaza el dataframe original de forma que ahora df contiene el marco de datos limpios, y los guarda en el mismo archivo .csv original utilizando la ruta especificada o la ruta predeterminada.</p>
+<p>Al final devuelve el dataframe de datos limpios, que también se ha guardado en el archivo .csv.</p>
+<p>Ejemplo de uso:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>path_of_example <span class="ot">=</span> <span class="fu">system.file</span>(<span class="st">"extdata"</span>, <span class="st">"qr.csv"</span>, <span class="at">package =</span> <span class="st">"rStegomyia"</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>df_clean <span class="ot">&lt;-</span> <span class="fu">clean_raw_data</span>(dfsm, <span class="at">path_out =</span> path_of_example)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<!-- head(df_clean) -->
+</section>
+</section>
+<section id="funciones-para-calcula-los-índices-estegomía" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="funciones-para-calcula-los-índices-estegomía"><span class="header-section-number">3.2.2</span> Funciones para calcula los índices Estegomía</h3>
+<p>Las siguientes funciones se utilizan para calcula los índices Estegomía(índice de Contenedores - CI, índice de Casas - HI, e índice de Breteau - BI) siempre para un tipo de estudio y una o dos variables para filtrar y especificar los datos según la intensión del análisis. Es necesario que el dataframe se proporcione haya sido previamente procesado por las funciones load_raw_data y clean_raw_data</p>
+<section id="función-get_stegomyia_indices_by_type_of_study_and_ew" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="función-get_stegomyia_indices_by_type_of_study_and_ew">Función get_stegomyia_indices_by_type_of_study_and_ew</h4>
+<p>Esta función calcula los índices Estegomíapara un tipo de estudio y una semana epidemiológica específicos.</p>
+<p>Recibe el parámetro df: dataframe que contiene la información limpia procesada por la función clean_raw_data. st (cadena de texto, opcional): El tipo de estudio seleccionado. Debe ser “Encuesta” o “Verificacion” (por defecto, “Verificacion”). ew (cadena de texto, opcional): El número de la semana epidemiológica utilizada para calcular los índices (por defecto, “1”).</p>
+<p>Una vez agregados los parámetros se filtra los datos del dataframe original (df) para seleccionar solo las filas que cumplen con las siguientes condiciones: - Tipo_de_Estudio: El tipo de estudio debe coincidir con el valor especificado en st. - Semana_Epidemiologica: La semana epidemiológica debe coincidir con el valor especificado en ew. - Comprueba la validez de los datos: Si el filtrado no tiene datos en ninguna fila se genera un error para indicar que no hay datos disponibles con los filtros aplicados. Si hay filas con valor 0 en la columna Casas_Revisadas, se genera una advertencia y filtra esas filas para evitar un error al dividir entre cero.</p>
+<p>Si los datos son válidos se Calcula los índices Estegomíaselecciona las columnas necesarias: Sector, Casas_Revisadas, Casas_Positivas, Total_de_Recipientes_con_Agua, Total_de_Recipientes_Positivos. Agrupa los datos por sector para calcula: - El Índice de Casa (HI) - El Índice de Contenedor (CI) - El Índice Breteau (BI)</p>
+<p>Utilizando las fórmulas especificadas; además se agrega nuevas columnas que representan el estado de riesgo en el valor del índice calculado (index_status_HI, index_status_CI, index_status_BI). Estas columnas utilizan un sistema de clasificación basado en rangos predefinidos (Óptimo, Bueno, Alarma, Emergencia).</p>
+<p>Ejemplo de uso:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df_stegomyia_sd <span class="ot">&lt;-</span> <span class="fu">get_stegomyia_indices_by_type_of_study_and_ew</span>(df_indx,</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>                                                                 <span class="at">st =</span> <span class="st">"Verificacion"</span>,</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>                                                                 <span class="at">ew =</span> <span class="st">"2"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<!-- head(df_stegomyia_sd) -->
+</section>
+<section id="función-get_stegomyia_indices_by_type_of_study_and_loc" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="función-get_stegomyia_indices_by_type_of_study_and_loc">Función get_stegomyia_indices_by_type_of_study_and_loc</h4>
+<p>Esta función calcula los índices Estegomíapara un tipo de estudio y una Localidad específicas del estado de Sonora,</p>
+<p>Recibe el parámetro df: dataframe que contiene la información limpia procesada por la función clean_raw_data. st (cadena de texto, opcional): El tipo de estudio seleccionado. Debe ser “Encuesta” o “Verificacion” (por defecto, “Verificacion”). El parámetro var (cadena de texto): Indica la Localidad a utilizar para calcular los índices. El parámetro path_out (cadena de texto, opcional): es la ruta y nombre del archivo .csv donde se guardarán los datos de los índices Estegomíacalculados y sus correspondientes estatus. El valor predeterminado es “data-raw/statusindicesloc.csv”.</p>
+<p>Una vez agregados los parámetros se filtra los datos del dataframe original (df) para seleccionar solo las filas que cumplen con las siguientes condiciones: - Tipo_de_Estudio: El tipo de estudio debe coincidir con el valor especificado en st. - Localidad: La Localidad o localidades debe coincidir con el valor especificado en var. - Comprueba la validez de los datos: Si el filtrado no tiene datos en ninguna fila se genera un error para indicar que no hay datos disponibles con los filtros aplicados. Si hay filas con valor 0 en la columna Casas_Revisadas, se genera una advertencia y filtra esas filas para evitar un error al dividir entre cero.</p>
+<p>Si los datos son válidos se Calcula los índices Estegomíaselecciona las columnas necesarias: Localidad, Casas_Revisadas, Casas_Positivas, Total_de_Recipientes_con_Agua, Total_de_Recipientes_Positivos. Agrupa los datos por sector para calcula: - El Índice de Casa (HI) - El Índice de Contenedor (CI) - El Índice Breteau (BI)</p>
+<p>Utilizando las fórmulas especificadas; además se agrega nuevas columnas que representan el estado de riesgo en del valor del índice calculado (index_status_HI, index_status_CI, index_status_BI). Estas columnas utilizan un sistema de clasificación basado en rangos predefinidos (Óptimo, Bueno, Alarma, Emergencia).</p>
+<p>Al final devuelve el dataframe con los datos calculados, Ademas se ha guardado en el archivo .csv.</p>
+<p>Ejemplo de uso:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>path_index_table <span class="ot">=</span> <span class="fu">c</span>(<span class="fu">system.file</span>(<span class="st">"extdata"</span>,</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>                                 <span class="st">"statusindicesloc.csv"</span>,</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">package =</span> <span class="st">"rStegomyia"</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>                                  )</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>                     )</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>df_stegomyia_l <span class="ot">&lt;-</span> <span class="fu">get_stegomyia_indices_by_type_of_study_and_loc</span>(df_indx,</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>                                                   <span class="at">st =</span> <span class="st">"Verificacion"</span>,</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>                                                   <span class="at">var =</span><span class="fu">c</span>(<span class="st">"HERMOSILLO"</span>,</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>                                                    <span class="st">"CIUDAD_OBREGÓN"</span>),</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>                                                   <span class="at">path_out =</span> path_index_table</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>               )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="función-get_stegomyia_indices_by_type_of_study_and_star_date" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="función-get_stegomyia_indices_by_type_of_study_and_star_date">Función get_stegomyia_indices_by_type_of_study_and_star_date</h4>
+<p>Esta función calcula los índices Estegomía para un tipo de estudio y un o más Fechas específicas.</p>
+<p>Recibe el parámetro df: dataframe que contiene la información limpia procesada por la función clean_raw_data. st (cadena de texto, opcional): El tipo de estudio seleccionado. Debe ser “Encuesta” o “Verificacion” (por defecto, “Verificacion”). date (cadena de texto, opcional): Es la fecha utilizada para calcular los índices (por defecto, “2021/01/07”).</p>
+<p>Una vez agregados los parámetros se filtra los datos del dataframe original (df) para seleccionar solo las filas que cumplen con las siguientes condiciones: - Tipo_de_Estudio: El tipo de estudio debe coincidir con el valor especificado en st. - Fecha_de_Inicio: La fecha debe coincidir con el valor especificado en date. - Comprueba la validez de los datos: Si el filtrado no tiene datos en ninguna fila se genera un error para indicar que no hay datos disponibles con los filtros aplicados. Si hay filas con valor 0 en la columna Casas_Revisadas, se genera una advertencia y filtra esas filas para evitar un error al dividir entre cero.</p>
+<p>Si los datos son válidos se calcula los índices Estegomía seleccionando las columnas necesarias: Sector, Casas_Revisadas, Casas_Positivas, Total_de_Recipientes_con_Agua, Total_de_Recipientes_Positivos. Agrupa los datos por sector para calcula: - El Índice de Casa (HI) - El Índice de Contenedor (CI) - El Índice Breteau (BI)</p>
+<p>Utilizando las fórmulas especificadas; además se agregan nuevas columnas que representan el estado de riesgo en el valor del índice calculado (index_status_HI, index_status_CI, index_status_BI). Estas columnas utilizan un sistema de clasificación basado en rangos predefinidos (Óptimo, Bueno, Alarma, Emergencia).</p>
+<p>Ejemplo de uso:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>df_stegomyia_sd <span class="ot">&lt;-</span> <span class="fu">get_stegomyia_indices_by_type_of_study_and_star_date</span>(df_indx,</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>                                                     <span class="at">st =</span> <span class="st">"Verificacion"</span>,</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>                                                     <span class="at">date =</span> <span class="st">"2021/01/06"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<!-- head(df_stegomyia_sd) -->
+</section>
+<section id="función-get_stegomyia_indices_by_type_of_study_and_geo_is" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="función-get_stegomyia_indices_by_type_of_study_and_geo_is">Función get_stegomyia_indices_by_type_of_study_and_geo_is</h4>
+<p>Esta función calcula los índices Estegomía para un tipo de estudio y uno o más Sectores específicas del estado de Sonora,</p>
+<p>Recibe el parámetro df: dataframe que contiene la información limpia procesada por la función clean_raw_data. st (cadena de texto, opcional): El tipo de estudio seleccionado. Debe ser “Encuesta” o “Verificacion” (por defecto, “Verificacion”). El parámetro var (el numero del sector): Indica el o los sectores a utilizar para calcular los índices. El parámetro path_out (cadena de texto, opcional): es la ruta y nombre del archivo .csv donde se guardarán los datos de los índices Estegomía calculados y sus correspondientes estatus. El valor predeterminado es “data-raw/statusindicesector.csv”.</p>
+<p>Una vez agregados los parámetros se filtra los datos del dataframe original (df) para seleccionar solo las filas que cumplen con las siguientes condiciones: - Tipo_de_Estudio: El tipo de estudio debe coincidir con el valor especificado en st. - Sector: Los sectores deben coincidir con el valor especificado en var. - Comprueba la validez de los datos: Si el filtrado no tiene datos en ninguna fila se genera un error para indicar que no hay datos disponibles con los filtros aplicados. Si hay filas con valor 0 en la columna Casas_Revisadas, se genera una advertencia y filtra esas filas para evitar un error al dividir entre cero.</p>
+<p>Si los datos son válidos se calcula los índices Estegomía seleccionado las columnas necesarias: Sector, Casas_Revisadas, Casas_Positivas, Total_de_Recipientes_con_Agua, Total_de_Recipientes_Positivos. Agrupa los datos por sector para calcular: - El Índice de Casa (HI) - El Índice de Contenedor (CI) - El Índice Breteau (BI)</p>
+<p>Utilizando las fórmulas especificadas; Además se agrega nuevas columnas que representan el estado de riesgo en del valor del índice calculado (index_status_HI, index_status_CI, index_status_BI). Estas columnas utilizan un sistema de clasificación basado en rangos predefinidos (Óptimo, Bueno, Alarma, Emergencia).</p>
+<p>Al final devuelve el dataframe con los datos calculados, Además se ha guardado en el archivo .csv.</p>
+<p>Ejemplo de uso:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>path_index_table <span class="ot">=</span> <span class="fu">c</span>(<span class="fu">system.file</span>(<span class="st">"extdata"</span>,</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>                                 <span class="st">"statusindicesector.csv"</span>,</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">package =</span> <span class="st">"rStegomyia"</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>                                  )</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>                     )</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>df_stegomyia <span class="ot">&lt;-</span> <span class="fu">get_stegomyia_indices_by_type_of_study_and_geo_is</span>(df_indx,</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>                                                   <span class="at">st =</span> <span class="st">"Verificacion"</span>,</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>                                                   <span class="at">var =</span><span class="st">"400"</span>,</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>                                                   <span class="at">path_out =</span> path_index_table</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="función-get_stegomyia_indices_by_type_of_study_star_date_and_geo" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="función-get_stegomyia_indices_by_type_of_study_star_date_and_geo">Función get_stegomyia_indices_by_type_of_study_star_date_and_geo</h4>
+<p>Esta función calcula los índices Estegomía para un tipo de estudio, una o más fechas y uno o más Sectores específicas del estado de Sonora,</p>
+<p>Recibe el parámetro df: dataframe que contiene la información limpia procesada por la función clean_raw_data. st (cadena de texto, opcional): El tipo de estudio seleccionado. Debe ser “Encuesta” o “Verificacion” (por defecto, “Verificacion”). El parámetro var (el número del sector): Indica el o los sectores a utilizar para calcular los índices. El parámetro date (cadena de texto, opcional): Es la fecha utilizada para calcular los índices (por defecto, “2021/01/07”). - Fecha_de_Inicio: La fecha debe coincidir con el valor especificado en date. Una vez agregados los parámetros se filtra los datos del dataframe original (df) para seleccionar solo las filas que cumplen con las siguientes condiciones: - Tipo_de_Estudio: El tipo de estudio debe coincidir con el valor especificado en st. - Sector: Los sectores deben coincidir con el valor especificado en var.</p>
+<p>Comprueba la validez de los datos: Si el filtrado no tiene datos en ninguna fila se genera un error para indicar que no hay datos disponibles con los filtros aplicados. Si hay filas con valor 0 en la columna Casas_Revisadas, se genera una advertencia y filtra esas filas para evitar un error al dividir entre cero.</p>
+<p>Si los datos son válidos se Calcula los índices Estegomía seleccionando las columnas necesarias: Sector, Casas_Revisadas, Casas_Positivas, Total_de_Recipientes_con_Agua, Total_de_Recipientes_Positivos. Agrupa los datos por sector para calcula: - El Índice de Casa (HI) - El Índice de Contenedor (CI) - El Índice Breteau (BI)</p>
+<p>Utilizando las fórmulas especificadas; además se agrega nuevas columnas que representan el estado de riesgo en el valor del índice calculado (index_status_HI, index_status_CI, index_status_BI). Estas columnas utilizan un sistema de clasificación basado en rangos predefinidos (Óptimo, Bueno, Alarma, Emergencia).</p>
+<p>Ejemplo de uso:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df_tc <span class="ot">&lt;-</span><span class="fu">get_typology_container_by_type_of_study_and_location</span>(df_typ,</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>                                                             <span class="at">st =</span> <span class="st">"Verificacion"</span>,</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>                                                             <span class="st">"CIUDAD_OBREGÓN"</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<!-- head(df_tc) -->
+</section>
+<section id="función-get_typology_container_by_type_of_study_and_location" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="función-get_typology_container_by_type_of_study_and_location">Función get_typology_container_by_type_of_study_and_location</h4>
+<p>Cuando ya se ha identificado una localidad en emergencia por riego entomológico se necesita saber qué tipo de criaderos son los que están presentes para tomar las medidas apropiadas. Esta función proporciona una herramienta útil para entender la distribución de los tipos de recipientes positivos en diferentes localidades y, por lo tanto, para diseñar estrategias más efectivas de control de vectores</p>
+<p>Recibe el parámetro df: dataframe que contiene la información limpia procesada por la función clean_raw_data. st (cadena de texto, opcional): El tipo de estudio seleccionado. Debe ser “Encuesta” o “Verificacion” (por defecto, “Verificacion”). El parámetro var (cadena de texto): Indica la Localidad a utilizar para calcular el porcentaje de los contenedores positivos.</p>
+<p>Una vez agregados los parámetros se filtra los datos del dataframe original (df) para seleccionar solo las filas que cumplen con las siguientes condiciones: - Tipo_de_Estudio: El tipo de estudio debe coincidir con el valor especificado en st. - Localidad: La Localidad o localidades debe coincidir con el valor especificado en var. - Comprueba la validez de los datos: Si el filtrado no tiene datos en ninguna fila se genera un error para indicar que no hay datos disponibles con los filtros aplicados. Si hay filas con valor 0 en la columna Casas_Revisadas, se genera una advertencia y filtra esas filas para evitar un error al dividir entre cero.</p>
+<p>Calcula los porcentajes: Para cada localidad, se calculan los porcentajes de recipientes positivos de cada tipología (tratables, controlables y eliminables) respecto al total de recipientes positivos.</p>
+<p>Los resultados se agrupan por localidad y se presentan en un nuevo dataframe.</p>
+<p>Ejemplo de uso:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df_tc <span class="ot">&lt;-</span><span class="fu">get_typology_container_by_type_of_study_and_location</span>(df_typ,</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>                                                             <span class="at">st =</span> <span class="st">"Verificacion"</span>,</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>                                                             <span class="st">"CIUDAD_OBREGÓN"</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<!-- head(df_tc) -->
+</section>
+</section>
+<section id="funciones-para-hacer-mapas" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="funciones-para-hacer-mapas"><span class="header-section-number">3.2.3</span> Funciones para hacer mapas</h3>
+<section id="función-get_maps_stegomyia_indices" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="función-get_maps_stegomyia_indices">Función get_maps_stegomyia_indices</h4>
+<p>Esta función genera mapas geográficos de los índices Estegomía calculados para diferentes sectores, lo que permite visualizar espacialmente los índices Estegomía, lo que facilita la identificación de áreas de riesgo y la toma de decisiones informadas para el control de vectores.</p>
+<p>Recibe el parámetro df: Un dataframe que contiene información sobre los sectores y sus respectivos índices Estegomía (HI, CI, BI).</p>
+<p>Además, utiliza por default objetos shapefile para generar los mapas: - m1 es un shapefile que contiene información geográfica sobre los sectores de Hermosillo (geometría de los sectores). - m0 es un shapefile que contiene información geográfica sobre los límites de Hermosillo (geometría de la ciudad).</p>
+<p>Una vez que resibe el dataframe, verifica los datos entrada contenga las columnas necesarias para calcular los índices Estegomía.</p>
+<p>Prepara el shapefile que se transforma el shapefile m1 a un sistema de coordenadas adecuado (EPSG:4326) y se renombra la columna “SECCION” a “Sector” para poder unirlo con el dataframe.</p>
+<p>Une el dataframe con el shapefile la columna “Sector” como clave.</p>
+<p>Genera los mapas: Se crean tres mapas utilizando la librería ggplot2: Mapa del Índice de Casa (HI): Visualiza la distribución espacial del HI en los diferentes sectores.</p>
+<p>Mapa del Índice de Contenedor (CI): Visualiza la distribución espacial del CI en los diferentes sectores.</p>
+<p>Mapa del Índice Breteau (BI): Visualiza la distribución espacial del BI en los diferentes sectores de Hermosillo.</p>
+<p>Guarda los mapas como archivos PNG en la carpeta “visualization”.</p>
+<p>Devuelve los mapas en una lista que contiene los tres objetos ggplot generados.</p>
+<p>Ejemplo de uso:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>Sindx_maps <span class="ot">&lt;-</span> <span class="fu">get_maps_stegomyia_indices</span>(df_for_map)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>Sindx_maps</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="imagenes/p_HI.png" class="img-fluid"> <img src="imagenes/p_CI.png" class="img-fluid"> <img src="imagenes/p_BI.png" class="img-fluid"></p>
+</section>
+<section id="función-get_1map_stegomyia_indices" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="función-get_1map_stegomyia_indices">Función get_1map_stegomyia_indices</h4>
+<p>Esta función genera una visualización más interactiva y completa de los índices Estegomía, permitiendo al usuario explorar los datos de manera más flexible y comparar los diferentes índices en un mismo mapa de los índices Estegomía calculados para diferentes sectores.</p>
+<p>Recibe el parámetro df: Un dataframe que contiene información sobre los sectores y sus respectivos índices Estegomía (HI, CI, BI).</p>
+<p>Además, utiliza por default objetos shapefile para generar los mapas: - m1 es un shapefile que contiene información geográfica sobre los sectores de Hermosillo (geometría de los sectores). - m0 es un shapefile que contiene información geográfica sobre los límites de Hermosillo (geometría de la ciudad).</p>
+<p>Una vez que recibe el dataframe, verifica que los datos de entrada contengan las columnas necesarias para calcular los índices Estegomía.</p>
+<p>Prepara el shapefile que se transforma el shapefile m1 a un sistema de coordenadas adecuado (EPSG:4326) y se renombra la columna “SECCION” a “Sector” para poder unirlo con el dataframe.</p>
+<p>Une el dataframe con el shapefile la columna “Sector” como clave.</p>
+<p>Genera el mapa interactivo utilizando la librería leaflet. Permite al usuario seleccionar qué índice visualizar y obtener información detallada al hacer clic en cada sector</p>
+<p>Guarda el mapa interactivo como un archivo HTML en la carpeta “visualization”.</p>
+<p>Devuelve el objeto del mapa generado por leaflet.</p>
+<p>Ejemplo de uso:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>Sindx_map <span class="ot">&lt;-</span> <span class="fu">get_1map_stegomyia_indices</span>(df_for_map)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>Sindx_map</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<!-- ![](visualization/Indices_Stegomyia.html) -->
+<iframe src="visualization/Indices_Stegomyia.html" width="100%" height="600px" frameborder="0">
+</iframe>
+</section>
+</section>
+</section>
+<section id="conclusiones" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="conclusiones"><span class="header-section-number">3.3</span> Conclusiones</h2>
+<p>Este proyecto desarrolló un paquete de R para automatizar el cálculo, análisis y visualización de los índices de Estegomía (HI, CI, BI), abordando las limitaciones del actual manejo de datos de control vectorial basado en hojas de cálculo y la restricción de la plataforma a cálculos por manzana. El objetivo principal fue proveer una herramienta eficiente para la toma de decisiones en salud pública, permitiendo un análisis más granular y una mejor comprensión del riesgo entomológico.</p>
+<p>Las funciones implementadas en el paquete permiten el cálculo automatizado de los índices de riesgo entomológico por tipo de estudio (encuesta/verificación), la localidad, sector, la fecha de inicio de actividad, y la semana epidemiológica, obteniendo resultados rápidos y consistentes. Lo que permite evaluar el impacto de las actividades de control integral e identificar áreas que requieren refuerzos.</p>
+<p>La generación de mapas dinámicos y detallados facilita la identificación de patrones espaciales y temporales en la distribución de los índices, proporcionando una visualización georreferenciada superior a la disponible anteriormente.</p>
+<p>Se superaron las dificultades asociadas al uso de hojas de cálculo, proporcionando un flujo de trabajo estructurado que optimiza el tiempo y minimiza errores en la manipulación de datos.</p>
+<p>Este paquete de R representa un avance en la gestión y control de enfermedades transmitidas por vectores. No solo refuerza la comprensión del riesgo entomológico mediante el cálculo y visualización de índices de Estegomía, sino que establece una base sólida para el desarrollo de herramientas más avanzadas en el futuro. Al automatizar procesos, mejorar la precisión de los análisis y proporcionar visualizaciones robustas, este proyecto impacta positivamente en la toma de decisiones y, en última instancia, en la salud pública del estado de Sonora.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Bowman2014" class="csl-entry" role="listitem">
+Bowman, Leigh R., Silvia Runge-Ranzinger, and P. J. McCall. 2014. <span>“Assessing the Relationship Between Vector Indices and Dengue Transmission: A Systematic Review of the Evidence.”</span> <em>PLoS Neglected Tropical Diseases</em> 8. <a href="https://doi.org/10.1371/JOURNAL.PNTD.0002848">https://doi.org/10.1371/JOURNAL.PNTD.0002848</a>.
+</div>
+<div id="ref-Braks2003" class="csl-entry" role="listitem">
+Braks, Marieta A. H., Nildimar A. Honório, Ricardo Lourenço-De-Oliveira, Steven A. Juliano, and L. Philip Lounibos. 2003. <span>“Convergent Habitat Segregation of Aedes Aegypti and Aedes Albopictus (Diptera: Culicidae) in Southeastern Brazil and Florida.”</span> <em>Journal of Medical Entomology</em> 40: 785–94. <a href="https://doi.org/10.1603/0022-2585-40.6.785">https://doi.org/10.1603/0022-2585-40.6.785</a>.
+</div>
+<div id="ref-Vigilanciaentomologica2019" class="csl-entry" role="listitem">
+CENAPRECE. 2019. <span>“Vigilancia Entomológica y Control Integral Del Vector.”</span> <a href="https://geosis.mx/Aplicaciones/EntomologiayControl/">https://geosis.mx/Aplicaciones/EntomologiayControl/</a>.
+</div>
+<div id="ref-gobmx2023" class="csl-entry" role="listitem">
+———. 2024. <span>“DIRECCIÓN DEL PROGRAMA DE ENFERMEDADES TRANSMITIDAS POR VECTORES.”</span> <a href="https://www.gob.mx/salud/cenaprece/acciones-y-programas/direccion-del-programa-de-enfermedades-transmitidas-por-vectores">https://www.gob.mx/salud/cenaprece/acciones-y-programas/direccion-del-programa-de-enfermedades-transmitidas-por-vectores</a>.
+</div>
+<div id="ref-Garjito2020" class="csl-entry" role="listitem">
+Garjito, Triwibowo Ambar, Muhammad Choirul Hidajat, Revi Rosavika Kinansi, Riyani Setyaningsih, Yusnita Mirna Anggraeni, Mujiyanto, Wiwik Trapsilowati, et al. 2020. <span>“Stegomyia Indices and Risk of Dengue Transmission: A Lack of Correlation.”</span> <em>Frontiers in Public Health</em> 8 (July). <a href="https://doi.org/10.3389/fpubh.2020.00328">https://doi.org/10.3389/fpubh.2020.00328</a>.
+</div>
+<div id="ref-Kamgang2013" class="csl-entry" role="listitem">
+Kamgang, Basile, Carine Ngoagouni, Alexandre Manirakiza, Emmanuel Nakouné, Christophe Paupy, and Mirdad Kazanji. 2013. <span>“Temporal Patterns of Abundance of Aedes Aegypti and Aedes Albopictus (Diptera: Culicidae) and Mitochondrial DNA Analysis of Ae. Albopictus in the Central African Republic.”</span> <em>PLoS Neglected Tropical Diseases</em> 7. <a href="https://doi.org/10.1371/journal.pntd.0002590">https://doi.org/10.1371/journal.pntd.0002590</a>.
+</div>
+<div id="ref-Kamgang2010" class="csl-entry" role="listitem">
+Kamgang, B., J. Y. Happi, P. Boisier, F. Njiokou, J. P. Hervé, F. Simard, and C. Paupy. 2010. <span>“Geographic and Ecological Distribution of the Dengue and Chikungunya Virus Vectors Aedes Aegypti and Aedes Albopictus in Three Major Cameroonian Towns.”</span> <em>Medical and Veterinary Entomology</em> 24 (June): 132–41. <a href="https://doi.org/10.1111/j.1365-2915.2010.00869.x">https://doi.org/10.1111/j.1365-2915.2010.00869.x</a>.
+</div>
+<div id="ref-moraga2023" class="csl-entry" role="listitem">
+Moraga, Paula. 2023. <em>Geocomputation with r</em>. 2nd ed. Boca Raton, FL, USA: CRC Press. <a href="https://www.paulamoraga.com/book-geospatial/index.html">https://www.paulamoraga.com/book-geospatial/index.html</a>.
+</div>
+<div id="ref-Organization2016" class="csl-entry" role="listitem">
+Organization, World Health. 2016. <em>Entomological Surveillance for Aedes Spp. In the Context of Zika Virus. Interim Guidance for Entomologists</em>. WHO Regional Office for South-East Asia. <a href="https://iris.who.int/handle/10665/204894">https://iris.who.int/handle/10665/204894</a>.
+</div>
+<div id="ref-Praptowibowo2015" class="csl-entry" role="listitem">
+Praptowibowo, Wahyu. 2015. <span>“Maya Index Dan Gambaran Habitat Perkembangbiakan Larva Aedes Sp. Berdasarkan Endemisitas DBD Di Kota Semarang Provinsi Jawa Tengah”</span> 3: 2356–3346. <a href="http://ejournal-s1.undip.ac.id/index.php/jkm">http://ejournal-s1.undip.ac.id/index.php/jkm</a>.
+</div>
+<div id="ref-Quintero2015" class="csl-entry" role="listitem">
+Quintero, J., T. Garcia-Betancourt, S. Cortes, D. Garcia, L. Alcala, C. Gonzalez-Uribe, H. Brochero, and G. Carrasquilla. 2015. <span>“Effectiveness and Feasibility of Long-Lasting Insecticide-Treated Curtains and Water Container Covers for Dengue Vector Control in Colombia: A Cluster Randomised Trial.”</span> <em>Transactions of the Royal Society of Tropical Medicine and Hygiene</em> 109 (February): 116–25. <a href="https://doi.org/10.1093/trstmh/tru208">https://doi.org/10.1093/trstmh/tru208</a>.
+</div>
+<div id="ref-SouthEastAsia2011" class="csl-entry" role="listitem">
+South-East Asia., World Health Organization. Regional Office for. 2011. <em>Comprehensive Guidelines for Prevention and Control of Dengue and Dengue Haemorrhagic Fever.</em> World Health Organization Regional Office for South-East Asia. <a href="https://iris.who.int/handle/10665/204894">https://iris.who.int/handle/10665/204894</a>.
+</div>
+<div id="ref-rpkgs2023" class="csl-entry" role="listitem">
+Statistical Computing, R Foundation for. 2023. <em>R Packages</em>. 2.0 ed. Vienna, Austria: R Foundation for Statistical Computing. <a href="https://r-pkgs.org/index.html">https://r-pkgs.org/index.html</a>.
+</div>
+<div id="ref-Tedjou2020" class="csl-entry" role="listitem">
+Tedjou, Armel N., Basile Kamgang, Aurélie P. Yougang, Theodel A. Wilson-Bahun, Flobert Njiokou, and Charles S. Wondji. 2020. <span>“Patterns of Ecological Adaptation of Aedes Aegypti and Aedes Albopictus and Stegomyia Indices Highlight the Potential Risk of Arbovirus Transmission in Yaoundé, the Capital City of Cameroon.”</span> <em>Pathogens</em> 9 (June): 491. <a href="https://doi.org/10.3390/pathogens9060491">https://doi.org/10.3390/pathogens9060491</a>.
+</div>
+<div id="ref-Tomia2022" class="csl-entry" role="listitem">
+Tomia, Amalan, and Rosmila Tuhatea. n.d. <span>“Potential of Transmission of the Dengue Virus Based on Entomological Index and Maya Index in Kalumata and North Mangga Dua Villages,ternate City.”</span> <em>International Journal of Science</em>. https://doi.org/<a href=" https://doi.org/10.46729/ijstm.v3i4.547"> https://doi.org/10.46729/ijstm.v3i4.547</a>.
+</div>
+<div id="ref-TunLin1996" class="csl-entry" role="listitem">
+Tun-Lin, W., B. H. Kay, A. Barnes, and S. Forsyth. 1996. <span>“Critical Examination of Aedes Aegypti Indices: Correlations with Abundance.”</span> <em>American Journal of Tropical Medicine and Hygiene</em> 54. <a href="https://doi.org/10.4269/ajtmh.1996.54.543">https://doi.org/10.4269/ajtmh.1996.54.543</a>.
+</div>
+<div id="ref-Weetman2018" class="csl-entry" role="listitem">
+Weetman, David, Basile Kamgang, Athanase Badolo, Catherine L. Moyes, Freya M. Shearer, Mamadou Coulibaly, João Pinto, Louis Lambrechts, and Philip J. McCall. 2018. <span>“Aedes Mosquitoes and Aedes-Borne Arboviruses in Africa: Current and Future Threats.”</span> <em>International Journal of Environmental Research and Public Health</em>. MDPI. <a href="https://doi.org/10.3390/ijerph15020220">https://doi.org/10.3390/ijerph15020220</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./03_resumen_ejecutivo.html" class="pagination-link  aria-label=" &lt;span="" ejecutivo&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Resumen ejecutivo</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./referencia.html" class="pagination-link" aria-label="<span class='chapter-number'>4</span>&nbsp; <span class='chapter-title'>Referencias</span>">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Referencias</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Esta tesis ha sido escrita por Edgar Javier Verdugo Molina y dirigida por Saúl Díaz Infante Velasco, en cumplimiento para obtener el grado de Maestro en Ciencia de Datos.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
