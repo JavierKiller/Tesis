@@ -1,6 +1,6 @@
 ## Introduccion
 
-El análisis de riesgo entomológico se realiza actualmente mediante hojas de cálculo, lo que resulta en una gestión ineficiente de la información. La estructura de la base de datos es compleja teniendo 121 variables, dificulta la adaptación de consultas a pequeñas modificaciones, lo que complica aún más. La visualización georreferenciada de la plataforma es limitada e inestable, lo que afecta negativamente la interpretación de los datos. sistema integral de monitoreo de vectores
+El análisis de riesgo entomológico se realiza actualmente mediante hojas de cálculo, lo que resulta en una gestión ineficiente de la información. La estructura de la base de datos es compleja teniendo 121 variables, dificulta la adaptación de consultas a pequeñas modificaciones, lo que complica aún más. La visualización georreferenciada de la plataforma es limitada e inestable, lo que afecta negativamente la interpretación de los datos sistema integral de monitoreo de vectores
 
 <http://geosis.mx/aplicaciones/sismv/>
 

@@ -2,7 +2,7 @@
 
 ### Funciones para limpieza y formato de las bases de datos
 
-#### Función load_raw_data
+#### Función load_raw_data {.unnumbered}
 
 La función load_raw_data está diseñada para cargar datos sin procesar de un archivo .txt relacionado con un estudio de entomología realizado en la plataforma "Vigilancia Entomológica y Control Integral del Vector". La función recibe el parámetro denominado "path" (cadena de texto): la cual es ruta del archivo .txt que contiene los datos sin procesar. Se espera que siga el formato utilizado en la actividad "Estudios entomológicos en fase larval y pupal" de la plataforma "Vigilancia Entomológica".
 
@@ -35,7 +35,7 @@ df_load_raw <- load_raw_data(path_raw_data)
 
 <!-- head(df_load_raw) -->
 
-#### Función clean_raw_data
+#### Función clean_raw_data {.unnumbered}
 
 Está función fue diseñada para limpiar y reformatear un dataframe que ha sido generado previamente por la función load_raw_data. Dicho dataframe contiene datos de un estudio de entomología realizado en la plataforma "Vigilancia Entomológica y Control Integral del Vector".
 
@@ -45,7 +45,22 @@ El parámetro path_out (cadena de texto, opcional): es la ruta y nombre del arch
 
 col_name (lista): Una lista que define los tipos de datos y niveles de factor (en caso de ser factor) para cada columna del marco de datos. Esta lista debe ser congruente con las variables seleccionadas en la función load_raw_data.Si no se especifica este parámetro, la función selecciona por defecto las siguientes variables:
 
-Tipo_de_Estudio = col_factor(levels = c( "Encuesta", "Verificacion")), Clave_Jurisdiccion = col_factor(levels = as.character(c( 2601, 2602, 2603, 2604, 2605, 2606))), Jurisdiccion = col_factor(levels = c( "Hermosillo", "Caborca", "Cananea", "Cajeme", "Navojoa", "San_Luis_Río_Colorado" )), Clave_Municipio = col_factor(levels = as.character(1:72)), Municipio = col_factor(), Clave_Localidad = col_factor(), Localidad = col_factor(), Sector = col_factor(levels = as.character(1:2000)), Fecha_de_Inicio = col_date(format = "%d/%m/%Y"), Semana_Epidemiologica = col_factor(levels = as.character(1:53)), Casas_Revisadas = col_double(), Casas_Positivas = col_double(), Total_de_Recipientes_con_Agua = col_double(), Total_de_Recipientes_Positivos = col_double()
+``` r
+Tipo_de_Estudio = col_factor(levels = c( "Encuesta", "Verificacion")),
+Clave_Jurisdiccion = col_factor(levels = as.character(c( 2601, 2602, 2603, 2604, 2605, 2606))),
+Jurisdiccion = col_factor(levels = c( "Hermosillo", "Caborca", "Cananea", "Cajeme", "Navojoa", "San_Luis_Río_Colorado" )),
+Clave_Municipio = col_factor(levels = as.character(1:72)),
+Municipio = col_factor(),
+Clave_Localidad = col_factor(),
+Localidad = col_factor(),
+Sector = col_factor(levels = as.character(1:2000)),
+Fecha_de_Inicio = col_date(format = "%d/%m/%Y"),
+Semana_Epidemiologica = col_factor(levels = as.character(1:53)),
+Casas_Revisadas = col_double(),
+Casas_Positivas = col_double(),
+Total_de_Recipientes_con_Agua = col_double(),
+Total_de_Recipientes_Positivos = col_double()
+```
 
 Una vez agregados los parámetros la función guarda el dataframe sin procesar en un archivo .csv temporal utilizando la ruta especificada en path_out o la ruta predeterminada. Continua en leer el archivo con tipos de datos: Luego, la función lee el archivo .csv recién creado utilizando read_csv. Aquí, se especifica el parámetro col_types como la lista col_name para establecer los tipos de datos correctos para cada columna.
 
@@ -68,7 +83,7 @@ df_clean <- clean_raw_data(dfsm, path_out = path_of_example)
 
 Las siguientes funciones se utilizan para calcula los índices Estegomía(índice de Contenedores - CI, índice de Casas - HI, e índice de Breteau - BI) siempre para un tipo de estudio y una o dos variables para filtrar y especificar los datos según la intensión del análisis. Es necesario que el dataframe se proporcione haya sido previamente procesado por las funciones load_raw_data y clean_raw_data
 
-#### Función get_stegomyia_indices_by_type_of_study_and_ew
+#### Función get_stegomyia_indices_by_type_of_study_and_ew {.unnumbered}
 
 Esta función calcula los índices Estegomíapara un tipo de estudio y una semana epidemiológica específicos.
 
@@ -91,7 +106,7 @@ df_stegomyia_sd <- get_stegomyia_indices_by_type_of_study_and_ew(df_indx,
 
 <!-- head(df_stegomyia_sd) -->
 
-#### Función get_stegomyia_indices_by_type_of_study_and_loc
+#### Función get_stegomyia_indices_by_type_of_study_and_loc {.unnumbered}
 
 Esta función calcula los índices Estegomíapara un tipo de estudio y una Localidad específicas del estado de Sonora,
 
@@ -124,7 +139,7 @@ df_stegomyia_l <- get_stegomyia_indices_by_type_of_study_and_loc(df_indx,
                )
 ```
 
-#### Función get_stegomyia_indices_by_type_of_study_and_star_date
+#### Función get_stegomyia_indices_by_type_of_study_and_star_date {.unnumbered}
 
 Esta función calcula los índices Estegomía para un tipo de estudio y un o más Fechas específicas.
 
@@ -147,7 +162,7 @@ df_stegomyia_sd <- get_stegomyia_indices_by_type_of_study_and_star_date(df_indx,
 
 <!-- head(df_stegomyia_sd) -->
 
-#### Función get_stegomyia_indices_by_type_of_study_and_geo_is
+#### Función get_stegomyia_indices_by_type_of_study_and_geo_is {.unnumbered}
 
 Esta función calcula los índices Estegomía para un tipo de estudio y uno o más Sectores específicas del estado de Sonora,
 
@@ -179,7 +194,7 @@ df_stegomyia <- get_stegomyia_indices_by_type_of_study_and_geo_is(df_indx,
   )
 ```
 
-#### Función get_stegomyia_indices_by_type_of_study_star_date_and_geo
+#### Función get_stegomyia_indices_by_type_of_study_star_date_and_geo {.unnumbered}
 
 Esta función calcula los índices Estegomía para un tipo de estudio, una o más fechas y uno o más Sectores específicas del estado de Sonora,
 
@@ -202,7 +217,7 @@ df_tc <-get_typology_container_by_type_of_study_and_location(df_typ,
 
 <!-- head(df_tc) -->
 
-### Función get_typology_container_by_type_of_study_and_location
+#### Función get_typology_container_by_type_of_study_and_location {.unnumbered}
 
 Cuando ya se ha identificado una localidad en emergencia por riego entomológico se necesita saber qué tipo de criaderos son los que están presentes para tomar las medidas apropiadas. Esta función proporciona una herramienta útil para entender la distribución de los tipos de recipientes positivos en diferentes localidades y, por lo tanto, para diseñar estrategias más efectivas de control de vectores
 
@@ -225,9 +240,9 @@ df_tc <-get_typology_container_by_type_of_study_and_location(df_typ,
 
 <!-- head(df_tc) -->
 
-## Funciones para hacer mapas
+### Funciones para hacer mapas
 
-### Función get_maps_stegomyia_indices
+#### Función get_maps_stegomyia_indices {.unnumbered}
 
 Esta función genera mapas geográficos de los índices Estegomía calculados para diferentes sectores, lo que permite visualizar espacialmente los índices Estegomía, lo que facilita la identificación de áreas de riesgo y la toma de decisiones informadas para el control de vectores.
 
@@ -261,7 +276,7 @@ Sindx_maps
 
 ![](imagenes/p_HI.png) ![](imagenes/p_CI.png) ![](imagenes/p_BI.png)
 
-#### Función get_1map_stegomyia_indices
+#### Función get_1map_stegomyia_indices {.unnumbered}
 
 Esta función genera una visualización más interactiva y completa de los índices Estegomía, permitiendo al usuario explorar los datos de manera más flexible y comparar los diferentes índices en un mismo mapa de los índices Estegomía calculados para diferentes sectores.
 

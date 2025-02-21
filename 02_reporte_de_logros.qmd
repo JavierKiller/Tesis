@@ -14,9 +14,9 @@ El paquete de R incluye funciones para cargar y limpiar datos, calcular los índ
 
 ## Logros
 
-El paquete de R desarrolló automatiza el cálculo de índices para el Programa Estatal de Vigilancia Entomológica y Control Integral de Enfermedades Transmitidas por Vector. Esta herramienta reduce el tiempo necesario para el análisis y minimiza los errores humanos, transformando un proceso manual basado en hojas de cálculo en un flujo de trabajo automatizado y reproducible.
+El paquete de R automatiza el cálculo de índices Estegomía para el Programa Estatal de Vigilancia Entomológica y Control Integral de Enfermedades Transmitidas por Vector. Esta herramienta reduce el tiempo necesario para el análisis, minimiza los errores humanos y transformando un proceso manual basado en hojas de cálculo en un flujo de trabajo automatizado y reproducible.
 
-Además, el paquete permite analizar el riesgo entomológico por tipo de estudio, localidad sector, semana epidemiológica, y/o Fecha de inicio, brindando una comprensión más detallada de la dinámica de las poblaciones de vectores y el impacto de las intervenciones.
+Además, el paquete permite analizar el riesgo entomológico por tipo de estudio, localidad sector, semana epidemiológica, y/o Fecha de inicio. Brindando así, una comprensión más detallada de la dinámica de las poblaciones de vectores y el impacto de las intervenciones.
 
 La información procesada y las visualizaciones geográficas permiten una toma de decisiones más informada y oportuna sobre las estrategias de control y prevención. Se facilita la identificación de zonas de alto riesgo y la priorización de recursos.
 
